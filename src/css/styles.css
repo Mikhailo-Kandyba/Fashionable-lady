@@ -119,6 +119,42 @@ h6 {
   padding: 0 15px;
   width: 100%; }
 
+.holder-languages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 85px;
+  color: #BEBEBE; }
+
+.radio-btn {
+  position: relative;
+  padding-right: 15px; }
+  .radio-btn::after {
+    content: '/';
+    position: absolute;
+    right: 4px;
+    top: 0;
+    color: #000; }
+  .radio-btn:last-child::after {
+    display: none; }
+  .radio-btn input[type=radio] {
+    display: none; }
+  .radio-btn label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    user-select: none;
+    text-transform: uppercase; }
+    .radio-btn label:hover {
+      font-weight: 600;
+      color: #000; }
+
+/* Checked */
+.radio-btn input[type=radio]:checked + label {
+  font-weight: 600;
+  color: #000; }
+
 .header {
   padding: 60px 0; }
   @media only screen and (max-width: 1023px) {

@@ -1,0 +1,55 @@
+@import "mixin";
+@import "variables";
+
+.holder-languages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 85px;
+  color: $light-gray;
+}
+
+.radio-btn {
+  position: relative;
+  padding-right: 15px;
+
+  &::after {
+    content: '/';
+    position: absolute;
+    right: 4px;
+    top: 0;
+    color: $black;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    user-select: none;
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: 600;
+      color: $black;
+    }
+  }
+}
+
+/* Checked */
+.radio-btn {
+  input[type=radio]:checked + label {
+    font-weight: 600;
+    color: $black;
+  }
+}
