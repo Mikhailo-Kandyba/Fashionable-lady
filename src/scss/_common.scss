@@ -1,0 +1,9 @@
+@import "mixin";
+@import "variables";
+
+.banner {
+  background: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 570px;
+}
