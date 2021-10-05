@@ -1,0 +1,212 @@
+@import "variables";
+@import "mixin";
+
+.header {
+  padding: 60px 0;
+
+  @include breakpoint($tablet) {
+    padding: 20px 0;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 83px 0 0;
+
+  @include breakpoint($desktop) {
+    padding: 0;
+  }
+
+  @include breakpoint($mobile) {
+    position: relative;
+  }
+}
+
+.logo {
+  display: flex;
+
+  img {
+    width: 70px;
+
+    @include breakpoint($mobile) {
+      width: 45px;
+    }
+  }
+}
+
+.menu-navigation-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 750px;
+
+  @include breakpoint($desktop) {
+    max-width: 720px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 430px;
+  }
+
+  @include breakpoint($mobile) {
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    right: 200%;
+    width: 100%;
+    transition: all .25s ease;
+    max-width: inherit;
+  }
+
+  .menu-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include breakpoint($desktop) {
+      padding: 0;
+    }
+
+    @include breakpoint($tablet) {
+      min-width: 400px;
+    }
+
+    @include breakpoint($mobile) {
+      display: block;
+      padding: 80px 40px;
+      //background: $blue;
+      min-height: 100vh;
+      min-width: inherit;
+    }
+
+    li {
+      min-width: 25%;
+      padding: 0 10px;
+      text-align: center;
+
+      @include breakpoint($mobile) {
+        position: relative;
+        margin-bottom: 30px;
+        padding: 0;
+      }
+
+      a {
+        font-weight: 500;
+        line-height: 27px;
+
+        @include breakpoint($mobile) {
+          display: block;
+        }
+      }
+
+      .holder-phone {
+        @include breakpoint($mobile) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon {
+          display: inline-flex;
+        }
+      }
+    }
+
+    .phone-item {
+      display: none;
+
+      @include breakpoint($mobile) {
+        display: block;
+        padding: 20px 0;
+        //border-top: solid 1px $dark-two;
+        //border-bottom: solid 1px $dark-two;
+      }
+    }
+  }
+}
+
+.holder-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .icon {
+    &::before {
+      top: -10px;
+      left: -10px;
+    }
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+.show-menu {
+  @include breakpoint($mobile) {
+    right: 0;
+  }
+}
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  top: 14px;
+  right: 0;
+  height: 22px;
+  width: 28px;
+  cursor: pointer;
+  transition: all .25s ease;
+  z-index: 103;
+
+  @include breakpoint($mobile) {
+    display: block;
+  }
+
+  span {
+    //background: $dark-two;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+
+  .middle {
+    transform: translate(0, -50%);
+    top: 50%;
+  }
+
+  .bottom {
+    top: auto;
+    bottom: 0;
+  }
+
+  .top {
+    bottom: 0;
+  }
+
+  &.active {
+    background: transparent;
+    .top {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+      top: 0;
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      bottom: 4px;
+      transform: translateY(-8px) translateX(0) rotate(-45deg);
+    }
+  }
+}
