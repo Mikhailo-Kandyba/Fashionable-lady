@@ -158,7 +158,8 @@ h6 {
   padding: 10px 0; }
 
 .header-top {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  padding: 10px 0 0; }
 
 .header-top-content {
   display: flex;
@@ -341,7 +342,8 @@ h6 {
 
 .user-info_item {
   position: relative; }
-  .user-info_item:hover .contact-list {
+  .user-info_item:hover .contact-list,
+  .user-info_item:hover .info-list {
     display: block;
     position: absolute;
     top: 30px;
@@ -349,29 +351,50 @@ h6 {
     background: #FAFAFA;
     z-index: 5; }
 
-.contact-list {
+.contact-list,
+.info-list {
   display: none;
   padding: 27px 24px 5px;
   background: #FAFAFA;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   min-width: 240px; }
-  .contact-list li {
-    align-items: center;
-    min-width: 100%;
+  .contact-list li,
+  .info-list li {
+    text-align: left;
     margin: 0;
     margin-bottom: 16px;
     padding-bottom: 0; }
-    .contact-list li::after {
+    .contact-list li::after,
+    .info-list li::after {
       display: none; }
-    .contact-list li a {
+    .contact-list li a,
+    .info-list li a {
+      padding-left: 25px;
       display: block; }
-    .contact-list li:last-child::before {
+    .contact-list li:last-child::before,
+    .info-list li:last-child::before {
       content: "\f003";
       font-family: "FontAwesome";
       left: 0;
       top: 5px;
       position: absolute; }
+
+.info-list li {
+  text-align: left; }
+  .info-list li a {
+    padding-left: 25px; }
+  .info-list li:last-child::before {
+    content: "";
+    left: 0;
+    top: 5px;
+    background: url("../images/output.svg");
+    width: 19px;
+    height: 17px; }
+  .info-list li:first-child::before {
+    width: 19px;
+    height: 17px;
+    background: url("../images/history.svg"); }
 
 .header-bottom {
   background: #FAFAFA; }
@@ -396,16 +419,20 @@ h6 {
       background: #EBEBEB; }
       .menu-bottom li:hover a {
         text-decoration: none; }
-  .menu-bottom .catalog {
+  .menu-bottom .catalog-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 19%; }
-    .menu-bottom .catalog .decor {
+    min-width: 19%;
+    position: relative;
+    background: #EBEBEB; }
+    .menu-bottom .catalog-item:hover .display_none {
+      display: block; }
+    .menu-bottom .catalog-item .decor {
       height: 14px;
       width: 18px;
       position: relative; }
-      .menu-bottom .catalog .decor span {
+      .menu-bottom .catalog-item .decor span {
         position: absolute;
         top: 0;
         left: 0;
@@ -414,15 +441,39 @@ h6 {
         height: 2px;
         width: 100%;
         border-radius: 2px; }
-      .menu-bottom .catalog .decor .middle {
+      .menu-bottom .catalog-item .decor .middle {
         transform: translate(0, -50%);
         top: 50%;
         width: 50%; }
-      .menu-bottom .catalog .decor .bottom {
+      .menu-bottom .catalog-item .decor .bottom {
         top: auto;
         bottom: 0; }
-      .menu-bottom .catalog .decor .top {
+      .menu-bottom .catalog-item .decor .top {
         bottom: 0; }
+
+.catalog-lists {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #FAFAFA;
+  min-width: 1280px;
+  flex-wrap: wrap;
+  position: absolute;
+  padding: 22px 10px 35px 50px;
+  left: 15px;
+  top: 77px; }
+  .catalog-lists ul {
+    width: 19%; }
+    .catalog-lists ul li {
+      text-align: left;
+      border-right: 0;
+      padding: 0;
+      margin-bottom: 10px; }
+      .catalog-lists ul li a:hover {
+        text-decoration: underline; }
+      .catalog-lists ul li:hover {
+        background: transparent; }
 
 .header-bottom-content {
   display: flex;
@@ -458,12 +509,13 @@ h6 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 170px; }
+  max-width: 170px;
+  cursor: pointer; }
   .basket-wrap span {
     display: block; }
   .basket-wrap .number {
     background: #BEBEBE;
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 5px; }
 
 .name-basket {
@@ -481,5 +533,5 @@ h6 {
   background-size: cover;
   min-height: 570px; }
 
-.active {
-  background: #EBEBEB; }
+.display_none {
+  display: none; }

@@ -7,6 +7,7 @@
 
 .header-top {
   margin-bottom: 8px;
+  padding: 10px 0 0;
 }
 
 .header-top-content {
@@ -260,7 +261,8 @@
   position: relative;
 
   &:hover {
-    .contact-list {
+    .contact-list,
+    .info-list {
       display: block;
       position: absolute;
       top: 30px;
@@ -271,7 +273,8 @@
   }
 }
 
-.contact-list {
+.contact-list,
+.info-list {
   display: none;
   padding: 27px 24px 5px;
   background: $lactic;
@@ -280,8 +283,7 @@
   min-width: 240px;
 
   li {
-    align-items: center;
-    min-width: 100%;
+    text-align: left;
     margin: 0;
     margin-bottom: 16px;
     padding-bottom: 0;
@@ -291,6 +293,7 @@
     }
 
     a {
+      padding-left: 25px;
       display: block;
     }
 
@@ -301,6 +304,34 @@
         left: 0;
         top: 5px;
         position: absolute;
+      }
+    }
+  }
+}
+
+.info-list {
+  li {
+    text-align: left;
+
+    a {
+      padding-left: 25px;
+    }
+    &:last-child {
+      &::before {
+        content: "";
+        left: 0;
+        top: 5px;
+        background: url("../images/output.svg");
+        width: 19px;
+        height: 17px;
+      }
+    }
+
+    &:first-child {
+      &::before {
+        width: 19px;
+        height: 17px;
+        background: url("../images/history.svg");
       }
     }
   }
@@ -338,11 +369,19 @@
     }
   }
 
-  .catalog {
+  .catalog-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-width: 19%;
+    position: relative;
+    background: $dark-grey;
+
+    &:hover {
+      .display_none {
+        display: block;
+      }
+    }
 
     .decor {
       height: 14px;
@@ -373,6 +412,40 @@
 
       .top {
         bottom: 0;
+      }
+    }
+  }
+}
+
+.catalog-lists {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: $lactic;
+  min-width: 1280px;
+  flex-wrap: wrap;
+  position: absolute;
+  padding: 22px 10px 35px 50px;
+  left: 15px;
+  top: 77px;
+
+  ul {
+    width: 19%;
+    li {
+      text-align: left;
+      border-right: 0;
+      padding: 0;
+      margin-bottom: 10px;
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        background: transparent;
       }
     }
   }
@@ -421,6 +494,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 170px;
+  cursor: pointer;
 
   span {
     display: block;
@@ -428,7 +502,7 @@
 
   .number {
     background: $light-gray;
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 5px;
   }
 }
