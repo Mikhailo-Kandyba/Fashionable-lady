@@ -1,10 +1,6 @@
 @import "variables";
 @import "mixin";
 
-.header {
-  padding: 10px 0;
-}
-
 .header-top {
   margin-bottom: 8px;
   padding: 10px 0 0;
@@ -339,6 +335,37 @@
 
 .header-bottom {
   background: $lactic;
+
+  .form-group {
+    width: 370px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 24px;
+      width: 27px;
+      height: 24px;
+      background: url("../images/search.svg");
+    }
+
+    input {
+      width: 100%;
+      border-radius: 15px;
+      background: $white;
+      border: none;
+      height: 50px;
+      padding: 18px 40px 11px 82px;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 25px;
+        color: $black;
+      }
+    }
+  }
 }
 
 .menu-bottom-wrap {
@@ -455,37 +482,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.form-group {
-  width: 370px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 24px;
-    width: 27px;
-    height: 24px;
-    background: url("../images/search.svg");
-  }
-
-  input {
-    width: 100%;
-    border-radius: 15px;
-    background: $white;
-    border: none;
-    height: 50px;
-    padding: 18px 40px 11px 82px;
-
-    &::placeholder {
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      color: $black;
-    }
-  }
 }
 
 .basket-wrap {

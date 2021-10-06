@@ -52,3 +52,109 @@
     color: $black;
   }
 }
+
+.btn-model {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 32px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: uppercase;
+  width: 100%;
+  color: $white;
+  margin-bottom: 5px;
+}
+
+.btn-favorites {
+  background: $white;
+  border-radius: 50%;
+  padding: 11px 10px 9px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: $white;
+
+    &:after {
+      content: "\f004";
+      font-family: "FontAwesome";
+      color: $red;
+      font-size: 20px;
+    }
+
+    i {
+      display: none;
+    }
+  }
+}
+
+.btn-goods {
+  padding: 23px 80px 18px;
+  background: $black;
+  border-radius: 20px 0 20px 0;
+  color: $white ;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+
+  &:hover {
+    background: $light-black;
+  }
+}
+
+.btn_green {
+  background: $green;
+  color: $white;
+
+  &:hover {
+    background: $light-green;
+  }
+}
+
+.btn_red {
+  background: $red;
+
+  &:hover {
+    background: $light-red;
+  }
+
+}
+
+.btn_orange {
+  background: $orange;
+
+  &:hover {
+    background: $light-orange;
+  }
+}
+
+.btn_selected {
+  i {
+    display: none;
+  }
+  &:after {
+    content: "\f004";
+    font-family: "FontAwesome";
+    color: $red;
+    font-size: 20px;
+  }
+}
+
+.btn-form {
+  background: $black;
+  color: $white;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  padding: 16px 28px;
+  border-radius: 0 19px 19px 0;
+
+  &:hover {
+    background: $light-black;
+  }
+}
