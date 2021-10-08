@@ -4,8 +4,9 @@
 .holder-languages {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  min-width: 85px;
   color: $light-gray;
 }
 
@@ -158,3 +159,32 @@
     background: $light-black;
   }
 }
+
+.btn-drop {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  background: transparent;
+  border: none;
+  color: $black;
+  position: relative;
+  padding: 0 20px 10px 30px;
+
+  &:hover {
+    background: transparent;
+    color: $black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 16px;
+    height: 10px;
+    background: url("../images/pointer.svg");
+  }
+}
+
+
+

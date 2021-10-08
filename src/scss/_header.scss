@@ -2,15 +2,13 @@
 @import "mixin";
 
 .header-top {
-  margin-bottom: 8px;
-  padding: 10px 0 0;
+  padding: 10px 0 8px;
 }
 
 .header-top-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 95px 0 170px;
+  justify-content: center;
 }
 
 .logo {
@@ -182,162 +180,72 @@
 .menu-top-wrap {
   display: flex;
   justify-content: flex-start;
-  max-width: 325px;
-  width: 100%;
+  min-width: 325px;
 }
 
 .menu-top {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  min-width: 270px;
   flex-wrap: wrap;
-  width: 100%;
 
   li {
     padding-right: 10px;
     line-height: 21px;
-    min-width: 42%;
-    text-align: center;
   }
 }
 
 .user-info-wrap {
   display: flex;
   justify-content: flex-end;
-  max-width: 500px;
-  width: 100%;
-}
-
-.user-info {
-  display: flex;
-  justify-content: flex-end;
+  min-width: 500px;
   flex-wrap: wrap;
-  width: 100%;
-
-  li {
-    position: relative;
-    line-height: 21px;
-    min-width: 43%;
-    text-align: center;
-    margin: 0 12px;
-    padding-bottom: 10px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      right: 0;
-      width: 16px;
-      height: 10px;
-      background: url("../images/pointer.svg");
-    }
-
-    &:first-child {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 3px;
-        left: 0;
-        width: 16px;
-        height: 17px;
-        background: url("../images/phone.svg");
-      }
-    }
-
-    &:last-child {
-      &::before {
-        content: "\f007";
-        font-family: "FontAwesome";
-      }
-    }
-  }
 }
 
-.user-info_item {
-  position: relative;
-
-  &:hover {
-    .contact-list,
-    .info-list {
-      display: block;
-      position: absolute;
-      top: 30px;
-      left: -25px;
-      background: $lactic;
-      z-index: 5;
-    }
-  }
+.dropdown {
+  margin: 0 0 0 45px;
 }
 
-.contact-list,
-.info-list {
-  display: none;
-  padding: 27px 24px 5px;
-  background: $lactic;
+.dropdown-menu {
+  left: -25px !important;
+  background-color: $lactic;
+  padding: 33px 24px 5px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   min-width: 240px;
-
-  li {
-    text-align: left;
-    margin: 0;
-    margin-bottom: 16px;
-    padding-bottom: 0;
-
-    &::after {
-      display: none;
-    }
-
-    a {
-      padding-left: 25px;
-      display: block;
-    }
-
-    &:last-child {
-      &::before {
-        content: "\f003";
-        font-family: "FontAwesome";
-        left: 0;
-        top: 5px;
-        position: absolute;
-      }
-    }
-  }
+  width: 100%;
+  border: none;
+  overflow: hidden;
 }
 
-.info-list {
-  li {
-    text-align: left;
+.dropdown-item {
+  display: block;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  padding: 0 0 12px 32px;
+  text-decoration: none;
+  white-space: normal;
 
-    a {
-      padding-left: 25px;
-    }
-    &:last-child {
-      &::before {
-        content: "";
-        left: 0;
-        top: 5px;
-        background: url("../images/output.svg");
-        width: 19px;
-        height: 17px;
-      }
-    }
+  &:hover {
+    text-decoration: underline;
+    background-color:  transparent;
+  }
 
-    &:first-child {
-      &::before {
-        width: 19px;
-        height: 17px;
-        background: url("../images/history.svg");
-      }
-    }
+  &:active {
+    background-color:  transparent;
   }
 }
 
 .header-bottom {
   background: $lactic;
 
-  .form-group {
+  form {
     width: 370px;
+  }
+
+  .form-group {
     position: relative;
 
     &::after {
@@ -351,12 +259,14 @@
     }
 
     input {
+      font-size: 20px;
+      line-height: 20px;
       width: 100%;
       border-radius: 15px;
       background: $white;
       border: none;
       height: 50px;
-      padding: 18px 40px 11px 82px;
+      padding: 11px 20px 11px 82px;
 
       &::placeholder {
         font-weight: 400;
@@ -395,84 +305,96 @@
       }
     }
   }
-
-  .catalog-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 19%;
-    position: relative;
-    background: $dark-grey;
-
-    &:hover {
-      .display_none {
-        display: block;
-      }
-    }
-
-    .decor {
-      height: 14px;
-      width: 18px;
-      position: relative;
-
-      span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: $black;
-        border: none;
-        height: 2px;
-        width: 100%;
-        border-radius: 2px;
-      }
-
-      .middle {
-        transform: translate(0, -50%);
-        top: 50%;
-        width: 50%;
-      }
-
-      .bottom {
-        top: auto;
-        bottom: 0;
-      }
-
-      .top {
-        bottom: 0;
-      }
-    }
-  }
 }
 
-.catalog-lists {
+.catalog-item {
   display: flex;
   justify-content: space-between;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background: $lactic;
-  min-width: 1280px;
-  flex-wrap: wrap;
-  position: absolute;
-  padding: 22px 10px 35px 50px;
-  left: 15px;
-  top: 77px;
+  align-items: center;
+  max-width: 125px;
+  width: 100%;
+  position: relative;
+  background: $dark-grey;
 
-  ul {
-    width: 19%;
-    li {
-      text-align: left;
-      border-right: 0;
-      padding: 0;
-      margin-bottom: 10px;
+  .decor {
+    height: 14px;
+    width: 18px;
+    position: relative;
 
-      a {
-        &:hover {
-          text-decoration: underline;
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $black;
+      border: none;
+      height: 2px;
+      width: 100%;
+      border-radius: 2px;
+    }
+
+    .middle {
+      transform: translate(0, -50%);
+      top: 50%;
+      width: 50%;
+    }
+
+    .bottom {
+      top: auto;
+      bottom: 0;
+    }
+
+    .top {
+      bottom: 0;
+    }
+  }
+
+  .dropdown {
+    margin: 0;
+  }
+
+  .btn-drop {
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0 0 20px 20px;
+    background: $lactic;
+    min-width: 1280px;
+    flex-wrap: wrap;
+    position: absolute;
+    padding: 22px 10px 35px 50px;
+    left: 15px;
+    top: 25px !important;
+
+    .ul-area {
+      display: inline-grid;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    ul {
+      li {
+        font-weight: 400;
+        text-align: left;
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+
+        a {
+          font-size: 20px;
+          line-height: 21px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
-      }
 
-      &:hover {
-        background: transparent;
+        &:hover {
+          background: transparent;
+        }
       }
     }
   }
@@ -514,3 +436,4 @@
     min-width: 22px;
   }
 }
+

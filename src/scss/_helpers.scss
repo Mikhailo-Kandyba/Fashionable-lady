@@ -9,3 +9,76 @@
   background: $lactic;
   padding: 55px 0;
 }
+
+.history-img {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 19px;
+    height: 17px;
+    background: url("../images/history.svg");
+  }
+}
+
+.output-img {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: url("../images/output.svg");
+    width: 19px;
+    height: 17px;
+  }
+}
+
+.mail-img {
+  position: relative;
+
+  &::before {
+    content: "\f003";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.phone-img {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background: url("../images/phone.svg");
+  }
+}
+
+.private-img {
+  position: relative;
+
+  &::before {
+    content: "\f007";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "FontAwesome";
+  }
+}
+
+.position-left_15 {
+  position: absolute;
+  left: 15px !important;
+}
+
+

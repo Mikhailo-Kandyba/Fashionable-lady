@@ -6,11 +6,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div id="wrapper">
-            <header class="header">
+            <header>
 <!--                <div class="container">-->
 <!--                    <div class="header-content">-->
 <!--                        <a class="logo" href="#">-->
@@ -45,55 +46,51 @@
 <!--                    </div>-->
 <!--                </div>-->
                 <div class="header-top">
-                    <div class="container header-top-content">
-                        <div class="holder-languages">
-                            <div class="radio-btn">
-                                <input id="btn-ru" type="radio" name="radio">
-                                <label for="btn-ru">RU</label>
+                    <div class="container">
+                        <div class="header-top-content">
+                            <div class="holder-languages">
+                                <div class="radio-btn">
+                                    <input id="btn-ru" type="radio" name="radio">
+                                    <label for="btn-ru">RU</label>
+                                </div>
+                                <div class="radio-btn">
+                                    <input id="btn-ua" type="radio" name="radio" checked>
+                                    <label for="btn-ua">UA</label>
+                                </div>
                             </div>
-                            <div class="radio-btn">
-                                <input id="btn-ua" type="radio" name="radio" checked>
-                                <label for="btn-ua">UA</label>
+                            <div class="menu-top-wrap">
+                                <ul class="menu-top">
+                                    <li>
+                                        <a href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="menu-top-wrap">
-                            <ul class="menu-top">
-                                <li>
-                                    <a href="#">Доставка и оплата</a>
-                                </li>
-                                <li>
-                                    <a href="#">Отзывы</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="logo" href="#">
-                            <img src="./images/logo.svg" alt="logo">
-                        </a>
-                        <div class="user-info-wrap">
-                            <ul class="user-info">
-                                <li class="user-info_item">
-                                    <a href="tel:+38(097)4587828">+38(097)458-78-28</a>
-                                    <ul class="contact-list">
-                                        <li>
-                                            <a href="tel:+38(095)6121860">+38(095)612-18-60</a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:sale@modna-panyanka.com.ua">sale@modna-panyanka.com.ua</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="user-info_item">
-                                    <span>Личный кабинет</span>
-                                    <ul class="info-list">
-                                        <li>
-                                            <a href="W">История заказов</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Выйти</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <a class="logo" href="#">
+                                <img src="./images/logo.svg" alt="logo">
+                            </a>
+                            <div class="user-info-wrap">
+                                <div class="dropdown">
+                                    <button type="button" class="btn-drop phone-img" data-toggle="dropdown">
+                                        +38(097)458-78-28
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item phone-img" href="tel:+38(095)6121860">+38(095)612-18-60</a>
+                                        <a class="dropdown-item mail-img" href="mailto:sale@modna-panyanka.com.ua">sale@modna-panyanka.com.ua</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button type="button" class="btn-drop private-img" data-toggle="dropdown">
+                                        Личный кабинет
+                                    </button>
+                                    <div class="dropdown-menu position-left_15">
+                                        <a class="dropdown-item history-img" href="#">История заказов</a>
+                                        <a class="dropdown-item output-img" href="#">Выйти</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,62 +104,72 @@
                                         <span class="middle"></span>
                                         <span class="bottom"></span>
                                     </div>
-                                    <span>Каталог</span>
-                                    <div class="display_none">
-                                        <div class="catalog-lists">
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Летние платья</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Летние костюмы</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Пляжная мода</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Платья, сарафаны</a>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Костюмы, комплекты</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Футболки, майки</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Кофты, туники, джемперы</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Блузки, рубашки</a>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Жакеты, жилеты, накидки</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Брюки, лосины, шорты</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Вязаные вещи</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Джинсы</a>
-                                                </li>
-                                            </ul>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Юбки</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Спортивные костюмы</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Кардиганы</a>
-                                                </li>
-                                            </ul>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn-drop" data-toggle="dropdown">
+                                            Каталог
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <div class="ul-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Летние платья</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Летние костюмы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Пляжная мода</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Платья, сарафаны</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ul-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Костюмы, комплекты</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Футболки, майки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кофты, туники, джемперы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Блузки, рубашки</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ul-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Жакеты, жилеты, накидки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Брюки, лосины, шорты</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Вязаные вещи</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Джинсы</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ul-area">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Юбки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Спортивные костюмы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кардиганы</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -603,14 +610,16 @@
                             </div>
                             <div class="socials">
                                 <h3>Мы в соц.сетях</h3>
-                                <ul>
-                                    <li>
-                                        <img src="./images/facebook.svg" alt="facebook">
-                                    </li>
-                                    <li>
-                                        <img src="./images/instagram.svg" alt="instagram">
-                                    </li>
-                                </ul>
+                                <div class="socials-list-wrap">
+                                    <ul class="socials-list">
+                                        <li>
+                                            <img src="./images/facebook.svg" alt="facebook">
+                                        </li>
+                                        <li>
+                                            <img src="./images/instagram.svg" alt="instagram">
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -621,6 +630,8 @@
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -61,6 +61,7 @@ a {
   text-decoration: none;
 
   &:hover {
+    color: $black;
     text-decoration: underline;
   }
 
@@ -86,6 +87,12 @@ button {
   }
 }
 
+label {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .btn-menu {
   background: transparent;
   padding: 0;
@@ -93,6 +100,10 @@ button {
   &:hover {
     background: transparent;
   }
+}
+
+.form-group {
+  margin-bottom: 0;
 }
 
 img {
