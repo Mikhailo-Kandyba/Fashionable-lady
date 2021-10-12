@@ -182,6 +182,9 @@ h6 {
   position: absolute;
   right: 25px;
   top: 25px; }
+  @media only screen and (max-width: 1075px) {
+    .btn-favorites {
+      padding: 11px 10px 7px; } }
   .btn-favorites i {
     font-size: 20px; }
   .btn-favorites:hover {
@@ -280,7 +283,7 @@ h6 {
   justify-content: flex-end;
   width: 100%;
   max-width: 750px; }
-  @media only screen and (max-width: 1190px) {
+  @media only screen and (max-width: 1075px) {
     .menu-navigation-wrap {
       max-width: 720px; } }
   @media only screen and (max-width: 1023px) {
@@ -301,7 +304,7 @@ h6 {
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 100%; }
-    @media only screen and (max-width: 1190px) {
+    @media only screen and (max-width: 1075px) {
       .menu-navigation-wrap .menu-navigation {
         padding: 0; } }
     @media only screen and (max-width: 1023px) {
@@ -391,6 +394,9 @@ h6 {
   display: flex;
   justify-content: flex-start;
   min-width: 325px; }
+  @media only screen and (max-width: 1075px) {
+    .menu-top-wrap {
+      min-width: auto; } }
 
 .menu-top {
   display: flex;
@@ -407,6 +413,9 @@ h6 {
   justify-content: flex-end;
   min-width: 500px;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 1075px) {
+    .user-info-wrap {
+      min-width: 490px; } }
 
 .dropdown {
   margin: 0 0 0 45px; }
@@ -440,6 +449,9 @@ h6 {
   background: #FAFAFA; }
   .header-bottom form {
     width: 370px; }
+    @media only screen and (max-width: 1075px) {
+      .header-bottom form {
+        width: 310px; } }
   .header-bottom .form-group {
     position: relative; }
     .header-bottom .form-group::after {
@@ -450,15 +462,21 @@ h6 {
       width: 27px;
       height: 24px;
       background: url("../images/search.svg"); }
+      @media only screen and (max-width: 1075px) {
+        .header-bottom .form-group::after {
+          left: 15px; } }
     .header-bottom .form-group input {
       font-size: 20px;
       line-height: 20px;
       width: 100%;
       border-radius: 15px;
-      background: #fff;
+      background: #FAFAFA;
       border: none;
       height: 50px;
       padding: 11px 20px 11px 82px; }
+      @media only screen and (max-width: 1075px) {
+        .header-bottom .form-group input {
+          padding: 11px 20px 11px 50px; } }
       .header-bottom .form-group input::placeholder {
         font-weight: 400;
         font-size: 21px;
@@ -531,10 +549,18 @@ h6 {
     padding: 22px 10px 35px 50px;
     left: 15px;
     top: 25px !important; }
+    @media only screen and (max-width: 1075px) {
+      .catalog-item .dropdown-menu {
+        left: 277px !important;
+        padding: 22px 10px 35px 20px;
+        min-width: 990px; } }
     .catalog-item .dropdown-menu .ul-area {
       display: inline-grid;
       max-width: 300px;
       width: 100%; }
+      @media only screen and (max-width: 1075px) {
+        .catalog-item .dropdown-menu .ul-area {
+          max-width: 235px; } }
     .catalog-item .dropdown-menu ul li {
       font-weight: 400;
       text-align: left;
@@ -561,6 +587,9 @@ h6 {
   width: 100%;
   max-width: 170px;
   cursor: pointer; }
+  @media only screen and (max-width: 1075px) {
+    .basket-wrap {
+      max-width: 140px; } }
   .basket-wrap span {
     display: block; }
   .basket-wrap .number {
@@ -580,6 +609,7 @@ h6 {
 .banner {
   background: url("../images/banner.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   min-height: 730px;
   margin-bottom: 70px; }
@@ -629,6 +659,9 @@ h6 {
       border: 1px solid #BEBEBE;
       border-top: none;
       border-radius: 0 0 20px 20px; }
+      @media only screen and (max-width: 1075px) {
+        .model-list li .description {
+          padding: 5px 18px 17px 10px; } }
       .model-list li .description p {
         flex: 21px;
         line-height: 32px;
@@ -737,11 +770,13 @@ h6 {
 .form-btn-wrap {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   border-radius: 22px;
   border: 2px solid #000; }
   .form-btn-wrap .form-group {
     width: 370px; }
+    @media only screen and (max-width: 1075px) {
+      .form-btn-wrap .form-group {
+        width: 340px; } }
     .form-btn-wrap .form-group input {
       font-size: 20px;
       line-height: 20px;
@@ -751,6 +786,9 @@ h6 {
       width: 100%;
       border: none;
       padding: 22px 44px; }
+      @media only screen and (max-width: 1075px) {
+        .form-btn-wrap .form-group input {
+          padding: 22px 15px; } }
       .form-btn-wrap .form-group input::placeholder {
         font-weight: 300;
         font-size: 22px;
@@ -760,25 +798,40 @@ h6 {
 .footer {
   padding: 32px 0; }
 
+.footer-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
 .footer-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 0 90px 0 0; }
-  .footer-content .logo img {
-    width: 155px; }
+  min-width: 1230px; }
+  @media only screen and (max-width: 1075px) {
+    .footer-content {
+      min-width: 100%; } }
+  .footer-content .logo {
+    margin-right: 10px; }
+    .footer-content .logo img {
+      width: 155px; }
 
 .footer-navigation {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1015px;
-  width: 100%;
+  min-width: 1015px;
   margin-top: 15px; }
+  @media only screen and (max-width: 1075px) {
+    .footer-navigation {
+      min-width: 775px; } }
   .footer-navigation ul {
     max-width: 230px;
     width: 100%; }
+    @media only screen and (max-width: 1075px) {
+      .footer-navigation ul {
+        max-width: 200px; } }
     .footer-navigation ul li {
       margin-bottom: 10px; }
   .footer-navigation a {
@@ -817,6 +870,8 @@ h6 {
     width: auto; }
     .socials-list-wrap .socials-list li {
       margin-right: 5px; }
+      .socials-list-wrap .socials-list li:hover {
+        cursor: pointer; }
 
 .display_none {
   display: none; }
@@ -878,4 +933,4 @@ h6 {
 
 .position-left_15 {
   position: absolute;
-  left: 15px !important; }
+  left: -11px !important; }

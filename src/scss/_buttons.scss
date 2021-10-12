@@ -74,6 +74,10 @@
   right: 25px;
   top: 25px;
 
+  @include breakpoint($desktop) {
+    padding: 11px 10px 7px;
+  }
+
   i {
     font-size: 20px;
   }

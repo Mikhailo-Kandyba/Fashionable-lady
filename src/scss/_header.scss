@@ -181,6 +181,10 @@
   display: flex;
   justify-content: flex-start;
   min-width: 325px;
+
+  @include breakpoint($desktop) {
+    min-width: auto;
+  }
 }
 
 .menu-top {
@@ -201,6 +205,10 @@
   justify-content: flex-end;
   min-width: 500px;
   flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    min-width: 490px;
+  }
 }
 
 .dropdown {
@@ -243,6 +251,10 @@
 
   form {
     width: 370px;
+
+    @include breakpoint($desktop) {
+      width: 310px;
+    }
   }
 
   .form-group {
@@ -256,6 +268,10 @@
       width: 27px;
       height: 24px;
       background: url("../images/search.svg");
+
+      @include breakpoint($desktop) {
+        left: 15px;
+      }
     }
 
     input {
@@ -263,10 +279,14 @@
       line-height: 20px;
       width: 100%;
       border-radius: 15px;
-      background: $white;
+      background: $lactic;
       border: none;
       height: 50px;
       padding: 11px 20px 11px 82px;
+
+      @include breakpoint($desktop) {
+        padding: 11px 20px 11px 50px;
+      }
 
       &::placeholder {
         font-weight: 400;
@@ -370,10 +390,20 @@
     left: 15px;
     top: 25px !important;
 
+    @include breakpoint($desktop) {
+      left: 277px !important;
+      padding: 22px 10px 35px 20px;
+      min-width: 990px;
+    }
+
     .ul-area {
       display: inline-grid;
       max-width: 300px;
       width: 100%;
+
+      @include breakpoint($desktop) {
+        max-width: 235px;
+      }
     }
 
     ul {
@@ -413,6 +443,10 @@
   width: 100%;
   max-width: 170px;
   cursor: pointer;
+
+  @include breakpoint($desktop) {
+    max-width: 140px;
+  }
 
   span {
     display: block;
