@@ -267,6 +267,9 @@ h6 {
 
 .header-top {
   padding: 10px 0 8px; }
+  @media only screen and (max-width: 1023px) {
+    .header-top {
+      display: none; } }
 
 .header-top-content {
   display: flex;
@@ -277,118 +280,6 @@ h6 {
   display: flex; }
   .logo img {
     width: 130px; }
-
-.menu-navigation-wrap {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  max-width: 750px; }
-  @media only screen and (max-width: 1075px) {
-    .menu-navigation-wrap {
-      max-width: 720px; } }
-  @media only screen and (max-width: 1023px) {
-    .menu-navigation-wrap {
-      max-width: 430px; } }
-  @media only screen and (max-width: 767px) {
-    .menu-navigation-wrap {
-      position: fixed;
-      z-index: 25;
-      top: 0;
-      right: 200%;
-      width: 100%;
-      transition: all .25s ease;
-      max-width: inherit; } }
-  .menu-navigation-wrap .menu-navigation {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 100%; }
-    @media only screen and (max-width: 1075px) {
-      .menu-navigation-wrap .menu-navigation {
-        padding: 0; } }
-    @media only screen and (max-width: 1023px) {
-      .menu-navigation-wrap .menu-navigation {
-        min-width: 400px; } }
-    @media only screen and (max-width: 767px) {
-      .menu-navigation-wrap .menu-navigation {
-        display: block;
-        padding: 80px 40px;
-        min-height: 100vh;
-        min-width: inherit; } }
-    .menu-navigation-wrap .menu-navigation li {
-      min-width: 25%;
-      padding: 0 10px;
-      text-align: center; }
-      @media only screen and (max-width: 767px) {
-        .menu-navigation-wrap .menu-navigation li {
-          position: relative;
-          margin-bottom: 30px;
-          padding: 0; } }
-      .menu-navigation-wrap .menu-navigation li a {
-        font-weight: 500;
-        line-height: 27px; }
-        @media only screen and (max-width: 767px) {
-          .menu-navigation-wrap .menu-navigation li a {
-            display: block; } }
-      @media only screen and (max-width: 767px) {
-        .menu-navigation-wrap .menu-navigation li .holder-phone {
-          display: flex;
-          align-items: center;
-          justify-content: center; } }
-      .menu-navigation-wrap .menu-navigation li .holder-phone .icon {
-        display: inline-flex; }
-    .menu-navigation-wrap .menu-navigation .phone-item {
-      display: none; }
-      @media only screen and (max-width: 767px) {
-        .menu-navigation-wrap .menu-navigation .phone-item {
-          display: block;
-          padding: 20px 0; } }
-
-@media only screen and (max-width: 767px) {
-  .show-menu {
-    right: 0; } }
-
-.btn-menu {
-  display: none;
-  position: absolute;
-  top: 14px;
-  right: 0;
-  height: 22px;
-  width: 28px;
-  cursor: pointer;
-  transition: all .25s ease;
-  z-index: 103; }
-  @media only screen and (max-width: 767px) {
-    .btn-menu {
-      display: block; } }
-  .btn-menu span {
-    border: none;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .35s ease;
-    cursor: pointer; }
-  .btn-menu .middle {
-    transform: translate(0, -50%);
-    top: 50%; }
-  .btn-menu .bottom {
-    top: auto;
-    bottom: 0; }
-  .btn-menu .top {
-    bottom: 0; }
-  .btn-menu.active {
-    background: transparent; }
-    .btn-menu.active .top {
-      transform: translateY(8px) translateX(0) rotate(45deg);
-      top: 0; }
-    .btn-menu.active .middle {
-      opacity: 0; }
-    .btn-menu.active .bottom {
-      bottom: 4px;
-      transform: translateY(-8px) translateX(0) rotate(-45deg); }
 
 .menu-top-wrap {
   display: flex;
@@ -447,6 +338,9 @@ h6 {
 
 .header-bottom {
   background: #FAFAFA; }
+  @media only screen and (max-width: 1023px) {
+    .header-bottom {
+      display: none; } }
   .header-bottom form {
     width: 370px; }
     @media only screen and (max-width: 1075px) {
@@ -605,6 +499,183 @@ h6 {
   max-width: 100px; }
   .name-basket .img-area {
     min-width: 22px; }
+
+/*table css*/
+.mobile-header {
+  padding: 10px 0; }
+
+.mobile-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+
+.menu-navigation-wrap {
+  width: 100%;
+  position: fixed;
+  z-index: 25;
+  top: 90px;
+  right: 200%;
+  transition: all .25s ease; }
+
+.menu-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  min-height: 100vh;
+  box-shadow: 0 14px 20px -18px rgba(34, 60, 80, 0.35) inset; }
+  .menu-navigation .holder-languages {
+    margin-bottom: 50px; }
+
+@media only screen and (max-width: 1023px) {
+  .show-menu {
+    right: 0; } }
+
+.btn-menu-wrap {
+  max-width: 100px;
+  width: 100%; }
+
+.btn-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  height: 22px;
+  width: 28px;
+  cursor: pointer;
+  transition: all .25s ease;
+  z-index: 103; }
+  @media only screen and (max-width: 1023px) {
+    .btn-menu {
+      display: block; } }
+  .btn-menu span {
+    background: #000;
+    border: none;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer; }
+  .btn-menu .middle {
+    transform: translate(0, -50%);
+    top: 50%;
+    width: 50%; }
+  .btn-menu .bottom {
+    top: auto;
+    bottom: 0; }
+  .btn-menu .top {
+    bottom: 0; }
+  .btn-menu.active {
+    background: transparent; }
+    .btn-menu.active .top {
+      transform: translateY(8px) translateX(0) rotate(45deg);
+      top: 0; }
+    .btn-menu.active .middle {
+      opacity: 0; }
+    .btn-menu.active .bottom {
+      bottom: 4px;
+      transform: translateY(-8px) translateX(0) rotate(-45deg); }
+
+.search-and-basket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120px;
+  width: 100%; }
+  .search-and-basket .dropdown-menu {
+    top: 18px !important;
+    left: -10px !important;
+    min-width: 340px;
+    padding: 10px 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .search-and-basket input {
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid #EBEBEB;
+    height: 50px;
+    padding: 10px; }
+    .search-and-basket input::placeholder {
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 25px;
+      color: #000; }
+  .search-and-basket .dropdown {
+    margin: 0; }
+  .search-and-basket .btn-drop {
+    padding: 10px; }
+    .search-and-basket .btn-drop:after {
+      display: none; }
+
+.basket-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 10px 0; }
+  .basket-list li .img-area {
+    max-width: 100px; }
+  .basket-list li .description {
+    text-align: right; }
+
+.accordion-wrap {
+  margin-bottom: 50px; }
+
+.accordion {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  border-bottom: 1px solid #000;
+  position: relative;
+  background: #fff;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left; }
+  .accordion:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 16px;
+    height: 10px;
+    background-image: url("../images/pointer.svg"); }
+  .accordion:hover {
+    background: transparent; }
+
+.active {
+  border-bottom: none; }
+  .active:after {
+    transform: rotate(-90deg);
+    transition: all .35s ease; }
+
+.panel {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  padding: 0 0 10px; }
+  .panel ul li {
+    margin-bottom: 10px; }
+  .panel ul a:hover {
+    text-decoration: underline; }
+
+.phone-wrap a {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 25px; }
 
 .banner {
   background: url("../images/banner.png");
@@ -934,3 +1005,7 @@ h6 {
 .position-left_15 {
   position: absolute;
   left: -11px !important; }
+
+.overflow-y {
+  height: 300px;
+  overflow-y: scroll; }
