@@ -324,6 +324,11 @@
 /*table css*/
 .mobile-header {
   padding: 10px 0;
+  display: none;
+
+  @include breakpoint($tablet) {
+    display: block;
+  }
 }
 
 .mobile-header-content {

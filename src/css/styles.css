@@ -502,7 +502,11 @@ h6 {
 
 /*table css*/
 .mobile-header {
-  padding: 10px 0; }
+  padding: 10px 0;
+  display: none; }
+  @media only screen and (max-width: 1023px) {
+    .mobile-header {
+      display: block; } }
 
 .mobile-header-content {
   display: flex;
