@@ -21,8 +21,18 @@
     min-width: 100%;
   }
 
+  @include breakpoint($tablet) {
+    min-width: min-content;
+    display: block;
+  }
+
   .logo {
     margin-right: 10px;
+
+    @include breakpoint($tablet) {
+      display: inline-block;
+      float: left;
+    }
     img {
       width: 155px;
     }
@@ -39,6 +49,12 @@
 
   @include breakpoint($desktop) {
     min-width: 775px;
+  }
+
+  @include breakpoint($tablet) {
+    min-width: 585px;
+    flex-wrap: wrap-reverse;
+
   }
 
   ul {

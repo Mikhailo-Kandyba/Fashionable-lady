@@ -39,6 +39,11 @@
     user-select: none;
     text-transform: uppercase;
 
+    @include breakpoint($mobile) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     &:hover {
       font-weight: 600;
       color: $black;
@@ -78,8 +83,18 @@
     padding: 11px 10px 7px;
   }
 
+  @include breakpoint($mobile) {
+    padding: 0 6px 1px;
+    right: 11px;
+    top: 13px;
+  }
+
   i {
     font-size: 20px;
+
+    @include breakpoint($mobile) {
+      font-size: 13px;
+    }
   }
 
   &:hover {
@@ -90,6 +105,10 @@
       font-family: "FontAwesome";
       color: $red;
       font-size: 20px;
+
+      @include breakpoint($mobile) {
+        font-size: 13px;
+      }
     }
 
     i {
@@ -147,6 +166,10 @@
     font-family: "FontAwesome";
     color: $red;
     font-size: 20px;
+
+    @include breakpoint($mobile) {
+      font-size: 13px;
+    }
   }
 }
 

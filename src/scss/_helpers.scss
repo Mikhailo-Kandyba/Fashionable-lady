@@ -8,6 +8,10 @@
 .background-padding_lactic {
   background: $lactic;
   padding: 55px 0;
+
+  @include breakpoint($tablet) {
+    padding: 25px 0;
+  }
 }
 
 .history-img {
@@ -21,6 +25,7 @@
     width: 19px;
     height: 17px;
     background: url("../images/history.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -35,6 +40,7 @@
     background: url("../images/output.svg");
     width: 19px;
     height: 17px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -61,6 +67,12 @@
     width: 17px;
     height: 17px;
     background: url("../images/phone.svg");
+    background-repeat: no-repeat;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/phonr-mobile.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 

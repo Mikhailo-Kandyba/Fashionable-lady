@@ -20,6 +20,10 @@
 
   img {
     width: 130px;
+
+    @include breakpoint($mobile) {
+      width: 85px;
+    }
   }
 }
 
@@ -329,6 +333,10 @@
   @include breakpoint($tablet) {
     display: block;
   }
+
+  @include breakpoint($mobile) {
+    padding: 15px 0;
+  }
 }
 
 .mobile-header-content {
@@ -345,6 +353,10 @@
   top: 90px;
   right: 200%;
   transition: all .25s ease;
+
+  @include breakpoint($mobile) {
+    top: 75px;
+  }
 }
 
 .menu-navigation {
@@ -356,8 +368,16 @@
   min-height: 100vh;
   box-shadow: 0 14px 20px -18px rgba(34, 60, 80, 0.35) inset;
 
+  @include breakpoint($mobile) {
+    padding: 17px;
+  }
+
   .holder-languages {
     margin-bottom: 50px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -371,6 +391,10 @@
 .btn-menu-wrap {
   max-width: 100px;
   width: 100%;
+
+  @include breakpoint($mobile) {
+    max-width: 65px;
+  }
 }
 
 .btn-menu {
@@ -386,6 +410,11 @@
 
   @include breakpoint($tablet) {
     display: block;
+  }
+
+  @include breakpoint($mobile) {
+    height: 18px;
+    top: 17px;
   }
 
   span {
@@ -420,6 +449,10 @@
     .top {
       transform: translateY(8px) translateX(0) rotate(45deg);
       top: 0;
+
+      @include breakpoint($mobile) {
+        top: -4px;
+      }
     }
 
     .middle {
@@ -440,6 +473,10 @@
   max-width: 120px;
   width: 100%;
 
+  @include breakpoint($mobile) {
+    max-width: 65px;
+  }
+
   .dropdown-menu {
     top: 18px !important;
     left: -10px !important;
@@ -447,6 +484,12 @@
     padding: 10px 25px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
+    @include  breakpoint($mobile) {
+      min-width: 293px;
+      left: -10px !important;
+      top: 17px !important;
+    }
   }
 
   input {
@@ -473,6 +516,14 @@
 
   .btn-drop {
     padding: 10px;
+
+    @include breakpoint($mobile) {
+      padding: 5px;
+
+      img {
+        width: 20px;
+      }
+    }
 
     &:after {
       display: none;
@@ -501,6 +552,10 @@
 
 .accordion-wrap {
   margin-bottom: 50px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 10px;
+  }
 }
 
 .accordion {
@@ -515,6 +570,12 @@
   width: 100%;
   text-align: left;
 
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 11px 0;
+  }
+
   &:after {
     content: "";
     position: absolute;
@@ -523,6 +584,13 @@
     width: 16px;
     height: 10px;
     background-image: url("../images/pointer.svg");
+    background-repeat: no-repeat;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/pointer-mobile.svg");
+      width: 7px;
+      height: 12px;
+    }
   }
 
   &:hover {
@@ -553,6 +621,12 @@
   ul {
     li {
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 5px;
+      }
     }
 
     a {
@@ -564,10 +638,19 @@
 }
 
 .phone-wrap {
+
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 17px;
+  }
   a {
     display: block;
     margin-bottom: 10px;
     padding-left: 25px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 3px;
+    }
   }
 }
 

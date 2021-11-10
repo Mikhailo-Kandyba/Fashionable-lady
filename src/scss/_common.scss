@@ -8,15 +8,33 @@
   background-size: cover;
   min-height: 730px;
   margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    min-height: 470px;
+  }
+
+  @include breakpoint($mobile) {
+    min-height: 150px;
+    margin-bottom: 17px;
+  }
 }
 
 .goods {
   margin: 0 21px 100px;
 
+  @include breakpoint($mobile) {
+    margin: 0 0 100px;
+  }
+
   h3 {
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
+
+    @include breakpoint($mobile) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -34,6 +52,11 @@
   justify-content: space-between;
   margin-bottom: 50px;
 
+  @include breakpoint($mobile) {
+    min-width: 140px;
+    margin-bottom: 18px;
+  }
+
   li {
     margin: 0 10px;
     a {
@@ -41,6 +64,11 @@
       font-size: 21px;
       line-height: 25px;
       text-transform: uppercase;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 20px;
+      }
 
       &:hover {
         text-decoration: none;
@@ -56,6 +84,11 @@
   li {
     max-width: 300px;
     margin-bottom: 25px;
+
+    @include breakpoint($mobile) {
+      max-width: 141px;
+      margin-bottom: 17px;
+    }
 
     .img-area {
       position: relative;
@@ -75,10 +108,20 @@
         padding: 5px 18px 17px 10px;
       }
 
+      @include breakpoint($mobile) {
+        padding: 5px 4px 5px 4px;
+      }
+
       p {
         flex: 21px;
         line-height: 32px;
         margin-bottom: 5px;
+
+        @include breakpoint($mobile) {
+          font-size: 12px;
+          line-height: 18px;
+          margin-bottom: 12px;
+        }
       }
 
       strong {
@@ -86,6 +129,11 @@
         text-align: right;
         font-size: 21px;
         line-height: 26px;
+
+        @include breakpoint($mobile) {
+          font-size: 12px;
+          line-height: 15px;
+        }
       }
     }
 
@@ -94,6 +142,10 @@
       top: 75px;
       left: 0;
       max-width: 95px;
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
     }
   }
 }
@@ -116,6 +168,10 @@
 
 .blog {
   margin-bottom: 90px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 50px;
+  }
   h3 {
     font-weight: 400;
     font-size: 26px;
@@ -132,6 +188,10 @@
 
 .slick-slide {
   padding: 0 18px;
+
+  @include breakpoint($tablet) {
+    padding: 0 5px;
+  }
   .img-area {
     max-width: 407px;
 
@@ -142,6 +202,10 @@
     p {
       font-size: 21px;
       line-height: 45px;
+
+      @include breakpoint($tablet) {
+        line-height: 27px;
+      }
     }
   }
 }
@@ -206,10 +270,20 @@
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint($tablet) {
+    flex-direction: column;
+  }
+
   p {
     width: 50%;
     font-size: 30px;
     line-height: 40px;
+
+    @include breakpoint($tablet) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -224,6 +298,10 @@
 
     @include breakpoint($desktop) {
       width: 340px;
+    }
+
+    @include breakpoint($tablet) {
+      width: 320px;
     }
 
     input {
