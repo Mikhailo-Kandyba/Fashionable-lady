@@ -1,6 +1,13 @@
 .container {
   margin: 0 auto;
-  max-width: 1355px;
+  max-width: 1330px;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.container-xl {
+  margin: 0 auto;
+  max-width: 1410px;
   padding: 0 15px;
   width: 100%;
 }

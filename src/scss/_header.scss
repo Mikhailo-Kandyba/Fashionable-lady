@@ -30,7 +30,7 @@
 .menu-top-wrap {
   display: flex;
   justify-content: flex-start;
-  min-width: 325px;
+  min-width: 335px;
 
   @include breakpoint($desktop) {
     min-width: auto;
@@ -47,14 +47,36 @@
   li {
     padding-right: 10px;
     line-height: 21px;
+
+
+
+    a {
+      font-size: 20px;
+      line-height: 23px;
+      display: block;
+      padding: 10px 20px 10px 10px;
+    }
   }
 }
 
 .user-info-wrap {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  min-width: 500px;
+  min-width: 510px;
+}
+
+.user-info-holder {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
   flex-wrap: wrap;
+
+  .dropdown {
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 
   @include breakpoint($desktop) {
     min-width: 490px;
@@ -66,9 +88,9 @@
 }
 
 .dropdown-menu {
-  left: -25px !important;
+  left: -11px !important;
   background-color: $lactic;
-  padding: 33px 24px 5px;
+  padding: 8px 4px 5px 22px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   min-width: 240px;
@@ -82,7 +104,7 @@
   font-size: 20px;
   line-height: 23px;
   font-weight: 400;
-  padding: 0 0 12px 32px;
+  padding: 12px 12px 12px 32px;
   text-decoration: none;
   white-space: normal;
 
@@ -97,6 +119,7 @@
 }
 
 .header-bottom {
+  margin-bottom: 10px;
   background: $lactic;
 
   @include breakpoint($tablet) {
@@ -129,11 +152,11 @@
     }
 
     input {
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 21px;
+      line-height: 21px;
       width: 100%;
       border-radius: 15px;
-      background: $lactic;
+      background: $white;
       border: none;
       height: 50px;
       padding: 11px 20px 11px 82px;
@@ -152,24 +175,23 @@
   }
 }
 
-.menu-bottom-wrap {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
+.nav-wrap {
   border-right: 2px solid $white;
 }
 
 .menu-bottom {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
   align-items: center;
   flex-wrap: wrap;
 
   li {
     text-align: center;
     border-radius: 10px;
-    padding: 27px 17px;
+
+    a {
+      display: block;
+      padding: 29px 16px 24px 19px;
+    }
 
     &:hover {
       background: $dark-grey;
@@ -185,8 +207,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 125px;
-  width: 100%;
+  //max-width: 125px;
+  //width: 100%;
   position: relative;
   background: $dark-grey;
 
@@ -227,10 +249,23 @@
   }
 
   .btn-drop {
-    padding: 0;
+    padding: 29px 15px 24px 45px;
+    //padding: 27px 30px;
 
     &::after {
       display: none;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 17px;
+      //transform: translate(-50%, -50%);
+      width: 18px;
+      height: 14px;
+      background-image: url("../images/decor-btn.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -240,9 +275,9 @@
     min-width: 1280px;
     flex-wrap: wrap;
     position: absolute;
-    padding: 22px 10px 35px 50px;
-    left: 15px;
-    top: 25px !important;
+    padding: 22px 10px 42px 50px;
+    left: 17px !important;
+    top: -2px !important;
 
     @include breakpoint($desktop) {
       left: 277px !important;
@@ -252,11 +287,21 @@
 
     .ul-area {
       display: inline-grid;
-      max-width: 300px;
+      max-width: 320px;
       width: 100%;
+
+      &:last-child {
+        max-width: 245px;
+      }
 
       @include breakpoint($desktop) {
         max-width: 235px;
+      }
+
+      li {
+        a {
+          padding: 0;
+        }
       }
     }
 
@@ -269,8 +314,9 @@
         margin-bottom: 10px;
 
         a {
+          padding: 10px;
           font-size: 20px;
-          line-height: 21px;
+          line-height: 23px;
           &:hover {
             text-decoration: underline;
           }
@@ -284,12 +330,6 @@
   }
 }
 
-.header-bottom-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .basket-wrap {
   display: flex;
   align-items: center;
@@ -297,6 +337,11 @@
   width: 100%;
   max-width: 170px;
   cursor: pointer;
+
+  span {
+    font-size: 20px;
+    line-height: 23px;
+  }
 
   @include breakpoint($desktop) {
     max-width: 140px;
@@ -307,9 +352,9 @@
   }
 
   .number {
-    background: $light-gray;
+    background: $middle-grey;
     border-radius: 50%;
-    padding: 5px;
+    padding: 6px 7px;
   }
 }
 
@@ -470,8 +515,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 120px;
-  width: 100%;
+  //max-width: 120px;
+  //width: 100%;
 
   @include breakpoint($mobile) {
     max-width: 65px;

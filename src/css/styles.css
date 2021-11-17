@@ -124,27 +124,40 @@ h6 {
 
 .container {
   margin: 0 auto;
-  max-width: 1355px;
+  max-width: 1330px;
   padding: 0 15px;
   width: 100%; }
+
+.container-xl {
+  margin: 0 auto;
+  max-width: 1410px;
+  padding: 0 15px;
+  width: 100%; }
+
+.languages-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 110px; }
 
 .holder-languages {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   min-width: 85px;
   color: #BEBEBE; }
 
 .radio-btn {
-  position: relative;
-  padding-right: 15px; }
+  position: relative; }
   .radio-btn::after {
     content: '/';
     position: absolute;
     right: 4px;
-    top: 0;
+    top: 10px;
     color: #000; }
+  .radio-btn:last-child label {
+    padding: 10px 10px 10px 0; }
   .radio-btn:last-child::after {
     display: none; }
   .radio-btn input[type=radio] {
@@ -154,7 +167,8 @@ h6 {
     font-size: 20px;
     line-height: 23px;
     user-select: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 10px 15px 10px 10px; }
     @media only screen and (max-width: 767px) {
       .radio-btn label {
         font-size: 16px;
@@ -270,14 +284,14 @@ h6 {
   border: none;
   color: #000;
   position: relative;
-  padding: 0 20px 10px 30px; }
+  padding: 10px 22px 10px 33px; }
   .btn-drop:hover {
     background: transparent;
     color: #000; }
   .btn-drop::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 17px;
     right: 0;
     width: 16px;
     height: 10px;
@@ -305,7 +319,7 @@ h6 {
 .menu-top-wrap {
   display: flex;
   justify-content: flex-start;
-  min-width: 325px; }
+  min-width: 335px; }
   @media only screen and (max-width: 1075px) {
     .menu-top-wrap {
       min-width: auto; } }
@@ -319,23 +333,36 @@ h6 {
   .menu-top li {
     padding-right: 10px;
     line-height: 21px; }
+    .menu-top li a {
+      font-size: 20px;
+      line-height: 23px;
+      display: block;
+      padding: 10px 20px 10px 10px; }
 
 .user-info-wrap {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  min-width: 500px;
+  min-width: 510px; }
+
+.user-info-holder {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
   flex-wrap: wrap; }
+  .user-info-holder .dropdown:first-child {
+    margin-left: 0; }
   @media only screen and (max-width: 1075px) {
-    .user-info-wrap {
+    .user-info-holder {
       min-width: 490px; } }
 
 .dropdown {
   margin: 0 0 0 45px; }
 
 .dropdown-menu {
-  left: -25px !important;
+  left: -11px !important;
   background-color: #FAFAFA;
-  padding: 33px 24px 5px;
+  padding: 8px 4px 5px 22px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   min-width: 240px;
@@ -348,7 +375,7 @@ h6 {
   font-size: 20px;
   line-height: 23px;
   font-weight: 400;
-  padding: 0 0 12px 32px;
+  padding: 12px 12px 12px 32px;
   text-decoration: none;
   white-space: normal; }
   .dropdown-item:hover {
@@ -358,6 +385,7 @@ h6 {
     background-color: transparent; }
 
 .header-bottom {
+  margin-bottom: 10px;
   background: #FAFAFA; }
   @media only screen and (max-width: 1023px) {
     .header-bottom {
@@ -381,11 +409,11 @@ h6 {
         .header-bottom .form-group::after {
           left: 15px; } }
     .header-bottom .form-group input {
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 21px;
+      line-height: 21px;
       width: 100%;
       border-radius: 15px;
-      background: #FAFAFA;
+      background: #fff;
       border: none;
       height: 50px;
       padding: 11px 20px 11px 82px; }
@@ -398,22 +426,19 @@ h6 {
         line-height: 25px;
         color: #000; }
 
-.menu-bottom-wrap {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
+.nav-wrap {
   border-right: 2px solid #fff; }
 
 .menu-bottom {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
   align-items: center;
   flex-wrap: wrap; }
   .menu-bottom li {
     text-align: center;
-    border-radius: 10px;
-    padding: 27px 17px; }
+    border-radius: 10px; }
+    .menu-bottom li a {
+      display: block;
+      padding: 29px 16px 24px 19px; }
     .menu-bottom li:hover {
       background: #EBEBEB; }
       .menu-bottom li:hover a {
@@ -423,8 +448,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 125px;
-  width: 100%;
   position: relative;
   background: #EBEBEB; }
   .catalog-item .decor {
@@ -452,18 +475,27 @@ h6 {
   .catalog-item .dropdown {
     margin: 0; }
   .catalog-item .btn-drop {
-    padding: 0; }
+    padding: 29px 15px 24px 45px; }
     .catalog-item .btn-drop::after {
       display: none; }
+    .catalog-item .btn-drop:before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 17px;
+      width: 18px;
+      height: 14px;
+      background-image: url("../images/decor-btn.svg");
+      background-repeat: no-repeat; }
   .catalog-item .dropdown-menu {
     border-radius: 0 0 20px 20px;
     background: #FAFAFA;
     min-width: 1280px;
     flex-wrap: wrap;
     position: absolute;
-    padding: 22px 10px 35px 50px;
-    left: 15px;
-    top: 25px !important; }
+    padding: 22px 10px 42px 50px;
+    left: 17px !important;
+    top: -2px !important; }
     @media only screen and (max-width: 1075px) {
       .catalog-item .dropdown-menu {
         left: 277px !important;
@@ -471,11 +503,15 @@ h6 {
         min-width: 990px; } }
     .catalog-item .dropdown-menu .ul-area {
       display: inline-grid;
-      max-width: 300px;
+      max-width: 320px;
       width: 100%; }
+      .catalog-item .dropdown-menu .ul-area:last-child {
+        max-width: 245px; }
       @media only screen and (max-width: 1075px) {
         .catalog-item .dropdown-menu .ul-area {
           max-width: 235px; } }
+      .catalog-item .dropdown-menu .ul-area li a {
+        padding: 0; }
     .catalog-item .dropdown-menu ul li {
       font-weight: 400;
       text-align: left;
@@ -483,17 +519,13 @@ h6 {
       padding: 0;
       margin-bottom: 10px; }
       .catalog-item .dropdown-menu ul li a {
+        padding: 10px;
         font-size: 20px;
-        line-height: 21px; }
+        line-height: 23px; }
         .catalog-item .dropdown-menu ul li a:hover {
           text-decoration: underline; }
       .catalog-item .dropdown-menu ul li:hover {
         background: transparent; }
-
-.header-bottom-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 .basket-wrap {
   display: flex;
@@ -502,6 +534,9 @@ h6 {
   width: 100%;
   max-width: 170px;
   cursor: pointer; }
+  .basket-wrap span {
+    font-size: 20px;
+    line-height: 23px; }
   @media only screen and (max-width: 1075px) {
     .basket-wrap {
       max-width: 140px; } }
@@ -510,7 +545,7 @@ h6 {
   .basket-wrap .number {
     background: #BEBEBE;
     border-radius: 50%;
-    padding: 5px; }
+    padding: 6px 7px; }
 
 .name-basket {
   display: flex;
@@ -630,9 +665,7 @@ h6 {
 .search-and-basket {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 120px;
-  width: 100%; }
+  justify-content: space-between; }
   @media only screen and (max-width: 767px) {
     .search-and-basket {
       max-width: 65px; } }
@@ -780,14 +813,15 @@ h6 {
       margin-bottom: 17px; } }
 
 .goods {
-  margin: 0 21px 100px; }
+  margin-bottom: 100px; }
   @media only screen and (max-width: 767px) {
     .goods {
       margin: 0 0 100px; } }
   .goods h3 {
     font-size: 26px;
     line-height: 30px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 400; }
     @media only screen and (max-width: 767px) {
       .goods h3 {
         font-size: 16px;
@@ -809,26 +843,41 @@ h6 {
     .tabs-navigation {
       min-width: 140px;
       margin-bottom: 18px; } }
-  .tabs-navigation li {
-    margin: 0 10px; }
-    .tabs-navigation li a {
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      text-transform: uppercase; }
-      @media only screen and (max-width: 767px) {
-        .tabs-navigation li a {
-          font-size: 14px;
-          line-height: 20px; } }
-      .tabs-navigation li a:hover {
-        text-decoration: none; }
+
+.ui-tabs-anchor {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 10px 0 6px; }
+  @media only screen and (max-width: 767px) {
+    .ui-tabs-anchor {
+      font-size: 14px;
+      line-height: 20px; } }
+  .ui-tabs-anchor:hover {
+    text-decoration: none; }
+
+.ui-state-active,
+.ui-state-hover {
+  position: relative; }
+  .ui-state-active:after,
+  .ui-state-hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #000; }
 
 .model-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
   .model-list li {
-    max-width: 300px;
+    width: 25%;
+    padding: 0 15px;
     margin-bottom: 25px; }
     @media only screen and (max-width: 767px) {
       .model-list li {
@@ -876,13 +925,8 @@ h6 {
         .model-list li .holder-btn {
           display: none; } }
 
-.ui-state-active {
-  padding-bottom: 4px;
-  border-bottom: 2px solid #000; }
-
-.ui-state-hover {
-  padding-bottom: 4px;
-  border-bottom: 2px solid #000; }
+.tab-content {
+  margin: 0 -15px; }
 
 .btn-goods-wrap {
   display: flex;
@@ -1119,7 +1163,7 @@ h6 {
   .history-img::before {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 0;
     width: 19px;
     height: 17px;
@@ -1132,7 +1176,7 @@ h6 {
     content: "";
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 15px;
     background: url("../images/output.svg");
     width: 19px;
     height: 17px;
@@ -1145,14 +1189,14 @@ h6 {
     font-family: "FontAwesome";
     position: absolute;
     left: 0;
-    top: 5px; }
+    top: 25px; }
 
 .phone-img {
   position: relative; }
   .phone-img::before {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 13px;
     left: 0;
     width: 17px;
     height: 17px;
@@ -1169,7 +1213,7 @@ h6 {
     content: "\f007";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 8pxpx;
     font-family: "FontAwesome"; }
 
 .position-left_15 {
@@ -1179,3 +1223,11 @@ h6 {
 .overflow-y {
   height: 300px;
   overflow-y: scroll; }
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .row .col {
+    width: 50%;
+    padding: 0 15px; }

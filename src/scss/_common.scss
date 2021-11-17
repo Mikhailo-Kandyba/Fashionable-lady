@@ -20,7 +20,7 @@
 }
 
 .goods {
-  margin: 0 21px 100px;
+  margin-bottom: 100px;
 
   @include breakpoint($mobile) {
     margin: 0 0 100px;
@@ -30,6 +30,7 @@
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
+    font-weight: 400;
 
     @include breakpoint($mobile) {
       font-size: 16px;
@@ -56,24 +57,40 @@
     min-width: 140px;
     margin-bottom: 18px;
   }
+}
 
-  li {
-    margin: 0 10px;
-    a {
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      text-transform: uppercase;
+.ui-tabs-anchor {
+  display: block;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 10px 0 6px;
 
-      @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 20px;
-      }
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.ui-state-active,
+.ui-state-hover {
+  //padding-bottom: 4px;
+  //border-bottom: 2px solid $black;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: $black;
   }
 }
 
@@ -81,8 +98,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   li {
-    max-width: 300px;
+    width: 25%;
+    padding: 0 15px;
     margin-bottom: 25px;
 
     @include breakpoint($mobile) {
@@ -100,7 +119,7 @@
 
     .description {
       padding: 15px 28px 17px 20px;
-      border: 1px solid $light-gray;
+      border: 1px solid $middle-grey;
       border-top: none;
       border-radius: 0 0 20px 20px;
 
@@ -150,14 +169,8 @@
   }
 }
 
-.ui-state-active {
-  padding-bottom: 4px;
-  border-bottom: 2px solid $black;
-}
-
-.ui-state-hover {
-  padding-bottom: 4px;
-  border-bottom: 2px solid $black;
+.tab-content {
+  margin: 0 -15px;
 }
 
 .btn-goods-wrap {
