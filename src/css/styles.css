@@ -219,7 +219,7 @@ h6 {
     .btn-favorites:hover:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: #9C0101;
+      color: #EB5757;
       font-size: 20px; }
       @media only screen and (max-width: 767px) {
         .btn-favorites:hover:after {
@@ -262,7 +262,7 @@ h6 {
 .btn_selected:after {
   content: "\f004";
   font-family: "FontAwesome";
-  color: #9C0101;
+  color: #EB5757;
   font-size: 20px; }
   @media only screen and (max-width: 767px) {
     .btn_selected:after {
@@ -1023,7 +1023,6 @@ h6 {
     .mailing {
       flex-direction: column; } }
   .mailing p {
-    width: 50%;
     font-size: 30px;
     line-height: 40px; }
     @media only screen and (max-width: 1023px) {
@@ -1035,10 +1034,13 @@ h6 {
 .form-btn-wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: 22px;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+  max-width: 560px;
+  width: 100%; }
   .form-btn-wrap .form-group {
-    width: 370px; }
+    width: 100%; }
     @media only screen and (max-width: 1075px) {
       .form-btn-wrap .form-group {
         width: 340px; } }
@@ -1053,7 +1055,7 @@ h6 {
       border-radius: 19px 0 0 19px;
       width: 100%;
       border: none;
-      padding: 22px 44px; }
+      padding: 12px 17px; }
       @media only screen and (max-width: 1075px) {
         .form-btn-wrap .form-group input {
           padding: 22px 15px; } }
@@ -1066,16 +1068,10 @@ h6 {
 .footer {
   padding: 32px 0; }
 
-.footer-content-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
-
 .footer-content {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  min-width: 1230px; }
+  justify-content: space-between; }
   @media only screen and (max-width: 1075px) {
     .footer-content {
       min-width: 100%; } }
@@ -1094,10 +1090,9 @@ h6 {
 
 .footer-navigation {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 1015px;
+  min-width: 1075px;
   margin-top: 15px; }
   @media only screen and (max-width: 1075px) {
     .footer-navigation {
@@ -1107,7 +1102,7 @@ h6 {
       min-width: 585px;
       flex-wrap: wrap-reverse; } }
   .footer-navigation ul {
-    max-width: 230px;
+    max-width: 245px;
     width: 100%; }
     @media only screen and (max-width: 1075px) {
       .footer-navigation ul {
@@ -1118,9 +1113,24 @@ h6 {
     font-size: 21px;
     line-height: 25px; }
 
+.navigation-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 525px;
+  width: 100%;
+  flex-wrap: wrap; }
+
+.schedule-and-socials {
+  display: flex;
+  justify-content: space-between;
+  max-width: 510px;
+  width: 100%;
+  flex-wrap: wrap; }
+
 .schedule {
   font-size: 21px;
-  line-height: 36px; }
+  line-height: 36px;
+  min-width: 310px; }
   .schedule h3 {
     font-weight: 400;
     margin-bottom: 10px; }
@@ -1130,7 +1140,9 @@ h6 {
 
 .socials {
   font-size: 21px;
-  line-height: 36px; }
+  line-height: 36px;
+  max-width: 200px;
+  width: 100%; }
   .socials h3 {
     font-weight: 400;
     margin-bottom: 10px; }

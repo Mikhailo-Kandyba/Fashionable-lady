@@ -114,7 +114,7 @@
     &:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: $red;
+      color: $light-red;
       font-size: 20px;
 
       @include breakpoint($mobile) {
@@ -177,7 +177,7 @@
   &:after {
     content: "\f004";
     font-family: "FontAwesome";
-    color: $red;
+    color: $light-red;
     font-size: 20px;
 
     @include breakpoint($mobile) {
