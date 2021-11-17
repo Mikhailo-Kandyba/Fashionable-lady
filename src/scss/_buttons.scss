@@ -84,7 +84,7 @@
 .btn-favorites {
   background: $white;
   border-radius: 50%;
-  padding: 11px 10px 9px;
+  padding: 11px 10px 6px;
   position: absolute;
   right: 25px;
   top: 25px;
@@ -100,6 +100,7 @@
   }
 
   i {
+    color: $light-red;
     font-size: 20px;
 
     @include breakpoint($mobile) {
@@ -128,13 +129,15 @@
 }
 
 .btn-goods {
-  padding: 23px 80px 18px;
+  font-family: 'GillSans-Regular';
+  padding: 23px 100px 18px;
   background: $black;
   border-radius: 20px 0 20px 0;
   color: $white ;
   font-weight: 600;
   font-size: 22px;
   line-height: 36px;
+  font-weight: 600;
 
   &:hover {
     background: $light-black;

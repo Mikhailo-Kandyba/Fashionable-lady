@@ -21,6 +21,7 @@
 
 .goods {
   margin-bottom: 100px;
+  padding: 0 20px;
 
   @include breakpoint($mobile) {
     margin: 0 0 100px;
@@ -43,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .tabs-navigation {
@@ -99,6 +100,46 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  .description {
+    padding: 15px 28px 17px 20px;
+    border: 1px solid $dark-grey;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+
+    @include breakpoint($desktop) {
+      padding: 5px 18px 17px 10px;
+    }
+
+    @include breakpoint($mobile) {
+      padding: 5px 4px 5px 4px;
+    }
+
+    p {
+      flex: 21px;
+      line-height: 32px;
+      margin-bottom: 5px;
+
+      @include breakpoint($mobile) {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 12px;
+      }
+    }
+
+    strong {
+      display: block;
+      text-align: right;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: 600;
+
+      @include breakpoint($mobile) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+
   li {
     width: 25%;
     padding: 0 15px;
@@ -117,48 +158,9 @@
       display: block;
     }
 
-    .description {
-      padding: 15px 28px 17px 20px;
-      border: 1px solid $middle-grey;
-      border-top: none;
-      border-radius: 0 0 20px 20px;
-
-      @include breakpoint($desktop) {
-        padding: 5px 18px 17px 10px;
-      }
-
-      @include breakpoint($mobile) {
-        padding: 5px 4px 5px 4px;
-      }
-
-      p {
-        flex: 21px;
-        line-height: 32px;
-        margin-bottom: 5px;
-
-        @include breakpoint($mobile) {
-          font-size: 12px;
-          line-height: 18px;
-          margin-bottom: 12px;
-        }
-      }
-
-      strong {
-        display: block;
-        text-align: right;
-        font-size: 21px;
-        line-height: 26px;
-
-        @include breakpoint($mobile) {
-          font-size: 12px;
-          line-height: 15px;
-        }
-      }
-    }
-
     .holder-btn {
       position: absolute;
-      top: 75px;
+      top: 73px;
       left: 0;
       max-width: 95px;
 

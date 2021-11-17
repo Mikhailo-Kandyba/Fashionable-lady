@@ -196,7 +196,7 @@ h6 {
 .btn-favorites {
   background: #fff;
   border-radius: 50%;
-  padding: 11px 10px 9px;
+  padding: 11px 10px 6px;
   position: absolute;
   right: 25px;
   top: 25px; }
@@ -209,6 +209,7 @@ h6 {
       right: 11px;
       top: 13px; } }
   .btn-favorites i {
+    color: #EB5757;
     font-size: 20px; }
     @media only screen and (max-width: 767px) {
       .btn-favorites i {
@@ -227,13 +228,15 @@ h6 {
       display: none; }
 
 .btn-goods {
-  padding: 23px 80px 18px;
+  font-family: 'GillSans-Regular';
+  padding: 23px 100px 18px;
   background: #000;
   border-radius: 20px 0 20px 0;
   color: #fff;
   font-weight: 600;
   font-size: 22px;
-  line-height: 36px; }
+  line-height: 36px;
+  font-weight: 600; }
   .btn-goods:hover {
     background: #211e1e; }
 
@@ -246,7 +249,7 @@ h6 {
 .btn_red {
   background: #9C0101; }
   .btn_red:hover {
-    background: #bc2b2b; }
+    background: #EB5757; }
 
 .btn_orange {
   background: #C76103; }
@@ -813,7 +816,8 @@ h6 {
       margin-bottom: 17px; } }
 
 .goods {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 20px; }
   @media only screen and (max-width: 767px) {
     .goods {
       margin: 0 0 100px; } }
@@ -831,7 +835,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 25px; }
+  margin-bottom: 31px; }
 
 .tabs-navigation {
   display: flex;
@@ -875,6 +879,36 @@ h6 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
+  .model-list .description {
+    padding: 15px 28px 17px 20px;
+    border: 1px solid #EBEBEB;
+    border-top: none;
+    border-radius: 0 0 20px 20px; }
+    @media only screen and (max-width: 1075px) {
+      .model-list .description {
+        padding: 5px 18px 17px 10px; } }
+    @media only screen and (max-width: 767px) {
+      .model-list .description {
+        padding: 5px 4px 5px 4px; } }
+    .model-list .description p {
+      flex: 21px;
+      line-height: 32px;
+      margin-bottom: 5px; }
+      @media only screen and (max-width: 767px) {
+        .model-list .description p {
+          font-size: 12px;
+          line-height: 18px;
+          margin-bottom: 12px; } }
+    .model-list .description strong {
+      display: block;
+      text-align: right;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: 600; }
+      @media only screen and (max-width: 767px) {
+        .model-list .description strong {
+          font-size: 12px;
+          line-height: 15px; } }
   .model-list li {
     width: 25%;
     padding: 0 15px;
@@ -887,38 +921,9 @@ h6 {
       position: relative; }
     .model-list li img {
       display: block; }
-    .model-list li .description {
-      padding: 15px 28px 17px 20px;
-      border: 1px solid #BEBEBE;
-      border-top: none;
-      border-radius: 0 0 20px 20px; }
-      @media only screen and (max-width: 1075px) {
-        .model-list li .description {
-          padding: 5px 18px 17px 10px; } }
-      @media only screen and (max-width: 767px) {
-        .model-list li .description {
-          padding: 5px 4px 5px 4px; } }
-      .model-list li .description p {
-        flex: 21px;
-        line-height: 32px;
-        margin-bottom: 5px; }
-        @media only screen and (max-width: 767px) {
-          .model-list li .description p {
-            font-size: 12px;
-            line-height: 18px;
-            margin-bottom: 12px; } }
-      .model-list li .description strong {
-        display: block;
-        text-align: right;
-        font-size: 21px;
-        line-height: 26px; }
-        @media only screen and (max-width: 767px) {
-          .model-list li .description strong {
-            font-size: 12px;
-            line-height: 15px; } }
     .model-list li .holder-btn {
       position: absolute;
-      top: 75px;
+      top: 73px;
       left: 0;
       max-width: 95px; }
       @media only screen and (max-width: 767px) {
