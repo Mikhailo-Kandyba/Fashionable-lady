@@ -118,6 +118,11 @@
     top: 15px;
   }
 
+  @include breakpoint($tablet) {
+    right: 5px;
+    top: 5px;
+  }
+
   @include breakpoint($mobile) {
     padding: 0 6px 1px;
     right: 11px;
