@@ -9,27 +9,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  //padding-right: 60px;
-
-  @include breakpoint($desktop) {
-    min-width: 100%;
-  }
-
-  @include breakpoint($tablet) {
-    min-width: min-content;
-    display: block;
-  }
 
   .logo {
     margin-right: 10px;
-
-    @include breakpoint($tablet) {
-      display: inline-block;
-      float: left;
-    }
-    img {
-      width: 155px;
-    }
   }
 }
 
@@ -41,13 +23,7 @@
   margin-top: 15px;
 
   @include breakpoint($desktop) {
-    min-width: 775px;
-  }
-
-  @include breakpoint($tablet) {
-    min-width: 585px;
-    flex-wrap: wrap-reverse;
-
+    min-width: 1035px;
   }
 
   ul {
@@ -55,7 +31,7 @@
     width: 100%;
 
     @include breakpoint($desktop) {
-      max-width: 200px;
+      max-width: 240px;
     }
 
     li {
@@ -75,6 +51,10 @@
   max-width: 525px;
   width: 100%;
   flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    max-width: 485px;
+  }
 }
 
 .schedule-and-socials {
@@ -88,7 +68,12 @@
 .schedule {
   font-size: 21px;
   line-height: 36px;
-  min-width: 310px;
+  max-width: 310px;
+  width: 100%;
+
+  @include breakpoint($desktop) {
+    max-width: 290px;
+  }
 
   h3 {
     font-weight: 400;

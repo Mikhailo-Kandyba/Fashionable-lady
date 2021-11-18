@@ -1076,21 +1076,8 @@ h6 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
-  @media only screen and (max-width: 1200px) {
-    .footer-content {
-      min-width: 100%; } }
-  @media only screen and (max-width: 1023px) {
-    .footer-content {
-      min-width: min-content;
-      display: block; } }
   .footer-content .logo {
     margin-right: 10px; }
-    @media only screen and (max-width: 1023px) {
-      .footer-content .logo {
-        display: inline-block;
-        float: left; } }
-    .footer-content .logo img {
-      width: 155px; }
 
 .footer-navigation {
   display: flex;
@@ -1100,17 +1087,13 @@ h6 {
   margin-top: 15px; }
   @media only screen and (max-width: 1200px) {
     .footer-navigation {
-      min-width: 775px; } }
-  @media only screen and (max-width: 1023px) {
-    .footer-navigation {
-      min-width: 585px;
-      flex-wrap: wrap-reverse; } }
+      min-width: 1035px; } }
   .footer-navigation ul {
     max-width: 245px;
     width: 100%; }
     @media only screen and (max-width: 1200px) {
       .footer-navigation ul {
-        max-width: 200px; } }
+        max-width: 240px; } }
     .footer-navigation ul li {
       margin-bottom: 10px; }
   .footer-navigation a {
@@ -1123,6 +1106,9 @@ h6 {
   max-width: 525px;
   width: 100%;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 1200px) {
+    .navigation-wrap {
+      max-width: 485px; } }
 
 .schedule-and-socials {
   display: flex;
@@ -1134,7 +1120,11 @@ h6 {
 .schedule {
   font-size: 21px;
   line-height: 36px;
-  min-width: 310px; }
+  max-width: 310px;
+  width: 100%; }
+  @media only screen and (max-width: 1200px) {
+    .schedule {
+      max-width: 290px; } }
   .schedule h3 {
     font-weight: 400;
     margin-bottom: 10px; }
