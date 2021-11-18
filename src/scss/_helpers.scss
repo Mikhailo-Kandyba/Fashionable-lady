@@ -5,12 +5,16 @@
   display: none;
 }
 
-.background-padding_lactic {
+.background-padding-lactic {
   background: $lactic;
   padding: 55px 0;
 
   @include breakpoint($tablet) {
     padding: 25px 0;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 0;
   }
 }
 
@@ -116,5 +120,7 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+
 
 

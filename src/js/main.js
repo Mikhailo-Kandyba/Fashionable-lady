@@ -6,12 +6,6 @@ $(".btn-menu").on('click', function(e) {
     $("body").toggleClass('overflow-hidden');
 });
 
-$('.menu-navigation-wrap a').click(function(){
-    $('.btn-menu').removeClass("active");
-    $(".menu-navigation-wrap").removeClass('show-menu');
-    $("body").removeClass('overflow-hidden');
-});
-
 $( function() {
     $( "#tabs" ).tabs();
 } );

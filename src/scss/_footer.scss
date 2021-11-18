@@ -3,6 +3,10 @@
 
 .footer {
   padding: 32px 0;
+
+  @include breakpoint($mobile) {
+    padding: 7px 0;
+  }
 }
 
 .footer-content {
@@ -31,11 +35,22 @@
       @include breakpoint($tablet) {
         display: block;
       }
-    }
 
-    .logo {
-      img {
-        width: 160px;
+      h3 {
+        @include breakpoint($mobile) {
+          font-size: 14px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    img {
+      width: 160px;
+
+      @include breakpoint($mobile) {
+        width: 114px;
       }
     }
   }
@@ -58,6 +73,10 @@
     max-width: 100%;
   }
 
+  @include breakpoint($mobile) {
+    margin-top: 10px;
+  }
+
   ul {
     max-width: 245px;
     width: 100%;
@@ -66,14 +85,27 @@
       max-width: 200px;
     }
 
+    @include breakpoint($mobile) {
+      max-width: 133px;
+    }
+
     li {
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        margin-bottom: 0;
+      }
     }
   }
 
   a {
     font-size: 21px;
     line-height: 25px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -90,6 +122,10 @@
 
   @include breakpoint($tablet) {
     max-width: 100%;
+  }
+
+  @include breakpoint($mobile) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -119,6 +155,21 @@
     h3 {
       font-weight: 400;
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 36px;
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      @include breakpoint($mobile) {
+        font-family: 'GillSans-Light';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 36px;
+      }
     }
   }
 
@@ -126,6 +177,10 @@
     a {
       display: block;
       padding: 5px 5px 5px 0;
+
+      @include breakpoint($mobile) {
+        padding: 0;
+      }
     }
   }
 
@@ -137,6 +192,8 @@
 }
 
 .schedule {
+  font-family: 'GillSans-Light';
+  font-weight: 300;
   font-size: 21px;
   line-height: 36px;
   max-width: 310px;
@@ -146,15 +203,32 @@
     max-width: 210px;
   }
 
+  @include breakpoint($mobile) {
+    max-width: 150px;
+  }
+
   h3 {
+    font-family: 'GillSans-Regular';
     font-weight: 400;
     margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
   }
 
   ul {
     li {
       font-weight: 300;
       margin-bottom: 3px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 36px;
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -165,9 +239,17 @@
   max-width: 200px;
   width: 100%;
 
+  @include breakpoint($mobile) {
+    max-width: 140px;
+  }
+
   h3 {
     font-weight: 400;
     margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 0;
+    }
   }
 
   img {
@@ -188,11 +270,15 @@
     min-width: 90px;
     width: auto;
 
-    li {
-      margin-right: 5px;
+    @include breakpoint($mobile) {
+      min-width: 55px;
+    }
 
-      &:hover {
-        cursor: pointer;
+    i {
+      font-size: 42px;
+
+      @include breakpoint($mobile) {
+        font-size: 25px;
       }
     }
   }

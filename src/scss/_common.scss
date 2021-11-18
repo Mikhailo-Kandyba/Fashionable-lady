@@ -29,7 +29,7 @@
   }
 
   @include breakpoint($mobile) {
-    margin: 0 0 100px;
+    margin: 0 0 40px;
   }
 
   h3 {
@@ -39,6 +39,8 @@
     font-weight: 400;
 
     @include breakpoint($mobile) {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
       font-size: 16px;
       line-height: 20px;
     }
@@ -85,7 +87,8 @@
 
   @include breakpoint($mobile) {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 17px;
+    padding: 6px 0 6px;
   }
 
   &:hover {
@@ -126,7 +129,8 @@
     }
 
     @include breakpoint($mobile) {
-      padding: 5px 4px 5px 4px;
+      padding: 5px 12px 2px 12px;
+      border-radius: 0 0 18px 18px;
     }
 
     p {
@@ -142,6 +146,7 @@
     }
 
     strong {
+      font-family: 'GillSans-Bold';
       display: block;
       text-align: right;
       font-size: 21px;
@@ -165,8 +170,15 @@
     }
 
     @include breakpoint($mobile) {
-      max-width: 141px;
+      width: 50%;
       margin-bottom: 17px;
+
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(8) {
+        display: none;
+      }
     }
 
     .img-area {
@@ -206,6 +218,11 @@
   @include breakpoint($tablet) {
     margin-bottom: 50px;
   }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 13px;
+  }
+
   h3 {
     font-weight: 400;
     font-size: 26px;
@@ -216,6 +233,15 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 20px;
+    }
+
+    @include breakpoint($mobile) {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      padding-left: 0;
+      margin-bottom: 8px;
     }
   }
 }
@@ -239,6 +265,10 @@
       @include breakpoint($tablet) {
         margin-bottom: 5px;
       }
+
+      @include breakpoint($mobile) {
+        margin-bottom: 10px;
+      }
     }
 
     p {
@@ -247,6 +277,11 @@
 
       @include breakpoint($tablet) {
         line-height: 27px;
+      }
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 17px;
       }
     }
   }
@@ -259,6 +294,12 @@
   width: 88px;
   padding: 0;
   margin-left: 25px;
+
+  @include breakpoint($mobile) {
+    width: 46px;
+    height: 43px;
+    margin-left: 9px;
+  }
 
   &:hover {
     background: transparent;
@@ -278,6 +319,13 @@
     background-repeat: no-repeat;
     top: 0;
     right: 0;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/arrow-mobile.svg");
+      width: 25px;
+      height: 24px;
+      top: 8px;
+    }
   }
 }
 
@@ -293,6 +341,15 @@
     background-repeat: no-repeat;
     top: 0;
     left: 0;
+
+    @include breakpoint($mobile) {
+      background-image: url("../images/arrow-active-mobile.svg");
+      width: 46px;
+      height: 24px;
+      right: 0;
+      left: auto;
+      top: 8px;
+    }
   }
 }
 
@@ -301,10 +358,18 @@
   align-items: center;
   justify-content: flex-end;
   margin-right: 18px;
+
+  @include breakpoint($mobile) {
+    margin-right: 0;
+  }
 }
 
 .slider-blog {
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 5px;
+  }
 }
 
 .mailing {
@@ -327,6 +392,14 @@
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 21px;
+      padding-right: 20px;
+      text-align: left;
+      margin-bottom: 5px;
     }
   }
 }
@@ -354,6 +427,11 @@
       width: 320px;
     }
 
+    @include breakpoint($mobile) {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
     input {
       font-size: 20px;
       line-height: 20px;
@@ -368,11 +446,22 @@
         padding: 22px 15px;
       }
 
+      @include breakpoint($mobile) {
+        padding: 5px 4px 5px 14px;
+        height: 40px;
+        border-radius: 12px 0 0 12px;
+      }
+
       &::placeholder {
+        font-family: 'GillSans-Light';
         font-weight: 300;
         font-size: 22px;
         line-height: 36px;
-        opacity: 0.6;
+
+        @include breakpoint($mobile) {
+          font-size: 14px;
+          line-height: 36px;
+        }
       }
     }
   }

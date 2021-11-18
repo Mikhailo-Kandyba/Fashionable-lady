@@ -72,6 +72,11 @@ a {
 
 i {
   color: $black;
+
+  &:hover {
+    cursor: pointer;
+    color: $light-black;
+  }
 }
 
 button {

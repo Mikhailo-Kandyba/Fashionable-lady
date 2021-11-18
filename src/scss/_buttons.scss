@@ -67,6 +67,7 @@
     }
 
     @include breakpoint($mobile) {
+      font-family: 'GillSans-Bold';
       font-size: 16px;
       line-height: 20px;
     }
@@ -159,7 +160,7 @@
 }
 
 .btn-goods {
-  font-family: 'GillSans-Regular';
+  font-family: 'GillSans-Bold';
   padding: 23px 100px 18px;
   background: $black;
   border-radius: 20px 0 20px 0;
@@ -170,6 +171,12 @@
 
   @include breakpoint($desktop) {
     padding: 23px 70px 18px;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: 15px;
+    line-height: 36px;
+    padding: 4px 15px 4px;
   }
 
   &:hover {
@@ -231,6 +238,13 @@
 
   &:hover {
     background: $light-black;
+  }
+
+  @include  breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 36px;
+    padding: 4px 11px;
+    border-radius: 0 12px 12px 0;
   }
 }
 
