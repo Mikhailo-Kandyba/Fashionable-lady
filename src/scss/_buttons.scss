@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: flex-start;
   min-width: 110px;
+
+  @include breakpoint($desktop) {
+    min-width: 80px;
+  }
 }
 
 .holder-languages {
@@ -15,6 +19,10 @@
   flex-wrap: wrap;
   min-width: 85px;
   color: $middle-grey;
+
+  @include breakpoint($desktop) {
+    min-width: 100%;
+  }
 }
 
 .radio-btn {
@@ -26,6 +34,11 @@
     right: 4px;
     top: 10px;
     color: $black;
+
+    @include breakpoint($desktop) {
+      right: 0;
+      top: 5px;
+    }
   }
 
   &:last-child {
@@ -48,6 +61,10 @@
     user-select: none;
     text-transform: uppercase;
     padding: 10px 15px 10px 10px;
+
+    @include breakpoint($desktop) {
+      padding: 5px 9px 5px 5px;
+    }
 
     @include breakpoint($mobile) {
       font-size: 16px;
@@ -97,6 +114,8 @@
 
   @include breakpoint($desktop) {
     padding: 11px 10px 7px;
+    right: 15px;
+    top: 15px;
   }
 
   @include breakpoint($mobile) {
@@ -143,7 +162,10 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 36px;
-  font-weight: 600;
+
+  @include breakpoint($desktop) {
+    padding: 23px 70px 18px;
+  }
 
   &:hover {
     background: $light-black;

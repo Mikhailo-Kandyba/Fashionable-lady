@@ -139,6 +139,9 @@ h6 {
   align-items: center;
   justify-content: flex-start;
   min-width: 110px; }
+  @media only screen and (max-width: 1200px) {
+    .languages-wrap {
+      min-width: 80px; } }
 
 .holder-languages {
   display: flex;
@@ -147,6 +150,9 @@ h6 {
   flex-wrap: wrap;
   min-width: 85px;
   color: #BEBEBE; }
+  @media only screen and (max-width: 1200px) {
+    .holder-languages {
+      min-width: 100%; } }
 
 .radio-btn {
   position: relative; }
@@ -156,6 +162,10 @@ h6 {
     right: 4px;
     top: 10px;
     color: #000; }
+    @media only screen and (max-width: 1200px) {
+      .radio-btn::after {
+        right: 0;
+        top: 5px; } }
   .radio-btn:last-child label {
     padding: 10px 10px 10px 0; }
   .radio-btn:last-child::after {
@@ -169,6 +179,9 @@ h6 {
     user-select: none;
     text-transform: uppercase;
     padding: 10px 15px 10px 10px; }
+    @media only screen and (max-width: 1200px) {
+      .radio-btn label {
+        padding: 5px 9px 5px 5px; } }
     @media only screen and (max-width: 767px) {
       .radio-btn label {
         font-size: 16px;
@@ -207,7 +220,9 @@ h6 {
   top: 25px; }
   @media only screen and (max-width: 1200px) {
     .btn-favorites {
-      padding: 11px 10px 7px; } }
+      padding: 11px 10px 7px;
+      right: 15px;
+      top: 15px; } }
   @media only screen and (max-width: 767px) {
     .btn-favorites {
       padding: 0 6px 1px;
@@ -240,8 +255,10 @@ h6 {
   color: #fff;
   font-weight: 600;
   font-size: 22px;
-  line-height: 36px;
-  font-weight: 600; }
+  line-height: 36px; }
+  @media only screen and (max-width: 1200px) {
+    .btn-goods {
+      padding: 23px 70px 18px; } }
   .btn-goods:hover {
     background: #211e1e; }
 
@@ -348,12 +365,19 @@ h6 {
       line-height: 23px;
       display: block;
       padding: 10px 20px 10px 10px; }
+      @media only screen and (max-width: 1200px) {
+        .menu-top li a {
+          padding: 10px 5px; } }
 
 .user-info-wrap {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   min-width: 510px; }
+  @media only screen and (max-width: 1200px) {
+    .user-info-wrap {
+      min-width: 420px;
+      margin-left: 10px; } }
 
 .user-info-holder {
   display: flex;
@@ -364,10 +388,13 @@ h6 {
     margin-left: 0; }
   @media only screen and (max-width: 1200px) {
     .user-info-holder {
-      min-width: 490px; } }
+      min-width: 100%; } }
 
 .dropdown {
   margin: 0 0 0 45px; }
+  @media only screen and (max-width: 1200px) {
+    .dropdown {
+      margin: 0 0 0 10px; } }
 
 .dropdown-menu {
   left: -11px !important;
@@ -508,9 +535,10 @@ h6 {
     top: -2px !important; }
     @media only screen and (max-width: 1200px) {
       .catalog-item .dropdown-menu {
-        left: 277px !important;
+        left: 7px !important;
         padding: 22px 10px 35px 20px;
-        min-width: 990px; } }
+        min-width: 990px;
+        top: 158px !important; } }
     .catalog-item .dropdown-menu .ul-area {
       display: inline-grid;
       max-width: 320px;
@@ -894,7 +922,7 @@ h6 {
     border-radius: 0 0 20px 20px; }
     @media only screen and (max-width: 1200px) {
       .model-list .description {
-        padding: 5px 18px 17px 10px; } }
+        padding: 4px 4px 11px 4px; } }
     @media only screen and (max-width: 767px) {
       .model-list .description {
         padding: 5px 4px 5px 4px; } }
@@ -1087,13 +1115,13 @@ h6 {
   margin-top: 15px; }
   @media only screen and (max-width: 1200px) {
     .footer-navigation {
-      min-width: 1035px; } }
+      min-width: 890px; } }
   .footer-navigation ul {
     max-width: 245px;
     width: 100%; }
     @media only screen and (max-width: 1200px) {
       .footer-navigation ul {
-        max-width: 240px; } }
+        max-width: 210px; } }
     .footer-navigation ul li {
       margin-bottom: 10px; }
   .footer-navigation a {
@@ -1108,7 +1136,7 @@ h6 {
   flex-wrap: wrap; }
   @media only screen and (max-width: 1200px) {
     .navigation-wrap {
-      max-width: 485px; } }
+      max-width: 435px; } }
 
 .schedule-and-socials {
   display: flex;
@@ -1116,6 +1144,9 @@ h6 {
   max-width: 510px;
   width: 100%;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 1200px) {
+    .schedule-and-socials {
+      max-width: 450px; } }
 
 .schedule {
   font-size: 21px;
@@ -1124,7 +1155,7 @@ h6 {
   width: 100%; }
   @media only screen and (max-width: 1200px) {
     .schedule {
-      max-width: 290px; } }
+      max-width: 240px; } }
   .schedule h3 {
     font-weight: 400;
     margin-bottom: 10px; }

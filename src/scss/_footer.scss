@@ -23,7 +23,7 @@
   margin-top: 15px;
 
   @include breakpoint($desktop) {
-    min-width: 1035px;
+    min-width: 890px;
   }
 
   ul {
@@ -31,7 +31,7 @@
     width: 100%;
 
     @include breakpoint($desktop) {
-      max-width: 240px;
+      max-width: 210px;
     }
 
     li {
@@ -53,7 +53,7 @@
   flex-wrap: wrap;
 
   @include breakpoint($desktop) {
-    max-width: 485px;
+    max-width: 435px;
   }
 }
 
@@ -63,6 +63,10 @@
   max-width: 510px;
   width: 100%;
   flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    max-width: 450px;
+  }
 }
 
 .schedule {
@@ -72,7 +76,7 @@
   width: 100%;
 
   @include breakpoint($desktop) {
-    max-width: 290px;
+    max-width: 240px;
   }
 
   h3 {
