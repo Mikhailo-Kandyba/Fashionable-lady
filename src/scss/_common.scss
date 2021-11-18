@@ -11,6 +11,7 @@
 
   @include breakpoint($tablet) {
     min-height: 470px;
+    margin-bottom: 40px;
   }
 
   @include breakpoint($mobile) {
@@ -21,7 +22,7 @@
 
 .goods {
   margin-bottom: 100px;
-  padding: 0 20px;
+  padding: 0 10px;
 
   @include breakpoint($mobile) {
     margin: 0 0 100px;
@@ -44,13 +45,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .tabs-navigation {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 40px;
+  }
 
   @include breakpoint($mobile) {
     min-width: 140px;
@@ -143,8 +148,9 @@
   }
 
   li {
-    width: 25%;
-    padding: 0 15px;
+    max-width: 300px;
+    //width: 25%;
+    //padding: 0 15px;
     margin-bottom: 25px;
 
     @include breakpoint($mobile) {
@@ -171,10 +177,6 @@
       }
     }
   }
-}
-
-.tab-content {
-  margin: 0 -15px;
 }
 
 .btn-goods-wrap {
