@@ -148,9 +148,8 @@
   }
 
   li {
-    max-width: 300px;
-    //width: 25%;
-    //padding: 0 15px;
+    width: 25%;
+    padding: 0 15px;
     margin-bottom: 25px;
 
     @include breakpoint($mobile) {
@@ -177,6 +176,10 @@
       }
     }
   }
+}
+
+.tab-content {
+  margin: 0 -15px;
 }
 
 .btn-goods-wrap {

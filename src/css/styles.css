@@ -956,7 +956,8 @@ h6 {
           font-size: 12px;
           line-height: 15px; } }
   .model-list li {
-    max-width: 300px;
+    width: 25%;
+    padding: 0 15px;
     margin-bottom: 25px; }
     @media only screen and (max-width: 767px) {
       .model-list li {
@@ -974,6 +975,9 @@ h6 {
       @media only screen and (max-width: 767px) {
         .model-list li .holder-btn {
           display: none; } }
+
+.tab-content {
+  margin: 0 -15px; }
 
 .btn-goods-wrap {
   display: flex;
