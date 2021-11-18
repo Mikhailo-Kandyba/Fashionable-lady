@@ -44,20 +44,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 }
 
 .tabs-navigation {
   display: flex;
   align-items: center;
-  min-width: 180px;
-  justify-content: space-between;
   margin-bottom: 50px;
 
   @include breakpoint($mobile) {
     min-width: 140px;
     margin-bottom: 18px;
   }
+}
+
+.ui-tabs-tab {
+  margin: 0 15px;
 }
 
 .ui-tabs-anchor {
@@ -211,12 +213,12 @@
     max-width: 407px;
 
     img {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
 
     p {
       font-size: 21px;
-      line-height: 45px;
+      line-height: 25px;
 
       @include breakpoint($tablet) {
         line-height: 27px;
@@ -277,14 +279,10 @@
 }
 
 .slider-blog {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .mailing {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   @include breakpoint($tablet) {
     flex-direction: column;
   }
@@ -304,14 +302,13 @@
 .form-btn-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 22px;
-  border: 2px solid $black;
-  max-width: 560px;
-  width: 100%;
+  justify-content: flex-end;
 
   .form-group {
-    width: 100%;
+    border: 2px solid $black;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    width: 375px;
 
     @include breakpoint($desktop) {
       width: 340px;
@@ -324,7 +321,7 @@
     input {
       font-size: 20px;
       line-height: 20px;
-      height: 68px;
+      height: 64px;
       background: $white;
       border-radius: 19px 0 0 19px;
       width: 100%;

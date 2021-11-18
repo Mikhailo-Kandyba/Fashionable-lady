@@ -182,7 +182,12 @@ h6 {
   font-weight: 600;
   color: #000; }
 
+.radio-btn .active {
+  font-weight: 600;
+  color: #000; }
+
 .btn-model {
+  font-family: 'GillSans-Regular';
   font-weight: 400;
   font-size: 11px;
   line-height: 32px;
@@ -200,7 +205,7 @@ h6 {
   position: absolute;
   right: 25px;
   top: 25px; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .btn-favorites {
       padding: 11px 10px 7px; } }
   @media only screen and (max-width: 767px) {
@@ -274,12 +279,14 @@ h6 {
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
-  padding: 16px 28px;
+  padding: 16px 32px;
+  max-width: 185px;
   border-radius: 0 19px 19px 0; }
   .btn-form:hover {
     background: #211e1e; }
 
 .btn-drop {
+  font-family: 'GillSans-Regular';
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -323,7 +330,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   min-width: 335px; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .menu-top-wrap {
       min-width: auto; } }
 
@@ -355,7 +362,7 @@ h6 {
   flex-wrap: wrap; }
   .user-info-holder .dropdown:first-child {
     margin-left: 0; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .user-info-holder {
       min-width: 490px; } }
 
@@ -395,7 +402,7 @@ h6 {
       display: none; } }
   .header-bottom form {
     width: 370px; }
-    @media only screen and (max-width: 1075px) {
+    @media only screen and (max-width: 1200px) {
       .header-bottom form {
         width: 310px; } }
   .header-bottom .form-group {
@@ -408,7 +415,7 @@ h6 {
       width: 27px;
       height: 24px;
       background: url("../images/search.svg"); }
-      @media only screen and (max-width: 1075px) {
+      @media only screen and (max-width: 1200px) {
         .header-bottom .form-group::after {
           left: 15px; } }
     .header-bottom .form-group input {
@@ -420,7 +427,7 @@ h6 {
       border: none;
       height: 50px;
       padding: 11px 20px 11px 82px; }
-      @media only screen and (max-width: 1075px) {
+      @media only screen and (max-width: 1200px) {
         .header-bottom .form-group input {
           padding: 11px 20px 11px 50px; } }
       .header-bottom .form-group input::placeholder {
@@ -499,7 +506,7 @@ h6 {
     padding: 22px 10px 42px 50px;
     left: 17px !important;
     top: -2px !important; }
-    @media only screen and (max-width: 1075px) {
+    @media only screen and (max-width: 1200px) {
       .catalog-item .dropdown-menu {
         left: 277px !important;
         padding: 22px 10px 35px 20px;
@@ -510,7 +517,7 @@ h6 {
       width: 100%; }
       .catalog-item .dropdown-menu .ul-area:last-child {
         max-width: 245px; }
-      @media only screen and (max-width: 1075px) {
+      @media only screen and (max-width: 1200px) {
         .catalog-item .dropdown-menu .ul-area {
           max-width: 235px; } }
       .catalog-item .dropdown-menu .ul-area li a {
@@ -540,7 +547,7 @@ h6 {
   .basket-wrap span {
     font-size: 20px;
     line-height: 23px; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .basket-wrap {
       max-width: 140px; } }
   .basket-wrap span {
@@ -835,18 +842,19 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 31px; }
+  margin-bottom: 25px; }
 
 .tabs-navigation {
   display: flex;
   align-items: center;
-  min-width: 180px;
-  justify-content: space-between;
   margin-bottom: 50px; }
   @media only screen and (max-width: 767px) {
     .tabs-navigation {
       min-width: 140px;
       margin-bottom: 18px; } }
+
+.ui-tabs-tab {
+  margin: 0 15px; }
 
 .ui-tabs-anchor {
   display: block;
@@ -884,7 +892,7 @@ h6 {
     border: 1px solid #EBEBEB;
     border-top: none;
     border-radius: 0 0 20px 20px; }
-    @media only screen and (max-width: 1075px) {
+    @media only screen and (max-width: 1200px) {
       .model-list .description {
         padding: 5px 18px 17px 10px; } }
     @media only screen and (max-width: 767px) {
@@ -962,10 +970,10 @@ h6 {
   .slick-slide .img-area {
     max-width: 407px; }
     .slick-slide .img-area img {
-      margin-bottom: 15px; }
+      margin-bottom: 25px; }
     .slick-slide .img-area p {
       font-size: 21px;
-      line-height: 45px; }
+      line-height: 25px; }
       @media only screen and (max-width: 1023px) {
         .slick-slide .img-area p {
           line-height: 27px; } }
@@ -1013,35 +1021,31 @@ h6 {
   margin-right: 18px; }
 
 .slider-blog {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
 
-.mailing {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
+@media only screen and (max-width: 1023px) {
+  .mailing {
+    flex-direction: column; } }
+
+.mailing p {
+  font-size: 30px;
+  line-height: 40px; }
   @media only screen and (max-width: 1023px) {
-    .mailing {
-      flex-direction: column; } }
-  .mailing p {
-    font-size: 30px;
-    line-height: 40px; }
-    @media only screen and (max-width: 1023px) {
-      .mailing p {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 20px; } }
+    .mailing p {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; } }
 
 .form-btn-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 22px;
-  border: 2px solid #000;
-  max-width: 560px;
-  width: 100%; }
+  justify-content: flex-end; }
   .form-btn-wrap .form-group {
-    width: 100%; }
-    @media only screen and (max-width: 1075px) {
+    border: 2px solid #000;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    width: 375px; }
+    @media only screen and (max-width: 1200px) {
       .form-btn-wrap .form-group {
         width: 340px; } }
     @media only screen and (max-width: 1023px) {
@@ -1050,13 +1054,13 @@ h6 {
     .form-btn-wrap .form-group input {
       font-size: 20px;
       line-height: 20px;
-      height: 68px;
+      height: 64px;
       background: #fff;
       border-radius: 19px 0 0 19px;
       width: 100%;
       border: none;
       padding: 12px 17px; }
-      @media only screen and (max-width: 1075px) {
+      @media only screen and (max-width: 1200px) {
         .form-btn-wrap .form-group input {
           padding: 22px 15px; } }
       .form-btn-wrap .form-group input::placeholder {
@@ -1072,7 +1076,7 @@ h6 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .footer-content {
       min-width: 100%; } }
   @media only screen and (max-width: 1023px) {
@@ -1094,7 +1098,7 @@ h6 {
   flex-wrap: wrap;
   min-width: 1075px;
   margin-top: 15px; }
-  @media only screen and (max-width: 1075px) {
+  @media only screen and (max-width: 1200px) {
     .footer-navigation {
       min-width: 775px; } }
   @media only screen and (max-width: 1023px) {
@@ -1104,7 +1108,7 @@ h6 {
   .footer-navigation ul {
     max-width: 245px;
     width: 100%; }
-    @media only screen and (max-width: 1075px) {
+    @media only screen and (max-width: 1200px) {
       .footer-navigation ul {
         max-width: 200px; } }
     .footer-navigation ul li {
@@ -1248,3 +1252,8 @@ h6 {
   .row .col {
     width: 50%;
     padding: 0 15px; }
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
