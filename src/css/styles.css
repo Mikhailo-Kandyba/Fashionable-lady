@@ -188,6 +188,7 @@ h6 {
     @media only screen and (max-width: 767px) {
       .radio-btn label {
         font-family: 'GillSans-Bold';
+        font-weight: 600;
         font-size: 16px;
         line-height: 20px; } }
     .radio-btn label:hover {
@@ -319,7 +320,8 @@ h6 {
       font-size: 14px;
       line-height: 36px;
       padding: 4px 11px;
-      border-radius: 0 12px 12px 0; } }
+      border-radius: 0 12px 12px 0;
+      color: #FAFAFA; } }
 
 .btn-drop {
   font-family: 'GillSans-Regular';
@@ -600,7 +602,7 @@ h6 {
   .basket-wrap span {
     display: block; }
   .basket-wrap .number {
-    background: #BEBEBE;
+    background: #EBEBEB;
     border-radius: 50%;
     padding: 6px 7px; }
 
@@ -1051,7 +1053,7 @@ h6 {
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
-        padding-left: 0;
+        padding-left: 4px;
         margin-bottom: 8px; } }
 
 .slick-dots {
@@ -1270,7 +1272,7 @@ h6 {
   flex-wrap: wrap;
   max-width: 1075px;
   width: 100%;
-  margin-top: 15px; }
+  margin-top: 18px; }
   @media only screen and (max-width: 1240px) {
     .footer-navigation {
       max-width: 845px; } }
@@ -1377,7 +1379,9 @@ h6 {
   .schedule h3 {
     font-family: 'GillSans-Regular';
     font-weight: 400;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 36px; }
     @media only screen and (max-width: 767px) {
       .schedule h3 {
         font-size: 14px;
@@ -1401,6 +1405,8 @@ h6 {
     .socials {
       max-width: 140px; } }
   .socials h3 {
+    font-size: 21px;
+    line-height: 36px;
     font-weight: 400;
     margin-bottom: 10px; }
     @media only screen and (max-width: 767px) {

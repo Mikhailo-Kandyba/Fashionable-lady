@@ -62,7 +62,7 @@
   flex-wrap: wrap;
   max-width: 1075px;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 18px;
 
   @include breakpoint($desktop) {
     max-width: 845px;
@@ -211,6 +211,8 @@
     font-family: 'GillSans-Regular';
     font-weight: 400;
     margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 36px;
 
     @include breakpoint($mobile) {
       font-size: 14px;
@@ -244,6 +246,8 @@
   }
 
   h3 {
+    font-size: 21px;
+    line-height: 36px;
     font-weight: 400;
     margin-bottom: 10px;
 
