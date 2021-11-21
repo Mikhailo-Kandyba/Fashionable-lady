@@ -293,7 +293,7 @@
       left: 7px !important;
       padding: 22px 10px 35px 20px;
       min-width: 990px;
-      top: 158px !important;
+      top: -2px !important;
     }
 
     .ul-area {
@@ -306,7 +306,7 @@
       }
 
       @include breakpoint($desktop) {
-        max-width: 235px;
+        max-width: 233px;
       }
 
       li {
@@ -648,7 +648,8 @@
   &:after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 50%;
+    transform: translate(0px, -50%);
     right: 0;
     width: 16px;
     height: 10px;

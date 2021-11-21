@@ -63,3 +63,82 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+function setForm(value) {
+
+    if(value == 'form1'){
+        document.getElementById('form1').style='display:block;';
+        document.getElementById('form2').style='display:none;';
+    }
+    else {
+
+        document.getElementById('form2').style = 'display:block;';
+        document.getElementById('form1').style = 'display:none;';
+    }
+
+}
+
+var $range = $("#scale");
+var $inputFrom = $("#value-from");
+var $inputTo = $("#value-up");
+var instance;
+var min = 177;
+var max = 1290;
+var from = 0;
+var to = 0;
+
+$range.ionRangeSlider({
+    skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 0,
+    to: 1290,
+    onStart: updateInputs,
+    onChange: updateInputs,
+    onFinish: updateInputs
+});
+instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);
+}
+
+$inputFrom.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+
+    instance.update({
+        from: val
+    });
+
+    $(this).prop("value", val);
+
+});
+
+$inputTo.on("change", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+
+    instance.update({
+        to: val
+    });
+
+    $(this).prop("value", val);
+});
