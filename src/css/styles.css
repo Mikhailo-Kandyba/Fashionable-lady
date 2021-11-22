@@ -1325,6 +1325,8 @@ h6 {
         font-size: 14px;
         border-radius: 15px;
         padding: 0 26px 0 22px; } }
+    .filter-and-tova .accordion:hover {
+      background: #EBEBEB; }
     .filter-and-tova .accordion:after {
       right: 16px; }
       @media only screen and (max-width: 1350px) {
@@ -1410,6 +1412,8 @@ h6 {
     height: 40px;
     min-width: 335px;
     padding: 2px 36px 2px 25px; }
+    .select-holder #select1:hover {
+      background: #EBEBEB; }
     @media only screen and (max-width: 1023px) {
       .select-holder #select1 {
         min-width: 265px; } }
@@ -1480,6 +1484,10 @@ h6 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+  @media only screen and (max-width: 767px) {
+    .container-label {
+      font-size: 14px;
+      line-height: 16px; } }
   .container-label:hover input ~ .checkmark {
     background-color: transparent;
     border: 2px solid #C85D6C; }

@@ -126,6 +126,10 @@
       padding: 0 26px 0 22px;
     }
 
+    &:hover {
+      background: $dark-grey;
+    }
+
     &:after {
       right: 16px;
 
@@ -245,6 +249,10 @@
     min-width: 335px;
     padding: 2px 36px 2px 25px;
 
+    &:hover {
+      background: $dark-grey;
+    }
+
     @include breakpoint($tablet) {
       min-width: 265px;
     }
@@ -336,6 +344,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
   &:hover {
     input ~ .checkmark {
