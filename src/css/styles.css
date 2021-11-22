@@ -1245,6 +1245,9 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .breadcrumb {
       margin: 10px 0 15px; } }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb {
+      margin: 25px 0 0; } }
   .breadcrumb li {
     display: flex;
     align-items: center; }
@@ -1257,6 +1260,11 @@ h6 {
       padding: 10px 6px 10px 0;
       color: #000;
       text-decoration: none; }
+      @media only screen and (max-width: 767px) {
+        .breadcrumb li a {
+          font-size: 14px;
+          line-height: 18px;
+          padding: 10px 3px 7px 0; } }
       .breadcrumb li a:hover {
         color: #BEBEBE; }
   .breadcrumb .active a {
@@ -1268,7 +1276,7 @@ h6 {
     color: black;
     content: "/\00a0"; }
 
-.dresses .title {
+.title-page {
   font-family: 'GillSans-Bold';
   font-weight: 600;
   font-size: 36px;
@@ -1276,17 +1284,32 @@ h6 {
   color: #000;
   border-bottom: 1px solid #000;
   padding-bottom: 17px; }
+  @media only screen and (max-width: 767px) {
+    .title-page {
+      font-size: 20px;
+      padding-bottom: 7px; } }
 
 .filter-and-tova {
   display: flex;
   justify-content: space-between;
   padding: 23px 0; }
+  @media only screen and (max-width: 767px) {
+    .filter-and-tova {
+      flex-direction: column; } }
   .filter-and-tova .accordion-wrap {
     max-width: 300px;
     width: 100%; }
     @media only screen and (max-width: 1023px) {
       .filter-and-tova .accordion-wrap {
         min-width: 255px; } }
+    @media only screen and (max-width: 767px) {
+      .filter-and-tova .accordion-wrap {
+        display: none; } }
+  .filter-and-tova .filter-mobile {
+    display: none; }
+    @media only screen and (max-width: 767px) {
+      .filter-and-tova .filter-mobile {
+        display: block; } }
   .filter-and-tova .accordion {
     font-family: 'GillSans-Regular';
     font-weight: 400;
@@ -1295,16 +1318,29 @@ h6 {
     border-bottom: none;
     background: #FAFAFA;
     border-radius: 10px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     padding: 14px 26px 6px 20px; }
+    @media only screen and (max-width: 767px) {
+      .filter-and-tova .accordion {
+        font-size: 14px;
+        border-radius: 15px;
+        padding: 0 26px 0 22px; } }
     .filter-and-tova .accordion:after {
       right: 16px; }
       @media only screen and (max-width: 1350px) {
         .filter-and-tova .accordion:after {
           right: 10px; } }
+      @media only screen and (max-width: 767px) {
+        .filter-and-tova .accordion:after {
+          right: 14px; } }
   .filter-and-tova .active:after {
     transform: rotate(-180deg);
     top: 22px; }
+    @media only screen and (max-width: 767px) {
+      .filter-and-tova .active:after {
+        transform: rotate(-90deg);
+        top: 12px;
+        right: 17px; } }
   .filter-and-tova .panel {
     border-bottom: none;
     padding: 21px 25px 26px;
@@ -1318,6 +1354,10 @@ h6 {
       font-size: 16px;
       line-height: 36px;
       margin-right: 10px; }
+      @media only screen and (max-width: 767px) {
+        .filter-and-tova .panel lable {
+          font-size: 12px;
+          line-height: 36px; } }
 
 .tova-wrap {
   margin-left: 30px; }
@@ -1331,30 +1371,53 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .sorting .model-list li {
       padding: 0 5px; } }
+  @media only screen and (max-width: 767px) {
+    .sorting .model-list li {
+      width: 50%; }
+      .sorting .model-list li:last-child {
+        display: none; } }
 
 .sorting-filter {
   display: flex;
   align-items: center;
   margin-bottom: 53px; }
+  @media only screen and (max-width: 767px) {
+    .sorting-filter {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 25px; } }
   .sorting-filter p {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     color: #000;
     font-size: 20px;
     line-height: 36px;
-    margin-right: 40px; }
+    margin-right: 20px; }
+    @media only screen and (max-width: 767px) {
+      .sorting-filter p {
+        font-size: 14px; } }
 
 .select-holder {
   position: relative; }
   .select-holder #select1 {
+    font-family: 'GillSans-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
     background: #FAFAFA;
     border-radius: 10px;
     border: none;
+    height: 40px;
     min-width: 335px;
-    padding: 8px 8px 8px 21px; }
+    padding: 2px 36px 2px 25px; }
     @media only screen and (max-width: 1023px) {
       .select-holder #select1 {
         min-width: 265px; } }
+    @media only screen and (max-width: 767px) {
+      .select-holder #select1 {
+        font-size: 14px;
+        line-height: 36px;
+        height: 35px; } }
     .select-holder #select1:focus-visible {
       outline: none; }
   .select-holder select {
@@ -1371,6 +1434,11 @@ h6 {
     height: 10px;
     background-image: url("../images/pointer.svg");
     background-repeat: no-repeat; }
+    @media only screen and (max-width: 767px) {
+      .select-holder:after {
+        width: 7px;
+        height: 12px;
+        background-image: url("../images/pointer-mobile.svg"); } }
 
 .irs--round {
   top: -25px; }
@@ -1447,6 +1515,12 @@ h6 {
   height: 11px;
   background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat; }
+
+.filter-mobile .panel {
+  padding: 0; }
+
+.filter-mobile .panel > .panel {
+  padding: 20px; }
 
 .footer {
   padding: 32px 0; }
@@ -1744,7 +1818,7 @@ h6 {
 .display-flex {
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: space-between; }
 
 .margin-15 {
   margin: 0 -15px; }
@@ -1755,21 +1829,23 @@ h6 {
     .margin-15 {
       margin: 0 -5px; } }
 
-.display-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
 .style-input-prices {
   font-family: 'GillSans-Bold';
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  height: 26px;
   width: 76px;
   border-radius: 10px;
   background: #FAFAFA;
   border: none;
   text-align: center; }
+  @media only screen and (max-width: 767px) {
+    .style-input-prices {
+      font-size: 10px;
+      line-height: 12px;
+      border-radius: 15px;
+      height: 23px; } }
 
 .background-lactic-two {
   background: #F1F1F1; }
@@ -1779,3 +1855,10 @@ h6 {
 
 .margin-top-23 {
   margin-top: -23px; }
+  @media only screen and (max-width: 767px) {
+    .margin-top-23 {
+      margin-top: -28px; } }
+
+@media only screen and (max-width: 767px) {
+  .background-dark-grey {
+    background: #EBEBEB; } }

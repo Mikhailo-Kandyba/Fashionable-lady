@@ -78,9 +78,9 @@ function setForm(value) {
 
 }
 
-var $range = $("#scale");
-var $inputFrom = $("#value-from");
-var $inputTo = $("#value-up");
+var $range = $("#scale, #scale-mobile");
+var $inputFrom = $("#value-from, #value-from-mobile");
+var $inputTo = $("#value-up, #value-up-mobile");
 var instance;
 var min = 177;
 var max = 1290;

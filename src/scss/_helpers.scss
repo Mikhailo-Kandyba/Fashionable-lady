@@ -118,7 +118,7 @@
 .display-flex {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .margin-15 {
@@ -133,22 +133,24 @@
   }
 }
 
-.display-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .style-input-prices {
   font-family: 'GillSans-Bold';
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
+  height: 26px;
   width: 76px;
   border-radius: 10px;
   background: $lactic;
   border: none;
   text-align: center;
+
+  @include breakpoint($mobile) {
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 15px;
+    height: 23px;
+  }
 }
 
 .background-lactic-two {
@@ -161,6 +163,16 @@
 
 .margin-top-23 {
   margin-top: -23px;
+
+  @include breakpoint($mobile) {
+    margin-top: -28px;
+  }
+}
+
+.background-dark-grey {
+  @include breakpoint($mobile) {
+    background: $dark-grey;
+  }
 }
 
 

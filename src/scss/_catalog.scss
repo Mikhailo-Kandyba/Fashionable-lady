@@ -12,9 +12,14 @@
     margin: 10px 0 15px;
   }
 
+  @include breakpoint($mobile) {
+    margin: 25px 0 0;
+  }
+
   li {
     display: flex;
     align-items: center;
+
     a {
       font-family: 'GillSans-Bold';
       font-weight: 600;
@@ -24,6 +29,12 @@
       padding: 10px 6px 10px 0;
       color: $black;
       text-decoration: none;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 3px 7px 0;
+      }
 
       &:hover {
         color: $middle-grey;
@@ -48,15 +59,23 @@
   }
 }
 
-.dresses {
-  .title {
-    font-family: 'GillSans-Bold';
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 36px;
-    color: $black;
-    border-bottom: 1px solid $black;
-    padding-bottom: 17px;
+//.dresses {
+//  display: flex;
+//  flex-direction: column;
+//}
+
+.title-page {
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  border-bottom: 1px solid $black;
+  padding-bottom: 17px;
+
+  @include breakpoint($mobile) {
+    font-size: 20px;
+    padding-bottom: 7px;
   }
 }
 
@@ -65,12 +84,28 @@
   justify-content: space-between;
   padding: 23px 0;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
+
   .accordion-wrap {
     max-width: 300px;
     width: 100%;
 
     @include breakpoint($tablet) {
       min-width: 255px;
+    }
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  .filter-mobile {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: block;
     }
   }
 
@@ -82,14 +117,24 @@
     border-bottom: none;
     background: $lactic;
     border-radius: 10px;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     padding: 14px 26px 6px 20px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      border-radius: 15px;
+      padding: 0 26px 0 22px;
+    }
 
     &:after {
       right: 16px;
 
       @include breakpoint($desktop) {
         right: 10px;
+      }
+
+      @include breakpoint($mobile) {
+        right: 14px;
       }
     }
   }
@@ -98,6 +143,12 @@
     &:after {
       transform: rotate(-180deg);
       top: 22px;
+
+      @include breakpoint($mobile) {
+        transform: rotate(-90deg);
+        top: 12px;
+        right: 17px;
+      }
     }
   }
 
@@ -116,6 +167,11 @@
       font-size: 16px;
       line-height: 36px;
       margin-right: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 12px;
+        line-height: 36px;
+      }
     }
   }
 }
@@ -137,6 +193,14 @@
       @include breakpoint($tablet) {
         padding: 0 5px;
       }
+
+      @include breakpoint($mobile) {
+        width: 50%;
+
+        &:last-child {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -146,27 +210,49 @@
   align-items: center;
   margin-bottom: 53px;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+
   p {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     color: $black;
     font-size: 20px;
     line-height: 36px;
-    margin-right: 40px;
+    margin-right: 20px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+    }
   }
 }
 
 .select-holder {
   position: relative;
+
   #select1 {
+    font-family: 'GillSans-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
     background: $lactic;
     border-radius: 10px;
     border: none;
+    height: 40px;
     min-width: 335px;
-    padding: 8px 8px 8px 21px;
+    padding: 2px 36px 2px 25px;
 
     @include breakpoint($tablet) {
       min-width: 265px;
+    }
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+      height: 35px;
     }
 
     &:focus-visible {
@@ -190,6 +276,12 @@
     height: 10px;
     background-image: url("../images/pointer.svg");
     background-repeat: no-repeat;
+
+    @include breakpoint($mobile) {
+      width: 7px;
+      height: 12px;
+      background-image: url("../images/pointer-mobile.svg");
+    }
   }
 }
 
@@ -293,6 +385,16 @@
   height: 11px;
   background-image: url("../images/check-mark.svg");
   background-repeat: no-repeat;
+}
+
+.filter-mobile {
+  .panel {
+    padding: 0;
+  }
+
+  .panel > .panel {
+    padding: 20px;
+  }
 }
 
 
