@@ -119,11 +119,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  @include breakpoint($tablet) {
-    flex-direction: column;
-    align-items: baseline !important;
-  }
 }
 
 .margin-15 {
@@ -131,6 +126,10 @@
 
   @include breakpoint($desktop) {
     margin: 0 -10px;
+  }
+
+  @include breakpoint($tablet) {
+    margin: 0 -5px;
   }
 }
 

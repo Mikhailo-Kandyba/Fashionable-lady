@@ -1284,6 +1284,9 @@ h6 {
   .filter-and-tova .accordion-wrap {
     max-width: 300px;
     width: 100%; }
+    @media only screen and (max-width: 1023px) {
+      .filter-and-tova .accordion-wrap {
+        min-width: 255px; } }
   .filter-and-tova .accordion {
     font-family: 'GillSans-Regular';
     font-weight: 400;
@@ -1293,7 +1296,7 @@ h6 {
     background: #FAFAFA;
     border-radius: 10px;
     margin-bottom: 6px;
-    padding: 14px 32px 6px 20px; }
+    padding: 14px 26px 6px 20px; }
     .filter-and-tova .accordion:after {
       right: 16px; }
       @media only screen and (max-width: 1350px) {
@@ -1325,6 +1328,9 @@ h6 {
 .sorting .model-list li {
   width: 33.3%;
   padding: 0 10px; }
+  @media only screen and (max-width: 1023px) {
+    .sorting .model-list li {
+      padding: 0 5px; } }
 
 .sorting-filter {
   display: flex;
@@ -1346,6 +1352,9 @@ h6 {
     border: none;
     min-width: 335px;
     padding: 8px 8px 8px 21px; }
+    @media only screen and (max-width: 1023px) {
+      .select-holder #select1 {
+        min-width: 265px; } }
     .select-holder #select1:focus-visible {
       outline: none; }
   .select-holder select {
@@ -1736,16 +1745,15 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: flex-end; }
-  @media only screen and (max-width: 1023px) {
-    .display-flex {
-      flex-direction: column;
-      align-items: baseline !important; } }
 
 .margin-15 {
   margin: 0 -15px; }
   @media only screen and (max-width: 1350px) {
     .margin-15 {
       margin: 0 -10px; } }
+  @media only screen and (max-width: 1023px) {
+    .margin-15 {
+      margin: 0 -5px; } }
 
 .display-flex {
   display: flex;
