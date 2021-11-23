@@ -14,7 +14,13 @@
   font-family: 'GillSans-Bold';
   src: local("GillSansC-Bold"), local("GillSansLightC-Italic"), url("../fonts/GillSansC-Bold.woff2") format("woff2"), url("../fonts/GillSansC-Bold.woff") format("woff");
   font-weight: 600;
-  font-style: italic; }
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GillSansExtraBold';
+  src: local("GillSansC-Black"), local("GillSansC-Black"), url("../fonts/GillSansExtraBold.woff2") format("woff2"), url("../fonts/GillSansExtraBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -350,6 +356,70 @@ h6 {
     width: 16px;
     height: 10px;
     background: url("../images/pointer.svg"); }
+
+.btn-article {
+  font-family: 'GillSans-Regular';
+  font-size: 16px;
+  line-height: 19px;
+  background: #EBEBEB;
+  border-radius: 15px;
+  padding: 6px 18px; }
+  .btn-article:hover {
+    background: #BFBFBF; }
+
+.btn-secondary {
+  font-family: 'GillSansExtraBold';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000;
+  background: transparent;
+  border: none; }
+  .btn-secondary:hover {
+    background: transparent;
+    color: #BFBFBF; }
+  .btn-secondary:focus {
+    outline: none;
+    background: transparent;
+    color: #BFBFBF;
+    border: none;
+    box-shadow: none; }
+
+.btn-link {
+  font-family: 'GillSans-Regular';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: block;
+  color: #000;
+  position: relative;
+  padding: 11px 60px 11px 0;
+  min-width: 200px;
+  width: fit-content; }
+  .btn-link:hover {
+    color: #333;
+    text-decoration: none; }
+  .btn-link:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 15px; }
+
+.btn-md {
+  padding: 20px 45px; }
+
+.btn-xl {
+  padding: 20px 95px; }
+
+.grey-btn {
+  background: #BEBEBE; }
+  .grey-btn:hover {
+    background: #000; }
 
 .header-top {
   padding: 10px 0 8px; }
@@ -1015,8 +1085,6 @@ h6 {
         margin-bottom: 17px; }
         .model-list li:nth-child(5), .model-list li:nth-child(6), .model-list li:nth-child(7), .model-list li:nth-child(8) {
           display: none; } }
-    .model-list li .img-area {
-      position: relative; }
     .model-list li img {
       display: block; }
     .model-list li .holder-btn {
@@ -1027,6 +1095,9 @@ h6 {
       @media only screen and (max-width: 767px) {
         .model-list li .holder-btn {
           display: none; } }
+
+.img-area {
+  position: relative; }
 
 .tab-content {
   margin: 0 -15px; }
@@ -1530,6 +1601,129 @@ h6 {
 .filter-mobile .panel > .panel {
   padding: 20px; }
 
+.card-product-wrap .row {
+  align-items: flex-start; }
+
+.card-product .img-block {
+  display: flex; }
+
+.card-product .img-block > .img-area {
+  max-width: 480px;
+  width: 100%;
+  margin-right: 35px; }
+  .card-product .img-block > .img-area .btn-favorites {
+    right: 44px;
+    top: 42px; }
+    .card-product .img-block > .img-area .btn-favorites:hover:after {
+      font-size: 26px; }
+    .card-product .img-block > .img-area .btn-favorites i {
+      font-size: 26px; }
+
+.info-product {
+  padding: 20px 0; }
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px; }
+
+.img-small .img-area {
+  margin-bottom: 25px; }
+
+.name-block .name h3 {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 7px; }
+
+.name-block .bonus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7px; }
+  .name-block .bonus p {
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 10px; }
+
+.price strong {
+  display: block;
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #C85D6C;
+  margin-bottom: 13px; }
+
+.price p {
+  text-align: right;
+  font-size: 21px;
+  line-height: 25px;
+  color: #117900; }
+
+.description-block {
+  margin-bottom: 30px; }
+  .description-block h3 {
+    font-family: 'GillSans-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 10px; }
+  .description-block .description {
+    font-size: 18px;
+    line-height: 27px;
+    color: #BEBEBE;
+    margin-bottom: 20px; }
+  .description-block strong {
+    font-family: 'GillSans-Regular';
+    font-weight: 400;
+    color: #000; }
+  .description-block .holder-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+.size-block {
+  margin-bottom: 13px; }
+  .size-block .size {
+    display: flex; }
+
+.form_radio_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px; }
+  .form_radio_btn label {
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 15px;
+    user-select: none;
+    background: #EBEBEB; }
+    .form_radio_btn label:hover {
+      background: #BFBFBF; }
+
+.form_radio_btn input[type=radio] {
+  display: none; }
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+  background: #BFBFBF; }
+
+.color-block {
+  margin-bottom: 46px; }
+
+.color {
+  display: flex;
+  align-items: center; }
+  .color label {
+    border-radius: 50%;
+    padding: 22px; }
+  .color .form_radio_btn input[type=radio]:checked + label {
+    border: 2px solid #000; }
+
 .footer {
   padding: 32px 0; }
   @media only screen and (max-width: 767px) {
@@ -1870,3 +2064,30 @@ h6 {
 @media only screen and (max-width: 767px) {
   .background-dark-grey {
     background: #EBEBEB; } }
+
+.border-bottom {
+  border-bottom: 1px solid #000; }
+
+.background-green {
+  background: #117900 !important; }
+
+.background-pink {
+  background: #C85D6C !important; }
+
+.background-dark-blue {
+  background: #001375 !important; }
+
+.background-green {
+  background: #D30000 !important; }
+
+.background-black {
+  background: #000 !important; }
+
+.background-red {
+  background: #9C0101 !important; }
+
+.padding-bottom-5 {
+  padding-bottom: 5px; }
+
+.margin-bottom-50 {
+  margin-bottom: 50px; }

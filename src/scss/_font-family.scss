@@ -22,6 +22,15 @@
   url('../fonts/GillSansC-Bold.woff2') format('woff2'),
   url('../fonts/GillSansC-Bold.woff') format('woff');
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSansExtraBold';
+  src: local('GillSansC-Black'), local('GillSansC-Black'),
+  url('../fonts/GillSansExtraBold.woff2') format('woff2'),
+  url('../fonts/GillSansExtraBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 

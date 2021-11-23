@@ -179,9 +179,9 @@
       }
     }
 
-    .img-area {
-      position: relative;
-    }
+    //.img-area {
+    //  position: relative;
+    //}
 
     img {
       display: block;
@@ -198,6 +198,10 @@
       }
     }
   }
+}
+
+.img-area {
+  position: relative;
 }
 
 .tab-content {

@@ -277,5 +277,87 @@
   }
 }
 
+.btn-article {
+  font-family: 'GillSans-Regular';
+  font-size: 16px;
+  line-height: 19px;
+  background: $dark-grey;
+  border-radius: 15px;
+  padding: 6px 18px;
+
+  &:hover {
+    background: $dark-grey-two;
+  }
+}
+
+.btn-secondary {
+  font-family: 'GillSansExtraBold';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: $black;
+  background: transparent;
+  border: none;
+
+  &:hover {
+    background: transparent;
+    color: $dark-grey-two;
+  }
+
+  &:focus {
+    outline: none;
+    background: transparent;
+    color: $dark-grey-two;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.btn-link {
+  font-family: 'GillSans-Regular';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: block;
+  color: $black;
+  position: relative;
+  padding: 11px 60px 11px 0;
+  min-width: 200px;
+  width: fit-content;
+
+  &:hover {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 15px;
+  }
+}
+
+.btn-md {
+  padding: 20px 45px;
+}
+
+.btn-xl {
+  padding: 20px 95px;
+}
+
+.grey-btn {
+  background: $middle-grey;
+
+  &:hover {
+    background: $black;
+  }
+}
+
 
 

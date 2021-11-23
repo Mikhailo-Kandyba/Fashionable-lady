@@ -142,3 +142,7 @@ $inputTo.on("change", function () {
 
     $(this).prop("value", val);
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
