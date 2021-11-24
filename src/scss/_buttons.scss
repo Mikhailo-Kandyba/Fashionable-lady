@@ -359,5 +359,13 @@
   }
 }
 
+.btn-red-two {
+  background: $light-red-two;
+
+  &:hover {
+    background: $light-red;
+  }
+}
+
 
 

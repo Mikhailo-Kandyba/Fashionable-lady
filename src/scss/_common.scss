@@ -116,48 +116,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  .description {
-    padding: 15px 28px 17px 20px;
-    border: 1px solid $dark-grey;
-    border-top: none;
-    border-radius: 0 0 20px 20px;
-
-    @include breakpoint($desktop) {
-      padding: 4px 4px 11px 4px;
-    }
-
-    @include breakpoint($mobile) {
-      padding: 5px 12px 2px 12px;
-      border-radius: 0 0 18px 18px;
-    }
-
-    p {
-      flex: 21px;
-      line-height: 32px;
-      margin-bottom: 5px;
-
-      @include breakpoint($mobile) {
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 12px;
-      }
-    }
-
-    strong {
-      font-family: 'GillSans-Bold';
-      display: block;
-      text-align: right;
-      font-size: 21px;
-      line-height: 26px;
-      font-weight: 600;
-
-      @include breakpoint($mobile) {
-        font-size: 12px;
-        line-height: 15px;
-      }
-    }
-  }
-
   li {
     width: 25%;
     padding: 0 15px;
@@ -186,17 +144,59 @@
     img {
       display: block;
     }
+  }
+}
 
-    .holder-btn {
-      position: absolute;
-      top: 73px;
-      left: 0;
-      max-width: 88px;
+.description-model-item {
+  padding: 15px 28px 17px 20px;
+  border: 1px solid $dark-grey;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
 
-      @include breakpoint($mobile) {
-        display: none;
-      }
+  @include breakpoint($desktop) {
+    padding: 4px 4px 11px 4px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 5px 12px 2px 12px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  p {
+    flex: 21px;
+    line-height: 32px;
+    margin-bottom: 5px;
+
+    @include breakpoint($mobile) {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 12px;
     }
+  }
+
+  strong {
+    font-family: 'GillSans-Bold';
+    display: block;
+    text-align: right;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 600;
+
+    @include breakpoint($mobile) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+.holder-btn-item {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  max-width: 88px;
+
+  @include breakpoint($mobile) {
+    display: none;
   }
 }
 
@@ -290,7 +290,9 @@
 }
 
 .prev,
-.next {
+.next,
+.prev-1,
+.next-2 {
   background: transparent;
   height: 24px;
   width: 88px;
@@ -308,7 +310,8 @@
   }
 }
 
-.prev {
+.prev,
+.prev-1 {
   position: relative;
   margin-left: 0;
 
@@ -331,7 +334,8 @@
   }
 }
 
-.next {
+.next,
+.next-2 {
   position: relative;
 
   &::after {

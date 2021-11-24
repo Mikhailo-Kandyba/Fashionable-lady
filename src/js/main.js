@@ -10,13 +10,48 @@ $( function() {
     $( "#tabs" ).tabs();
 } );
 
-$('.slider-blog').slick({
+$('.slider-blog, .slider-reviews').slick({
     dots: true,
     prevArrow: $('.prev'),
     nextArrow: $('.next'),
     infinite: true,
     speed: 300,
     slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.slider-suggestions').slick({
+    dots: true,
+    prevArrow: $('.prev-1'),
+    nextArrow: $('.next-2'),
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
         {
@@ -146,3 +181,4 @@ $inputTo.on("change", function () {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
+
