@@ -2,6 +2,8 @@
 @import "mixin";
 
 .card-product-wrap {
+  margin-bottom: 35px;
+
   .row {
     align-items: flex-start;
   }
@@ -44,6 +46,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
+
+  .name-block {
+    max-width: 450px;
+    width: 100%;
+  }
 }
 
 .img-small {
@@ -54,10 +61,11 @@
 
 .name-block {
   h3 {
-      font-size: 26px;
-      line-height: 30px;
-      margin-bottom: 7px;
-    }
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
 
   .bonus {
     display: flex;
@@ -73,6 +81,13 @@
 }
 
 .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 190px;
+  width: 100%;
+  text-align: right;
+
   strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -84,7 +99,6 @@
   }
 
   p {
-    text-align: right;
     font-size: 21px;
     line-height: 25px;
     color: $green;
@@ -119,14 +133,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  button {
+    margin-bottom: 10px;
   }
 }
 
 .size-block {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
 
   .size {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -135,6 +155,7 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 30px;
+  margin-bottom: 5px;
 
   label {
     font-size: 20px;
@@ -162,12 +183,13 @@
 }
 
 .color-block {
-  margin-bottom: 46px;
+  margin-bottom: 42px;
 }
 
 .color {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   label {
     border-radius: 50%;
@@ -232,7 +254,7 @@
       font-family: 'GillSans-Bold';
       font-weight: 600;
       font-size: 20px;
-      line-height: 23px;
+      line-height: 24px;
     }
 
     .name-and-rating {
@@ -354,7 +376,8 @@
 }
 
 .estimate {
-  min-width: 515px;
+  max-width: 515px;
+  width: 100%;
   margin-top: 25px;
 }
 
@@ -375,6 +398,12 @@
 
 .slider-suggestions {
   margin-bottom: 40px;
+}
+
+.slider-reviews {
+  .slick-slide {
+    width: 427px;
+  }
 }
 
 

@@ -359,6 +359,7 @@ h6 {
 
 .btn-article {
   font-family: 'GillSans-Regular';
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   background: #EBEBEB;
@@ -393,7 +394,7 @@ h6 {
   display: block;
   color: #000;
   position: relative;
-  padding: 11px 60px 11px 0;
+  padding: 5px 60px 5px 0;
   min-width: 200px;
   width: fit-content; }
   .btn-link:hover {
@@ -1620,8 +1621,10 @@ h6 {
 .filter-mobile .panel > .panel {
   padding: 20px; }
 
-.card-product-wrap .row {
-  align-items: flex-start; }
+.card-product-wrap {
+  margin-bottom: 35px; }
+  .card-product-wrap .row {
+    align-items: flex-start; }
 
 .card-product .img-block {
   display: flex; }
@@ -1646,11 +1649,15 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px; }
+  .info-block .name-block {
+    max-width: 450px;
+    width: 100%; }
 
 .img-small .img-area {
   margin-bottom: 25px; }
 
 .name-block h3 {
+  font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   margin-bottom: 7px; }
@@ -1664,20 +1671,25 @@ h6 {
     line-height: 23px;
     margin-right: 10px; }
 
-.price strong {
-  display: block;
-  font-family: 'GillSans-Bold';
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #C85D6C;
-  margin-bottom: 13px; }
-
-.price p {
-  text-align: right;
-  font-size: 21px;
-  line-height: 25px;
-  color: #117900; }
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 190px;
+  width: 100%;
+  text-align: right; }
+  .price strong {
+    display: block;
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C85D6C;
+    margin-bottom: 13px; }
+  .price p {
+    font-size: 21px;
+    line-height: 25px;
+    color: #117900; }
 
 .description-block {
   margin-bottom: 30px; }
@@ -1699,18 +1711,23 @@ h6 {
   .description-block .holder-btn {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .description-block button {
+    margin-bottom: 10px; }
 
 .size-block {
-  margin-bottom: 13px; }
+  margin-bottom: 20px; }
   .size-block .size {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
 
 .form_radio_btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 30px; }
+  margin-right: 30px;
+  margin-bottom: 5px; }
   .form_radio_btn label {
     font-size: 20px;
     line-height: 23px;
@@ -1731,11 +1748,12 @@ h6 {
   background: #BFBFBF; }
 
 .color-block {
-  margin-bottom: 46px; }
+  margin-bottom: 42px; }
 
 .color {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .color label {
     border-radius: 50%;
     padding: 22px; }
@@ -1802,7 +1820,7 @@ h6 {
     font-family: 'GillSans-Bold';
     font-weight: 600;
     font-size: 20px;
-    line-height: 23px; }
+    line-height: 24px; }
   .card-product-tabs #tabs-1 .name-and-rating,
   .card-product-tabs #tabs-2 .name-and-rating,
   .card-product-tabs #tabs-3 .name-and-rating,
@@ -1894,7 +1912,8 @@ h6 {
   line-height: 23px; }
 
 .estimate {
-  min-width: 515px;
+  max-width: 515px;
+  width: 100%;
   margin-top: 25px; }
 
 .suggestions h3 {
@@ -1910,6 +1929,9 @@ h6 {
 
 .slider-suggestions {
   margin-bottom: 40px; }
+
+.slider-reviews .slick-slide {
+  width: 427px; }
 
 .footer {
   padding: 32px 0; }
@@ -2264,14 +2286,14 @@ h6 {
 .background-dark-blue {
   background: #001375 !important; }
 
-.background-green {
-  background: #D30000 !important; }
-
 .background-black {
   background: #000 !important; }
 
 .background-red {
   background: #9C0101 !important; }
+
+.background-red-three {
+  background: #D30000 !important; }
 
 .padding-bottom-5 {
   padding-bottom: 5px; }
