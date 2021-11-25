@@ -413,9 +413,15 @@ h6 {
 
 .btn-md {
   padding: 20px 45px; }
+  @media only screen and (max-width: 1350px) {
+    .btn-md {
+      padding: 20px 15px; } }
 
 .btn-xl {
   padding: 20px 95px; }
+  @media only screen and (max-width: 1350px) {
+    .btn-xl {
+      padding: 20px 63px; } }
 
 .grey-btn {
   background: #BEBEBE; }
@@ -1652,6 +1658,9 @@ h6 {
   .info-block .name-block {
     max-width: 450px;
     width: 100%; }
+    @media only screen and (max-width: 1350px) {
+      .info-block .name-block {
+        max-width: 335px; } }
 
 .img-small .img-area {
   margin-bottom: 25px; }
@@ -1678,6 +1687,9 @@ h6 {
   max-width: 190px;
   width: 100%;
   text-align: right; }
+  @media only screen and (max-width: 1350px) {
+    .price {
+      max-width: 140px; } }
   .price strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -1767,12 +1779,27 @@ h6 {
 .card-product-tabs .tabs-navigation {
   margin-left: -30px;
   margin-bottom: 22px; }
+  @media only screen and (max-width: 1350px) {
+    .card-product-tabs .tabs-navigation {
+      margin-left: 0;
+      flex-wrap: wrap; } }
+
+@media only screen and (max-width: 1350px) {
+  .card-product-tabs .ui-tabs-tab:first-child {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 1350px) {
+  .card-product-tabs .tab-content {
+    margin: 0; } }
 
 .card-product-tabs .ui-tabs-anchor {
   font-size: 20px;
   line-height: 36px;
   text-transform: none;
   padding: 0 50px; }
+  @media only screen and (max-width: 1350px) {
+    .card-product-tabs .ui-tabs-anchor {
+      padding: 0 20px; } }
 
 .card-product-tabs #tabs-1,
 .card-product-tabs #tabs-2,
@@ -1826,7 +1853,8 @@ h6 {
   .card-product-tabs #tabs-3 .name-and-rating,
   .card-product-tabs #tabs-4 .name-and-rating,
   .card-product-tabs #tabs-5 .name-and-rating {
-    margin-bottom: 37px; }
+    margin-bottom: 37px;
+    flex-wrap: wrap; }
     .card-product-tabs #tabs-1 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-2 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-3 .name-and-rating .rating-result span,
@@ -1884,6 +1912,9 @@ h6 {
   display: flex;
   justify-content: space-between;
   min-width: 1280px; }
+  @media only screen and (max-width: 1350px) {
+    .reviews-wrap {
+      min-width: 990px; } }
 
 .reviews textarea {
   background: #FAFAFA;
@@ -1893,6 +1924,11 @@ h6 {
   height: 382px;
   resize: none;
   padding: 35px 50px; }
+  @media only screen and (max-width: 1350px) {
+    .reviews textarea {
+      width: 530px;
+      height: 370px;
+      padding: 25px 40px; } }
   .reviews textarea::placeholder {
     font-family: 'GillSans-Regular';
     font-weight: 400;
@@ -1915,6 +1951,9 @@ h6 {
   max-width: 515px;
   width: 100%;
   margin-top: 25px; }
+  @media only screen and (max-width: 1350px) {
+    .estimate {
+      max-width: 405px; } }
 
 .suggestions h3 {
   font-family: 'GillSans-Bold';

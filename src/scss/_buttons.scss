@@ -346,10 +346,18 @@
 
 .btn-md {
   padding: 20px 45px;
+
+  @include breakpoint($desktop) {
+    padding: 20px 15px;
+  }
 }
 
 .btn-xl {
   padding: 20px 95px;
+
+  @include breakpoint($desktop) {
+    padding: 20px 63px;
+  }
 }
 
 .grey-btn {

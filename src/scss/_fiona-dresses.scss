@@ -50,6 +50,10 @@
   .name-block {
     max-width: 450px;
     width: 100%;
+
+    @include breakpoint($desktop) {
+      max-width: 335px;
+    }
   }
 }
 
@@ -87,6 +91,10 @@
   max-width: 190px;
   width: 100%;
   text-align: right;
+
+  @include breakpoint($desktop) {
+    max-width: 140px;
+  }
 
   strong {
     display: block;
@@ -210,6 +218,25 @@
   .tabs-navigation {
     margin-left: -30px;
     margin-bottom: 22px;
+
+    @include breakpoint($desktop) {
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  .ui-tabs-tab {
+    @include breakpoint($desktop) {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .tab-content {
+    @include breakpoint($desktop) {
+      margin: 0;
+    }
   }
 
   .ui-tabs-anchor {
@@ -217,6 +244,10 @@
     line-height: 36px;
     text-transform: none;
     padding: 0 50px;
+
+    @include breakpoint($desktop) {
+      padding: 0 20px;
+    }
   }
 
   #tabs-1,
@@ -259,6 +290,8 @@
 
     .name-and-rating {
       margin-bottom: 37px;
+      flex-wrap: wrap;
+
       .rating-result {
         span {
           margin: 0 13px;
@@ -330,6 +363,10 @@
   display: flex;
   justify-content: space-between;
   min-width: 1280px;
+
+  @include breakpoint($desktop) {
+    min-width: 990px;
+  }
 }
 
 .reviews {
@@ -341,6 +378,12 @@
     height: 382px;
     resize: none;
     padding: 35px 50px;
+
+    @include breakpoint($desktop) {
+      width: 530px;
+      height: 370px;
+      padding: 25px 40px;
+    }
 
     &::placeholder {
       font-family: 'GillSans-Regular';
@@ -379,6 +422,10 @@
   max-width: 515px;
   width: 100%;
   margin-top: 25px;
+
+  @include breakpoint($desktop) {
+    max-width: 405px;
+  }
 }
 
 .suggestions {
