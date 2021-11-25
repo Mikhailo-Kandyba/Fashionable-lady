@@ -206,6 +206,10 @@
 
 .margin-bottom-50 {
   margin-bottom: 50px;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .margin-bottom-60 {

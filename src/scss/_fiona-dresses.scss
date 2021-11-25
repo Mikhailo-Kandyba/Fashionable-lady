@@ -2,10 +2,14 @@
 @import "mixin";
 
 .card-product-wrap {
-  margin-bottom: 35px;
+  margin: 0 10px 35px;
 
   .row {
     align-items: flex-start;
+
+    .col {
+      padding: 0 5px;
+    }
   }
 }
 
@@ -19,9 +23,18 @@
     width: 100%;
     margin-right: 35px;
 
+    @include breakpoint($desktop) {
+      margin-right: 10px;
+    }
+
     .btn-favorites {
       right: 44px;
       top: 42px;
+
+      @include breakpoint($desktop) {
+        right: 15px;
+        top: 15px;
+      }
 
       &:hover {
         &:after {
@@ -96,6 +109,10 @@
     max-width: 140px;
   }
 
+  @include breakpoint($tablet) {
+    max-width: 100px;
+  }
+
   strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -142,10 +159,22 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include breakpoint($tablet) {
+      justify-content: center;
+    }
   }
 
   button {
     margin-bottom: 10px;
+
+    @include breakpoint($tablet) {
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -164,6 +193,10 @@
   justify-content: space-between;
   margin-right: 30px;
   margin-bottom: 5px;
+
+  @include breakpoint($tablet) {
+    margin-right: 10px;
+  }
 
   label {
     font-size: 20px;
@@ -248,6 +281,10 @@
     @include breakpoint($desktop) {
       padding: 0 20px;
     }
+
+    @include breakpoint($tablet) {
+      padding: 0 12px;
+    }
   }
 
   #tabs-1,
@@ -256,6 +293,10 @@
   #tabs-4,
   #tabs-5 {
     max-width: 700px;
+
+    @include breakpoint($tablet) {
+      max-width: 100%;
+    }
 
     h3 {
       font-family: 'GillSans-Regular';
@@ -367,6 +408,10 @@
   @include breakpoint($desktop) {
     min-width: 990px;
   }
+
+  @include breakpoint($tablet) {
+    min-width: 740px;
+  }
 }
 
 .reviews {
@@ -383,6 +428,11 @@
       width: 530px;
       height: 370px;
       padding: 25px 40px;
+    }
+
+    @include breakpoint($tablet) {
+      width: 370px;
+      height: 310px;
     }
 
     &::placeholder {
@@ -425,6 +475,10 @@
 
   @include breakpoint($desktop) {
     max-width: 405px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 345px;
   }
 }
 

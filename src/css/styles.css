@@ -1628,9 +1628,11 @@ h6 {
   padding: 20px; }
 
 .card-product-wrap {
-  margin-bottom: 35px; }
+  margin: 0 10px 35px; }
   .card-product-wrap .row {
     align-items: flex-start; }
+    .card-product-wrap .row .col {
+      padding: 0 5px; }
 
 .card-product .img-block {
   display: flex; }
@@ -1639,9 +1641,16 @@ h6 {
   max-width: 480px;
   width: 100%;
   margin-right: 35px; }
+  @media only screen and (max-width: 1350px) {
+    .card-product .img-block > .img-area {
+      margin-right: 10px; } }
   .card-product .img-block > .img-area .btn-favorites {
     right: 44px;
     top: 42px; }
+    @media only screen and (max-width: 1350px) {
+      .card-product .img-block > .img-area .btn-favorites {
+        right: 15px;
+        top: 15px; } }
     .card-product .img-block > .img-area .btn-favorites:hover:after {
       font-size: 26px; }
     .card-product .img-block > .img-area .btn-favorites i {
@@ -1690,6 +1699,9 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .price {
       max-width: 140px; } }
+  @media only screen and (max-width: 1023px) {
+    .price {
+      max-width: 100px; } }
   .price strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -1725,8 +1737,16 @@ h6 {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 1023px) {
+      .description-block .holder-btn {
+        justify-content: center; } }
   .description-block button {
     margin-bottom: 10px; }
+    @media only screen and (max-width: 1023px) {
+      .description-block button {
+        margin-right: 5px; }
+        .description-block button:last-child {
+          margin-right: 0; } }
 
 .size-block {
   margin-bottom: 20px; }
@@ -1740,6 +1760,9 @@ h6 {
   justify-content: space-between;
   margin-right: 30px;
   margin-bottom: 5px; }
+  @media only screen and (max-width: 1023px) {
+    .form_radio_btn {
+      margin-right: 10px; } }
   .form_radio_btn label {
     font-size: 20px;
     line-height: 23px;
@@ -1800,6 +1823,9 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .card-product-tabs .ui-tabs-anchor {
       padding: 0 20px; } }
+  @media only screen and (max-width: 1023px) {
+    .card-product-tabs .ui-tabs-anchor {
+      padding: 0 12px; } }
 
 .card-product-tabs #tabs-1,
 .card-product-tabs #tabs-2,
@@ -1807,6 +1833,13 @@ h6 {
 .card-product-tabs #tabs-4,
 .card-product-tabs #tabs-5 {
   max-width: 700px; }
+  @media only screen and (max-width: 1023px) {
+    .card-product-tabs #tabs-1,
+    .card-product-tabs #tabs-2,
+    .card-product-tabs #tabs-3,
+    .card-product-tabs #tabs-4,
+    .card-product-tabs #tabs-5 {
+      max-width: 100%; } }
   .card-product-tabs #tabs-1 h3,
   .card-product-tabs #tabs-2 h3,
   .card-product-tabs #tabs-3 h3,
@@ -1915,6 +1948,9 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .reviews-wrap {
       min-width: 990px; } }
+  @media only screen and (max-width: 1023px) {
+    .reviews-wrap {
+      min-width: 740px; } }
 
 .reviews textarea {
   background: #FAFAFA;
@@ -1929,6 +1965,10 @@ h6 {
       width: 530px;
       height: 370px;
       padding: 25px 40px; } }
+  @media only screen and (max-width: 1023px) {
+    .reviews textarea {
+      width: 370px;
+      height: 310px; } }
   .reviews textarea::placeholder {
     font-family: 'GillSans-Regular';
     font-weight: 400;
@@ -1954,6 +1994,9 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .estimate {
       max-width: 405px; } }
+  @media only screen and (max-width: 1023px) {
+    .estimate {
+      max-width: 345px; } }
 
 .suggestions h3 {
   font-family: 'GillSans-Bold';
@@ -2339,6 +2382,9 @@ h6 {
 
 .margin-bottom-50 {
   margin-bottom: 50px; }
+  @media only screen and (max-width: 1350px) {
+    .margin-bottom-50 {
+      margin-bottom: 30px; } }
 
 .margin-bottom-60 {
   margin-bottom: 60px; }
