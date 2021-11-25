@@ -9,12 +9,24 @@
   border-radius: 25px;
   padding: 75px 50px;
 
+  @include breakpoint($mobile) {
+    background: $white;
+    border-radius: 0;
+    padding: 5px 0;
+  }
+
   h3 {
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 35px;
     text-align: center;
+
+    @include breakpoint($mobile) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 5px;
+    }
   }
 
   a {
@@ -22,6 +34,12 @@
     font-size: 21px;
     line-height: 36px;
     margin-bottom: 25px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+      margin-bottom: 11px;
+    }
   }
 
   .registration-area {
@@ -29,6 +47,11 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 406px;
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+      width: 100%;
+    }
 
     button {
       width: 100%;
@@ -39,9 +62,18 @@
 .user-form {
   margin-bottom: 10px;
 
+  @include breakpoint($mobile) {
+    width: 100%;
+  }
+
   .form-group {
     width: 406px;
     margin-bottom: 17px;
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      margin-bottom: 5px;
+    }
   }
 
   lable {
@@ -49,8 +81,13 @@
     font-size: 21px;
     line-height: 36px;
     margin-bottom: 8px;
-  }
 
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
+  }
 
   input {
     font-size: 21px;
@@ -62,13 +99,27 @@
     height: 50px;
     border: none;
 
+    @include breakpoint($mobile) {
+      background: $lactic;
+      height: 40px;
+    }
+
     &::placeholder {
       font-family: 'GillSans-Regular';
       font-weight: 400;
       font-size: 21px;
       line-height: 36px;
       color: $middle-grey;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 36px;
+      }
     }
+  }
+
+  .margin-bottom-0 {
+    margin-bottom: 10px;
   }
 }
 
@@ -79,11 +130,20 @@
     font-weight: 500;
     font-size: 39px;
     line-height: 36px;
+
+    @include breakpoint($mobile) {
+      font-size: 29px;
+      line-height: 36px;
+    }
   }
 }
 
 .registration-wrap {
   margin-bottom:  105px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 35px;
+  }
 
   .tab-content {
     max-width: 845px;
@@ -92,10 +152,19 @@
     @include breakpoint($tablet) {
       max-width: 705px;
     }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+    }
   }
   .tabs-navigation {
-    margin-bottom: 25PX;
+    margin-bottom: 25px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 10px;
+    }
   }
 }
+
 
 
