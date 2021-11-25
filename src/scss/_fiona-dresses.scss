@@ -4,11 +4,23 @@
 .card-product-wrap {
   margin: 0 10px 35px;
 
+  @include breakpoint($mobile) {
+    margin: 0 10px 15px;
+  }
+
   .row {
     align-items: flex-start;
 
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+
     .col {
       padding: 0 5px;
+
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
     }
   }
 }
@@ -16,6 +28,24 @@
 .card-product {
   .img-block {
     display: flex;
+
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+
+    .img-area {
+      @include breakpoint($mobile) {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .img-small {
+    @include breakpoint($mobile) {
+      display: flex;
+    }
   }
 
   .img-block > .img-area {
@@ -23,8 +53,17 @@
     width: 100%;
     margin-right: 35px;
 
+    img {
+      border-radius: 20px;
+    }
+
     @include breakpoint($desktop) {
       margin-right: 10px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-right: 0;
+      margin-bottom: 7px;
     }
 
     .btn-favorites {
@@ -52,6 +91,10 @@
 
 .info-product {
   padding: 20px 0;
+
+  @include breakpoint($mobile) {
+    padding: 0;
+  }
 }
 
 .info-block {
@@ -60,19 +103,51 @@
   align-items: center;
   margin-bottom: 35px;
 
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
   .name-block {
     max-width: 450px;
     width: 100%;
 
     @include breakpoint($desktop) {
       max-width: 335px;
+      margin-bottom: 25px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 100%;
+    }
+
+    strong {
+      display: none;
+
+      @include breakpoint($mobile) {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: $black;
+      }
     }
   }
 }
 
 .img-small {
+  @include breakpoint($mobile) {
+    flex-wrap: wrap;
+  }
+
   .img-area {
     margin-bottom: 25px;
+
+    @include breakpoint($mobile) {
+      max-width: 80px;
+      margin-right: 16px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -82,6 +157,12 @@
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 7px;
+
+    @include breakpoint($mobile) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 5px;
+    }
   }
 
   .bonus {
@@ -89,10 +170,19 @@
     align-items: center;
     margin-bottom: 7px;
 
+    @include breakpoint($mobile) {
+      margin-bottom: 5px;
+    }
+
     p {
       font-size: 20px;
       line-height: 23px;
       margin-right: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 16px;
+        line-height: 14px;
+      }
     }
   }
 }
@@ -113,6 +203,11 @@
     max-width: 100px;
   }
 
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
   strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -121,17 +216,37 @@
     line-height: 24px;
     color: $light-red-two;
     margin-bottom: 13px;
+
+    @include breakpoint($mobile) {
+      display: none;
+      //font-size: 16px;
+      //line-height: 20px;
+      //color: $black;
+    }
   }
 
   p {
     font-size: 21px;
     line-height: 25px;
     color: $green;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 17px;
+      color: $black;
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      text-align: left;
+    }
   }
 }
 
 .description-block {
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 0;
+  }
 
   h3 {
     font-family: 'GillSans-Regular';
@@ -139,6 +254,14 @@
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 10px;
+
+    @include breakpoint($mobile) {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 8px;
+    }
   }
 
   .description {
@@ -146,6 +269,12 @@
     line-height: 27px;
     color: $middle-grey;
     margin-bottom: 20px;
+
+    @include breakpoint($mobile) {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 7px;
+    }
   }
 
   strong {
@@ -163,6 +292,7 @@
     @include breakpoint($tablet) {
       justify-content: center;
     }
+
   }
 
   button {
@@ -175,15 +305,30 @@
         margin-right: 0;
       }
     }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 }
 
 .size-block {
   margin-bottom: 20px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 5px;
+  }
+
   .size {
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint($mobile) {
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
   }
 }
 
@@ -208,6 +353,12 @@
     user-select: none;
     background: $dark-grey;
 
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 4px 7px;
+    }
+
     &:hover {
       background: $dark-grey-two;
     }
@@ -225,6 +376,10 @@
 
 .color-block {
   margin-bottom: 42px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .color {
@@ -232,9 +387,17 @@
   align-items: center;
   flex-wrap: wrap;
 
+  @include breakpoint($mobile) {
+    justify-content: space-between;
+  }
+
   label {
     border-radius: 50%;
     padding: 22px;
+
+    @include breakpoint($mobile) {
+      padding: 17px;
+    }
   }
 
   .form_radio_btn input[type=radio]:checked + label {
@@ -246,6 +409,10 @@
   #tabs {
     align-items: flex-start;
     margin-bottom: 48px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 7px;
+    }
   }
 
   .tabs-navigation {
@@ -255,6 +422,21 @@
     @include breakpoint($desktop) {
       margin-left: 0;
       flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include breakpoint($mobile) {
+      min-width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+  .ui-tabs-tab {
+    @include breakpoint($mobile) {
+      margin: 0;
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -285,6 +467,11 @@
     @include breakpoint($tablet) {
       padding: 0 12px;
     }
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
 
   #tabs-1,
@@ -304,6 +491,14 @@
       font-size: 26px;
       line-height: 36px;
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-family: 'GillSans-Bold';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 3px;
+      }
     }
 
     p {
@@ -312,6 +507,12 @@
       font-size: 21px;
       line-height: 32px;
       margin-bottom: 30px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 17px;
+      }
 
       a {
         color: $light-red-two;
@@ -327,15 +528,32 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 24px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
 
     .name-and-rating {
       margin-bottom: 37px;
       flex-wrap: wrap;
 
+      @include breakpoint($mobile) {
+        margin-bottom: 17px;
+      }
+
       .rating-result {
         span {
           margin: 0 13px;
+
+          @include breakpoint($mobile) {
+            margin: 0 9px;
+
+            &:last-child {
+              margin-right: 22px;
+            }
+          }
         }
       }
     }
@@ -412,9 +630,21 @@
   @include breakpoint($tablet) {
     min-width: 740px;
   }
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    min-width: 100%;
+  }
 }
 
 .reviews {
+  .name-and-rating {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: flex;
+    }
+  }
   textarea {
     background: $lactic;
     border-radius: 20px;
@@ -435,12 +665,23 @@
       height: 310px;
     }
 
+    @include breakpoint($mobile) {
+      width: 100%;
+      height: 312px;
+      padding: 22px 25px;
+    }
+
     &::placeholder {
       font-family: 'GillSans-Regular';
       font-weight: 400;
       color: $middle-grey;
       font-size: 20px;
       line-height: 23px;
+
+      @include breakpoint($mobile) {
+        font-size: 15px;
+        line-height: 18px;
+      }
     }
 
     &:focus {
@@ -462,6 +703,11 @@
           font-weight: 400;
           font-size: 20px;
           line-height: 23px;
+
+          @include breakpoint($mobile) {
+            font-size: 12px;
+            line-height: 14px;
+          }
         }
       }
     }
@@ -480,9 +726,33 @@
   @include breakpoint($tablet) {
     max-width: 345px;
   }
+
+  @include breakpoint($mobile) {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+
+  button {
+    @include breakpoint($mobile) {
+      width: 100%;
+    }
+  }
+
+  .name-and-rating {
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
 }
 
 .suggestions {
+  margin-bottom: 85px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 20px;
+    padding-top: 32px;
+  }
+
   h3 {
     font-family: 'GillSans-Bold';
     font-weight: 600;
@@ -490,15 +760,21 @@
     line-height: 32px;
     margin-bottom: 40px;
     text-transform: uppercase;
-  }
-}
 
-.suggestions {
-  margin-bottom: 85px;
+    @include breakpoint($mobile) {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .slider-suggestions {
   margin-bottom: 40px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 10px;
+  }
 }
 
 .slider-reviews {

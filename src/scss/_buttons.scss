@@ -286,6 +286,11 @@
   border-radius: 15px;
   padding: 6px 18px;
 
+  @include breakpoint($mobile) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
   &:hover {
     background: $dark-grey-two;
   }
@@ -326,6 +331,13 @@
   min-width: 200px;
   width: fit-content;
 
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 20px 5px 0;
+    min-width: 130px;
+  }
+
   &:hover {
     color: $dark;
     text-decoration: none;
@@ -341,6 +353,12 @@
     background-repeat: no-repeat;
     width: 47px;
     height: 15px;
+
+    @include breakpoint($mobile) {
+      width: 20px;
+      height: 8px;
+      background-image: url("../images/arrow-right-mobile.svg");
+    }
   }
 }
 
@@ -350,6 +368,10 @@
   @include breakpoint($desktop) {
     padding: 20px 15px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 3px 15px;
+  }
 }
 
 .btn-xl {
@@ -357,6 +379,10 @@
 
   @include breakpoint($desktop) {
     padding: 20px 63px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 3px 60px;
   }
 }
 

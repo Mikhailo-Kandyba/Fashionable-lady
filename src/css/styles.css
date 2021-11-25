@@ -365,6 +365,10 @@ h6 {
   background: #EBEBEB;
   border-radius: 15px;
   padding: 6px 18px; }
+  @media only screen and (max-width: 767px) {
+    .btn-article {
+      font-size: 10px;
+      line-height: 12px; } }
   .btn-article:hover {
     background: #BFBFBF; }
 
@@ -397,6 +401,12 @@ h6 {
   padding: 5px 60px 5px 0;
   min-width: 200px;
   width: fit-content; }
+  @media only screen and (max-width: 767px) {
+    .btn-link {
+      font-size: 14px;
+      line-height: 17px;
+      padding: 5px 20px 5px 0;
+      min-width: 130px; } }
   .btn-link:hover {
     color: #333;
     text-decoration: none; }
@@ -410,18 +420,29 @@ h6 {
     background-repeat: no-repeat;
     width: 47px;
     height: 15px; }
+    @media only screen and (max-width: 767px) {
+      .btn-link:after {
+        width: 20px;
+        height: 8px;
+        background-image: url("../images/arrow-right-mobile.svg"); } }
 
 .btn-md {
   padding: 20px 45px; }
   @media only screen and (max-width: 1350px) {
     .btn-md {
       padding: 20px 15px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-md {
+      padding: 3px 15px; } }
 
 .btn-xl {
   padding: 20px 95px; }
   @media only screen and (max-width: 1350px) {
     .btn-xl {
       padding: 20px 63px; } }
+  @media only screen and (max-width: 767px) {
+    .btn-xl {
+      padding: 3px 60px; } }
 
 .grey-btn {
   background: #BEBEBE; }
@@ -1629,21 +1650,46 @@ h6 {
 
 .card-product-wrap {
   margin: 0 10px 35px; }
+  @media only screen and (max-width: 767px) {
+    .card-product-wrap {
+      margin: 0 10px 15px; } }
   .card-product-wrap .row {
     align-items: flex-start; }
+    @media only screen and (max-width: 767px) {
+      .card-product-wrap .row {
+        flex-direction: column; } }
     .card-product-wrap .row .col {
       padding: 0 5px; }
+      @media only screen and (max-width: 767px) {
+        .card-product-wrap .row .col {
+          width: 100%; } }
 
 .card-product .img-block {
   display: flex; }
+  @media only screen and (max-width: 767px) {
+    .card-product .img-block {
+      flex-direction: column; } }
+  @media only screen and (max-width: 767px) {
+    .card-product .img-block .img-area button {
+      display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .card-product .img-small {
+    display: flex; } }
 
 .card-product .img-block > .img-area {
   max-width: 480px;
   width: 100%;
   margin-right: 35px; }
+  .card-product .img-block > .img-area img {
+    border-radius: 20px; }
   @media only screen and (max-width: 1350px) {
     .card-product .img-block > .img-area {
       margin-right: 10px; } }
+  @media only screen and (max-width: 767px) {
+    .card-product .img-block > .img-area {
+      margin-right: 0;
+      margin-bottom: 7px; } }
   .card-product .img-block > .img-area .btn-favorites {
     right: 44px;
     top: 42px; }
@@ -1658,36 +1704,77 @@ h6 {
 
 .info-product {
   padding: 20px 0; }
+  @media only screen and (max-width: 767px) {
+    .info-product {
+      padding: 0; } }
 
 .info-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px; }
+  @media only screen and (max-width: 767px) {
+    .info-block {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 8px; } }
   .info-block .name-block {
     max-width: 450px;
     width: 100%; }
     @media only screen and (max-width: 1350px) {
       .info-block .name-block {
-        max-width: 335px; } }
+        max-width: 335px;
+        margin-bottom: 25px; } }
+    @media only screen and (max-width: 767px) {
+      .info-block .name-block {
+        max-width: 100%; } }
+    .info-block .name-block strong {
+      display: none; }
+      @media only screen and (max-width: 767px) {
+        .info-block .name-block strong {
+          display: block;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000; } }
+
+@media only screen and (max-width: 767px) {
+  .img-small {
+    flex-wrap: wrap; } }
 
 .img-small .img-area {
   margin-bottom: 25px; }
+  @media only screen and (max-width: 767px) {
+    .img-small .img-area {
+      max-width: 80px;
+      margin-right: 16px;
+      margin-bottom: 15px; } }
 
 .name-block h3 {
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
   margin-bottom: 7px; }
+  @media only screen and (max-width: 767px) {
+    .name-block h3 {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 5px; } }
 
 .name-block .bonus {
   display: flex;
   align-items: center;
   margin-bottom: 7px; }
+  @media only screen and (max-width: 767px) {
+    .name-block .bonus {
+      margin-bottom: 5px; } }
   .name-block .bonus p {
     font-size: 20px;
     line-height: 23px;
     margin-right: 10px; }
+    @media only screen and (max-width: 767px) {
+      .name-block .bonus p {
+        font-size: 16px;
+        line-height: 14px; } }
 
 .price {
   display: flex;
@@ -1702,6 +1789,10 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .price {
       max-width: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .price {
+      max-width: 100%;
+      align-items: flex-start; } }
   .price strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -1710,24 +1801,50 @@ h6 {
     line-height: 24px;
     color: #C85D6C;
     margin-bottom: 13px; }
+    @media only screen and (max-width: 767px) {
+      .price strong {
+        display: none; } }
   .price p {
     font-size: 21px;
     line-height: 25px;
     color: #117900; }
+    @media only screen and (max-width: 767px) {
+      .price p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        font-family: 'GillSans-Bold';
+        font-weight: 600;
+        text-align: left; } }
 
 .description-block {
   margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .description-block {
+      margin-bottom: 0; } }
   .description-block h3 {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 767px) {
+      .description-block h3 {
+        font-family: 'GillSans-Bold';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 8px; } }
   .description-block .description {
     font-size: 18px;
     line-height: 27px;
     color: #BEBEBE;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 767px) {
+      .description-block .description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 7px; } }
   .description-block strong {
     font-family: 'GillSans-Regular';
     font-weight: 400;
@@ -1747,12 +1864,24 @@ h6 {
         margin-right: 5px; }
         .description-block button:last-child {
           margin-right: 0; } }
+    @media only screen and (max-width: 767px) {
+      .description-block button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px; } }
 
 .size-block {
   margin-bottom: 20px; }
+  @media only screen and (max-width: 767px) {
+    .size-block {
+      margin-bottom: 5px; } }
   .size-block .size {
     display: flex;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 767px) {
+      .size-block .size {
+        justify-content: space-between;
+        margin-bottom: 4px; } }
 
 .form_radio_btn {
   display: flex;
@@ -1772,6 +1901,11 @@ h6 {
     border-radius: 15px;
     user-select: none;
     background: #EBEBEB; }
+    @media only screen and (max-width: 767px) {
+      .form_radio_btn label {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 4px 7px; } }
     .form_radio_btn label:hover {
       background: #BFBFBF; }
 
@@ -1784,20 +1918,32 @@ h6 {
 
 .color-block {
   margin-bottom: 42px; }
+  @media only screen and (max-width: 767px) {
+    .color-block {
+      margin-bottom: 20px; } }
 
 .color {
   display: flex;
   align-items: center;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 767px) {
+    .color {
+      justify-content: space-between; } }
   .color label {
     border-radius: 50%;
     padding: 22px; }
+    @media only screen and (max-width: 767px) {
+      .color label {
+        padding: 17px; } }
   .color .form_radio_btn input[type=radio]:checked + label {
     border: 2px solid #000; }
 
 .card-product-tabs #tabs {
   align-items: flex-start;
   margin-bottom: 48px; }
+  @media only screen and (max-width: 767px) {
+    .card-product-tabs #tabs {
+      margin-bottom: 7px; } }
 
 .card-product-tabs .tabs-navigation {
   margin-left: -30px;
@@ -1805,7 +1951,19 @@ h6 {
   @media only screen and (max-width: 1350px) {
     .card-product-tabs .tabs-navigation {
       margin-left: 0;
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center; } }
+  @media only screen and (max-width: 767px) {
+    .card-product-tabs .tabs-navigation {
+      min-width: 100%;
+      margin-bottom: 5px; } }
+
+@media only screen and (max-width: 767px) {
+  .card-product-tabs .ui-tabs-tab {
+    margin: 0;
+    width: 100%;
+    text-align: center; } }
 
 @media only screen and (max-width: 1350px) {
   .card-product-tabs .ui-tabs-tab:first-child {
@@ -1826,6 +1984,10 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .card-product-tabs .ui-tabs-anchor {
       padding: 0 12px; } }
+  @media only screen and (max-width: 767px) {
+    .card-product-tabs .ui-tabs-anchor {
+      font-size: 14px;
+      line-height: 36px; } }
 
 .card-product-tabs #tabs-1,
 .card-product-tabs #tabs-2,
@@ -1850,6 +2012,17 @@ h6 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 767px) {
+      .card-product-tabs #tabs-1 h3,
+      .card-product-tabs #tabs-2 h3,
+      .card-product-tabs #tabs-3 h3,
+      .card-product-tabs #tabs-4 h3,
+      .card-product-tabs #tabs-5 h3 {
+        font-family: 'GillSans-Bold';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 3px; } }
   .card-product-tabs #tabs-1 p,
   .card-product-tabs #tabs-2 p,
   .card-product-tabs #tabs-3 p,
@@ -1860,6 +2033,15 @@ h6 {
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 30px; }
+    @media only screen and (max-width: 767px) {
+      .card-product-tabs #tabs-1 p,
+      .card-product-tabs #tabs-2 p,
+      .card-product-tabs #tabs-3 p,
+      .card-product-tabs #tabs-4 p,
+      .card-product-tabs #tabs-5 p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 17px; } }
     .card-product-tabs #tabs-1 p a,
     .card-product-tabs #tabs-2 p a,
     .card-product-tabs #tabs-3 p a,
@@ -1881,6 +2063,14 @@ h6 {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px; }
+    @media only screen and (max-width: 767px) {
+      .card-product-tabs #tabs-1 .name-and-rating > p,
+      .card-product-tabs #tabs-2 .name-and-rating > p,
+      .card-product-tabs #tabs-3 .name-and-rating > p,
+      .card-product-tabs #tabs-4 .name-and-rating > p,
+      .card-product-tabs #tabs-5 .name-and-rating > p {
+        font-size: 14px;
+        line-height: 17px; } }
   .card-product-tabs #tabs-1 .name-and-rating,
   .card-product-tabs #tabs-2 .name-and-rating,
   .card-product-tabs #tabs-3 .name-and-rating,
@@ -1888,12 +2078,32 @@ h6 {
   .card-product-tabs #tabs-5 .name-and-rating {
     margin-bottom: 37px;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 767px) {
+      .card-product-tabs #tabs-1 .name-and-rating,
+      .card-product-tabs #tabs-2 .name-and-rating,
+      .card-product-tabs #tabs-3 .name-and-rating,
+      .card-product-tabs #tabs-4 .name-and-rating,
+      .card-product-tabs #tabs-5 .name-and-rating {
+        margin-bottom: 17px; } }
     .card-product-tabs #tabs-1 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-2 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-3 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-4 .name-and-rating .rating-result span,
     .card-product-tabs #tabs-5 .name-and-rating .rating-result span {
       margin: 0 13px; }
+      @media only screen and (max-width: 767px) {
+        .card-product-tabs #tabs-1 .name-and-rating .rating-result span,
+        .card-product-tabs #tabs-2 .name-and-rating .rating-result span,
+        .card-product-tabs #tabs-3 .name-and-rating .rating-result span,
+        .card-product-tabs #tabs-4 .name-and-rating .rating-result span,
+        .card-product-tabs #tabs-5 .name-and-rating .rating-result span {
+          margin: 0 9px; }
+          .card-product-tabs #tabs-1 .name-and-rating .rating-result span:last-child,
+          .card-product-tabs #tabs-2 .name-and-rating .rating-result span:last-child,
+          .card-product-tabs #tabs-3 .name-and-rating .rating-result span:last-child,
+          .card-product-tabs #tabs-4 .name-and-rating .rating-result span:last-child,
+          .card-product-tabs #tabs-5 .name-and-rating .rating-result span:last-child {
+            margin-right: 22px; } }
   .card-product-tabs #tabs-1 .name-block,
   .card-product-tabs #tabs-2 .name-block,
   .card-product-tabs #tabs-3 .name-block,
@@ -1951,6 +2161,16 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .reviews-wrap {
       min-width: 740px; } }
+  @media only screen and (max-width: 767px) {
+    .reviews-wrap {
+      flex-direction: column;
+      min-width: 100%; } }
+
+.reviews .name-and-rating {
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .reviews .name-and-rating {
+      display: flex; } }
 
 .reviews textarea {
   background: #FAFAFA;
@@ -1969,12 +2189,21 @@ h6 {
     .reviews textarea {
       width: 370px;
       height: 310px; } }
+  @media only screen and (max-width: 767px) {
+    .reviews textarea {
+      width: 100%;
+      height: 312px;
+      padding: 22px 25px; } }
   .reviews textarea::placeholder {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     color: #BEBEBE;
     font-size: 20px;
     line-height: 23px; }
+    @media only screen and (max-width: 767px) {
+      .reviews textarea::placeholder {
+        font-size: 15px;
+        line-height: 18px; } }
   .reviews textarea:focus {
     outline: none; }
 
@@ -1986,6 +2215,10 @@ h6 {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px; }
+  @media only screen and (max-width: 767px) {
+    .card-product-tabs #tabs-5 > .name-block .bonus > p {
+      font-size: 12px;
+      line-height: 14px; } }
 
 .estimate {
   max-width: 515px;
@@ -1997,20 +2230,41 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .estimate {
       max-width: 345px; } }
-
-.suggestions h3 {
-  font-family: 'GillSans-Bold';
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 32px;
-  margin-bottom: 40px;
-  text-transform: uppercase; }
+  @media only screen and (max-width: 767px) {
+    .estimate {
+      margin-top: 15px;
+      max-width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    .estimate button {
+      width: 100%; } }
+  @media only screen and (max-width: 767px) {
+    .estimate .name-and-rating {
+      display: none; } }
 
 .suggestions {
   margin-bottom: 85px; }
+  @media only screen and (max-width: 767px) {
+    .suggestions {
+      margin-bottom: 20px;
+      padding-top: 32px; } }
+  .suggestions h3 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 767px) {
+      .suggestions h3 {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 15px; } }
 
 .slider-suggestions {
   margin-bottom: 40px; }
+  @media only screen and (max-width: 767px) {
+    .slider-suggestions {
+      margin-bottom: 10px; } }
 
 .slider-reviews .slick-slide {
   width: 427px; }
@@ -2379,15 +2633,24 @@ h6 {
 
 .padding-bottom-5 {
   padding-bottom: 5px; }
+  @media only screen and (max-width: 767px) {
+    .padding-bottom-5 {
+      padding-bottom: 10px; } }
 
 .margin-bottom-50 {
   margin-bottom: 50px; }
   @media only screen and (max-width: 1350px) {
     .margin-bottom-50 {
       margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .margin-bottom-50 {
+      margin-bottom: 22px; } }
 
 .margin-bottom-60 {
   margin-bottom: 60px; }
+  @media only screen and (max-width: 767px) {
+    .margin-bottom-60 {
+      margin-bottom: 15px; } }
 
 .margin-bottom-0 {
   margin-bottom: 0 !important; }
