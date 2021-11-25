@@ -2277,7 +2277,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 845px;
   background: #FAFAFA;
   border-radius: 25px;
   padding: 75px 50px; }
@@ -2333,8 +2332,16 @@ h6 {
   font-size: 39px;
   line-height: 36px; }
 
-.registration-wrap .tabs-navigation {
-  margin-bottom: 25PX; }
+.registration-wrap {
+  margin-bottom: 105px; }
+  .registration-wrap .tab-content {
+    max-width: 845px;
+    width: 100%; }
+    @media only screen and (max-width: 1023px) {
+      .registration-wrap .tab-content {
+        max-width: 705px; } }
+  .registration-wrap .tabs-navigation {
+    margin-bottom: 25PX; }
 
 .footer {
   padding: 32px 0; }
