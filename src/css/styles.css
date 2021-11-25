@@ -2273,6 +2273,69 @@ h6 {
 .slider-reviews .slick-slide {
   width: 427px; }
 
+.registration-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 845px;
+  background: #FAFAFA;
+  border-radius: 25px;
+  padding: 75px 50px; }
+  .registration-block h3 {
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center; }
+  .registration-block a {
+    display: block;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 25px; }
+  .registration-block .registration-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 406px; }
+    .registration-block .registration-area button {
+      width: 100%; }
+
+.user-form {
+  margin-bottom: 10px; }
+  .user-form .form-group {
+    width: 406px;
+    margin-bottom: 17px; }
+  .user-form lable {
+    display: block;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 8px; }
+  .user-form input {
+    font-size: 21px;
+    line-height: 21px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 29px;
+    width: 100%;
+    height: 50px;
+    border: none; }
+    .user-form input::placeholder {
+      font-family: 'GillSans-Regular';
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 36px;
+      color: #BEBEBE; }
+
+#password::placeholder,
+#password-2::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 36px; }
+
+.registration-wrap .tabs-navigation {
+  margin-bottom: 25PX; }
+
 .footer {
   padding: 32px 0; }
   @media only screen and (max-width: 767px) {
@@ -2640,6 +2703,9 @@ h6 {
   @media only screen and (max-width: 767px) {
     .padding-bottom-5 {
       padding-bottom: 10px; } }
+
+.margin-bottom-15 {
+  margin-bottom: 15px; }
 
 .margin-bottom-50 {
   margin-bottom: 50px; }

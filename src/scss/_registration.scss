@@ -1,3 +1,92 @@
 @import "mixin";
 @import "variables";
 
+.registration-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 845px;
+  background: $lactic;
+  border-radius: 25px;
+  padding: 75px 50px;
+
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+
+  .registration-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 406px;
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.user-form {
+  margin-bottom: 10px;
+
+  .form-group {
+    width: 406px;
+    margin-bottom: 17px;
+  }
+
+  lable {
+    display: block;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+
+
+  input {
+    font-size: 21px;
+    line-height: 21px;
+    background: $white;
+    border-radius: 10px;
+    padding: 10px 29px;
+    width: 100%;
+    height: 50px;
+    border: none;
+
+    &::placeholder {
+      font-family: 'GillSans-Regular';
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 36px;
+      color: $middle-grey;
+    }
+  }
+}
+
+#password,
+#password-2 {
+  &::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 36px;
+  }
+}
+
+.registration-wrap {
+  .tabs-navigation {
+    margin-bottom: 25PX;
+  }
+}
+
+

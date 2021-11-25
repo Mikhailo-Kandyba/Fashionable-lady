@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -357,307 +360,68 @@
     </header>
     <main>
         <div class="container-md">
-            <ul class="breadcrumb border-bottom padding-bottom-5 margin-bottom-50">
+            <ul class="breadcrumb border-bottom padding-bottom-5 margin-bottom-15">
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="index.html">Платья</a></li>
-                <li class="active"><a href="#">Платье “Фиона” А1</a></li>
+                <li class="active"><a href="#">Авторизация</a></li>
             </ul>
         </div>
-        <section class="container-md">
+        <section class="container-md registration-wrap">
             <div id="tabs">
                 <ul class="tabs-navigation">
                     <li>
-                        <a href="#tabs-1">Новинки</a>
+                        <a href="#tabs-1">Вход</a>
                     </li>
                     <li>
-                        <a href="#tabs-2">Sale</a>
+                        <a href="#tabs-2">Регистрация</a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div id="tabs-1">
-                        <ul class="model-list">
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                        <div class="registration-block">
+                            <h3>Постоянный покупатель</h3>
+                            <div class="registration-area">
+                                <form action="#" class="user-form">
+                                    <div class="form-group">
+                                        <lable for="email">Введите ваш Email :</lable>
+                                        <input type="email" id="email" placeholder="example@gmail.com">
                                     </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-2.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                                    <div class="form-group margin-bottom-0">
+                                        <lable for="password">Пароль :</lable>
+                                        <input type="password" id="password" placeholder=".........">
                                     </div>
-                                    <button class="btn-favorites btn_selected">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-3.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-4.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-5.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-6.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-7.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-8.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                        </ul>
+                                </form>
+                                <a href="#">Забыли пароль?</a>
+                                <button class="btn-goods">Войти</button>
+                            </div>
+                        </div>
                     </div>
                     <div id="tabs-2">
-                        <ul class="model-list">
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                        <div class="registration-block">
+                            <h3>Регистрация пользователя</h3>
+                            <div class="registration-area">
+                                <form action="#" class="user-form">
+                                    <div class="form-group">
+                                        <lable for="name">Введите ваше имя:</lable>
+                                        <input type="text" id="name" placeholder="Имя">
                                     </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                                    <div class="form-group">
+                                        <lable for="surname">Введите вашу фамилию:</lable>
+                                        <input type="text" id="surname" placeholder="Фамилия">
                                     </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-3.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                                    <div class="form-group">
+                                        <lable for="email-2">Ваш Email:</lable>
+                                        <input type="email" id="email-2" placeholder="example@gmail.com">
                                     </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-4.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
+                                    <div class="form-group">
+                                        <lable for="password-2">Пароль :</lable>
+                                        <input type="password" id="password-2" placeholder=".........">
                                     </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-5.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-6.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-7.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="img-area">
-                                    <img src="./images/model-8.png" width="298" height="421" alt="model">
-                                    <div class="holder-btn-item">
-                                        <button class="btn-model btn_green">новинка</button>
-                                        <button class="btn-model btn_red">-15%</button>
-                                        <button class="btn-model btn_orange">Хит продаж</button>
-                                    </div>
-                                    <button class="btn-favorites">
-                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="description-model-item">
-                                    <p>Блузка больших размеров Фиона</p>
-                                    <strong>1200 UAN</strong>
-                                </div>
-                            </li>
-                        </ul>
+                                </form>
+                                <button class="btn-goods">Зарегистироваться</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="btn-goods-wrap">
-                <button class="btn-goods">Загрузить ещё товары</button>
             </div>
         </section>
         <div class="background-padding-lactic">
