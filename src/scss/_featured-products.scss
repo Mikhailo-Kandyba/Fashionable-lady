@@ -15,10 +15,30 @@
       &:after {
         background-image: url("../images/pointer-grey.svg");
       }
+
+      &:hover {
+        color: $black;
+
+        &:before {
+          background: $black;
+        }
+
+        &:after {
+          background-image: url("../images/pointer-2.svg");
+        }
+      }
     }
 
     i {
       color: $middle-grey;
+    }
+
+    li {
+      &:hover {
+        i {
+          color: $black;
+        }
+      }
     }
 
     .active-link {
@@ -44,6 +64,8 @@
 }
 
 .featured-products {
+  margin: 0 -15px;
+
   .model-list {
     li {
       width: 50%;
