@@ -2398,6 +2398,61 @@ h6 {
       .registration-wrap .tabs-navigation {
         margin-bottom: 10px; } }
 
+.personal-area-wrap {
+  margin-bottom: 90px; }
+  .personal-area-wrap h3 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 35px; }
+  .personal-area-wrap .personal-area-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 515px; }
+    .personal-area-wrap .personal-area-navigation li {
+      margin-bottom: 11px; }
+    .personal-area-wrap .personal-area-navigation a {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      display: block;
+      position: relative;
+      padding-bottom: 15px; }
+      .personal-area-wrap .personal-area-navigation a:before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 20%);
+        height: 1px;
+        background: #000;
+        bottom: 0;
+        right: 0; }
+      .personal-area-wrap .personal-area-navigation a:after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        transform: translate(0, -40%);
+        right: 0;
+        background-image: url("../images/pointer-2.svg");
+        background-repeat: no-repeat;
+        width: 7px;
+        height: 12px; }
+      .personal-area-wrap .personal-area-navigation a:hover {
+        text-decoration: none; }
+      .personal-area-wrap .personal-area-navigation a span {
+        display: inline-block;
+        background: #fff;
+        border-radius: 10px;
+        padding: 19px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+        margin-right: 43px; }
+        .personal-area-wrap .personal-area-navigation a span img {
+          width: 19px; }
+
+.navigation-speaker {
+  padding-right: 50px; }
+
 .footer {
   padding: 32px 0; }
   @media only screen and (max-width: 767px) {
@@ -2771,6 +2826,9 @@ h6 {
   @media only screen and (max-width: 767px) {
     .margin-bottom-15 {
       margin-bottom: 10px; } }
+
+.margin-bottom-30 {
+  margin-bottom: 30px; }
 
 .margin-bottom-50 {
   margin-bottom: 50px; }

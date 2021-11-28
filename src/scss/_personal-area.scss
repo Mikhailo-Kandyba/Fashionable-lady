@@ -1,2 +1,78 @@
 @import "variables";
 @import "mixin";
+
+
+.personal-area-wrap {
+  margin-bottom: 90px;
+
+  h3 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 35px;
+  }
+
+  .personal-area-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 515px;
+
+    li {
+      margin-bottom: 11px;
+    }
+
+    a {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      display: block;
+      position: relative;
+      padding-bottom: 15px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 20%);
+        height: 1px;
+        background: $black;
+        bottom: 0;
+        right: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        transform: translate(0, -40%);
+        right: 0;
+        background-image: url("../images/pointer-2.svg");
+        background-repeat: no-repeat;
+        width: 7px;
+        height: 12px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      span {
+        display: inline-block;
+        background: $white;
+        border-radius: 10px;
+        padding: 19px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+        margin-right: 43px;
+
+        img {
+          width: 19px;
+        }
+      }
+    }
+  }
+}
+
+.navigation-speaker {
+  padding-right: 50px;
+}
