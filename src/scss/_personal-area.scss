@@ -5,12 +5,22 @@
 .personal-area-wrap {
   margin-bottom: 90px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 43px;
+  }
+
   h3 {
     font-family: 'GillSans-Bold';
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 35px;
+
+    @include breakpoint($mobile) {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
   }
 
   .personal-area-navigation {
@@ -18,11 +28,19 @@
     align-items: flex-start;
     max-width: 515px;
 
+    @include breakpoint($tablet) {
+      max-width: 100%;
+    }
+
     li {
       display: flex;
       align-items: baseline;
       margin-bottom: 11px;
       width: 100%;
+
+      @include breakpoint($mobile) {
+        margin-bottom: 5px;
+      }
     }
 
     a {
@@ -34,6 +52,12 @@
       position: relative;
       padding: 20px 15px 33px 0;
       width: 100%;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 11px 9px 12px 0;
+      }
 
       &:before {
         content: "";
@@ -70,6 +94,12 @@
       font-size: 24px;
       box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
       margin-right: 50px;
+
+      @include breakpoint($mobile) {
+        font-size: 15px;
+        padding: 12px;
+        margin-right: 15px;
+      }
     }
   }
 }

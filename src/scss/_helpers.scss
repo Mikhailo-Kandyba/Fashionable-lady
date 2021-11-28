@@ -218,6 +218,10 @@
 
 .margin-bottom-30 {
   margin-bottom: 30px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 16px;
+  }
 }
 
 .margin-bottom-50 {
@@ -256,6 +260,10 @@
 
 .i-md {
   padding: 19px 23px !important;
+
+  @include breakpoint($mobile) {
+    padding: 12px 14px !important;
+  }
 }
 
 
