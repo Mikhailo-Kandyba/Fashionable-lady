@@ -1,0 +1,52 @@
+@import "mixin";
+@import "variables";
+
+.featured-products-wrap {
+  margin-bottom: 70px;
+
+  .personal-area-navigation {
+    a {
+      color: $middle-grey;
+
+      &:before {
+        background: $middle-grey;
+      }
+
+      &:after {
+        background-image: url("../images/pointer-grey.svg");
+      }
+    }
+
+    i {
+      color: $middle-grey;
+    }
+
+    .active-link {
+      color: $black;
+
+      &:before {
+        background: $black;
+      }
+
+      &:after {
+        background-image: url("../images/pointer-2.svg");
+      }
+    }
+
+    .active-icon {
+      color: $black;
+    }
+  }
+
+  .row {
+    align-items: flex-start;
+  }
+}
+
+.featured-products {
+  .model-list {
+    li {
+      width: 50%;
+    }
+  }
+}
