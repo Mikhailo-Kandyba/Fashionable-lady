@@ -4,13 +4,38 @@
 .featured-products-wrap {
   margin-bottom: 70px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 40px;
+  }
+
   .row {
     align-items: flex-start;
+  }
+
+  .display_none {
+    display: block;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  .holder-btn {
+    display: none;
+
+    @include breakpoint($mobile) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
 .featured-products {
   margin: 0 -15px;
+
+  @include breakpoint($mobile) {
+    margin: 0 -5px;
+  }
 
   .model-list {
     li {
