@@ -267,9 +267,11 @@
 }
 
 .breadcrumb-fz-12 {
-  li {
-    a {
-      font-size: 12px;
+  @include breakpoint($mobile) {
+    li {
+      a {
+        font-size: 12px;
+      }
     }
   }
 }

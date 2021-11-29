@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+
+.orders-wrap {
+  .display_none {
+    display: block;
+  }
+
+  .row {
+    align-items: flex-start;
+  }
+}
+
+.order-list {
+  li {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  .img-area {
+    max-width: 188px;
+    margin-right: 30px;
+
+    img {
+      border-radius: 20px;
+    }
+  }
+
+  .description {
+    max-width: 440px;
+
+    h3 {
+      font-family: 'GillSans-Light';
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 26px;
+    }
+
+    strong {
+      display: block;
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: 'GillSans-Light';
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+}
