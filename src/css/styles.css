@@ -2534,30 +2534,71 @@ h6 {
   .featured-products .model-list li {
     width: 50%; }
 
-.orders-wrap .display_none {
-  display: block; }
-
-.orders-wrap .row {
-  align-items: flex-start; }
+.orders-wrap {
+  margin-bottom: 50px; }
+  @media only screen and (max-width: 767px) {
+    .orders-wrap {
+      margin-bottom: 25px; } }
+  .orders-wrap .display_none {
+    display: block; }
+    @media only screen and (max-width: 767px) {
+      .orders-wrap .display_none {
+        display: none; } }
+  .orders-wrap .row {
+    align-items: flex-start; }
 
 .order-list li {
   display: flex;
   margin-bottom: 45px; }
+  @media only screen and (max-width: 1023px) {
+    .order-list li {
+      margin-bottom: 25px; } }
+  @media only screen and (max-width: 767px) {
+    .order-list li {
+      margin-bottom: 10px; } }
 
 .order-list .img-area {
   max-width: 188px;
   margin-right: 30px; }
+  @media only screen and (max-width: 1350px) {
+    .order-list .img-area {
+      margin-right: 20px;
+      max-width: 160px; } }
+  @media only screen and (max-width: 1023px) {
+    .order-list .img-area {
+      max-width: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .order-list .img-area {
+      max-width: 140px;
+      margin-right: 15px; } }
   .order-list .img-area img {
     border-radius: 20px; }
 
 .order-list .description {
   max-width: 440px; }
+  @media only screen and (max-width: 1350px) {
+    .order-list .description {
+      min-width: 300px;
+      width: 100%; } }
+  @media only screen and (max-width: 1023px) {
+    .order-list .description {
+      min-width: 220px; } }
+  @media only screen and (max-width: 767px) {
+    .order-list .description {
+      min-width: 130px; } }
   .order-list .description h3 {
     font-family: 'GillSans-Light';
     font-weight: 300;
     font-size: 21px;
     line-height: 21px;
     margin-bottom: 26px; }
+    @media only screen and (max-width: 767px) {
+      .order-list .description h3 {
+        font-family: 'GillSans-Regular';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 5px; } }
   .order-list .description strong {
     display: block;
     font-family: 'GillSans-Bold';
@@ -2565,11 +2606,20 @@ h6 {
     font-size: 21px;
     line-height: 26px;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 767px) {
+      .order-list .description strong {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px; } }
   .order-list .description p {
     font-family: 'GillSans-Light';
     font-weight: 300;
     font-size: 21px;
     line-height: 24px; }
+    @media only screen and (max-width: 767px) {
+      .order-list .description p {
+        font-size: 14px;
+        line-height: 16px; } }
 
 .footer {
   padding: 32px 0; }
