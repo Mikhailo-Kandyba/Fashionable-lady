@@ -74,6 +74,18 @@
       min-width: 130px;
     }
 
+    h2 {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 7px;
+      text-transform: uppercase;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
     h3 {
       font-family: 'GillSans-Light';
       font-weight: 300;
