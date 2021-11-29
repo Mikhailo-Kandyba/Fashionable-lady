@@ -5,7 +5,7 @@
   margin-bottom: 95px;
 
   @include breakpoint($mobile) {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .display_none {
@@ -30,6 +30,10 @@
     font-size: 21px;
     line-height: 21px;
     margin-bottom: 33px;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
   }
 
   .table-row {
@@ -49,6 +53,12 @@
     width: 100%;
     border-right: 1px solid $middle-grey;
     padding: 15px 0;
+
+    @include breakpoint($mobile) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 6px 0;
+    }
 
     &:last-child {
       border-right: none;
@@ -72,5 +82,26 @@
 
   .tab-content {
     margin: 0;
+
+    @include breakpoint($tablet) {
+      margin: 0 -15px;
+    }
+
+    @include breakpoint($tablet) {
+      margin: 0;
+    }
+
+
+    p {
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 15px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 5px;
+      }
+    }
   }
 }
