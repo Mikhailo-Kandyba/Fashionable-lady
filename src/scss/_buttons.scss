@@ -402,5 +402,36 @@
   }
 }
 
+.btn-coupon-left {
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 36px;
+  color: $black;
+  background: $lactic;
+  border: none;
+  padding: 20px 64px 21px 81px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.btn-coupon-right {
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 36px;
+  color: $white;
+  background: $black;
+  border: none;
+  padding: 20px 26px 21px 41px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  &:hover {
+    color: $white;
+    background: $dark;
+  }
+}
+
 
 

@@ -454,6 +454,33 @@ h6 {
   .btn-red-two:hover {
     background: #EB5757; }
 
+.btn-coupon-left {
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 36px;
+  color: #000;
+  background: #FAFAFA;
+  border: none;
+  padding: 20px 64px 21px 81px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; }
+
+.btn-coupon-right {
+  font-family: 'GillSans-Bold';
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 36px;
+  color: #fff;
+  background: #000;
+  border: none;
+  padding: 20px 26px 21px 41px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
+  .btn-coupon-right:hover {
+    color: #fff;
+    background: #333; }
+
 .header-top {
   padding: 10px 0 8px; }
   @media only screen and (max-width: 1023px) {
@@ -2721,6 +2748,72 @@ h6 {
         font-size: 14px;
         line-height: 21px;
         margin-bottom: 5px; } }
+
+.checkout-wrap {
+  margin-bottom: 95px; }
+  @media only screen and (max-width: 767px) {
+    .checkout-wrap {
+      margin-bottom: 15px; } }
+  .checkout-wrap .display_none {
+    display: block; }
+    @media only screen and (max-width: 767px) {
+      .checkout-wrap .display_none {
+        display: none; } }
+  .checkout-wrap .row {
+    align-items: flex-start; }
+  .checkout-wrap h3 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px; }
+
+.product {
+  display: flex;
+  align-items: flex-end; }
+  .product .img-area {
+    max-width: 80px;
+    margin-right: 20px; }
+    .product .img-area img {
+      border-radius: 5px; }
+  .product .description h2 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  .product .description p {
+    font-family: 'GillSans-Light';
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 24px;
+    margin-bottom: 10px; }
+  .product .description h3 {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 18px; }
+
+.checkout-block {
+  border-bottom: 1px solid #333;
+  padding-bottom: 25px;
+  margin-bottom: 20px; }
+  .checkout-block .btn-holder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+
+.checkout-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px; }
+  .checkout-holder p {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    color: #000; }
 
 .footer {
   padding: 32px 0; }

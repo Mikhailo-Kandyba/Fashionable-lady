@@ -1,0 +1,96 @@
+@import "variables";
+@import "mixin";
+
+.checkout-wrap {
+  margin-bottom: 95px;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 15px;
+  }
+
+  .display_none {
+    display: block;
+
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+
+  .row {
+    align-items: flex-start;
+  }
+
+  h3 {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+}
+
+.product {
+  display: flex;
+  align-items: flex-end;
+
+  .img-area {
+    max-width: 80px;
+    margin-right: 20px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  .description {
+    h2 {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'GillSans-Light';
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.checkout-block {
+  border-bottom: 1px solid $dark;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+
+  .btn-holder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.checkout-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  p {
+    font-family: 'GillSans-Bold';
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 25px;
+    color: $black;
+  }
+}
