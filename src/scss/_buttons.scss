@@ -413,6 +413,17 @@
   padding: 20px 64px 21px 81px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+
+  @include breakpoint($tablet) {
+    padding: 10px 25px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 5px 20px;
+    font-size: 15px;
+    line-height: 36px;
+    border-radius: 20px;
+  }
 }
 
 .btn-coupon-right {
@@ -426,6 +437,19 @@
   padding: 20px 26px 21px 41px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  @include breakpoint($tablet) {
+    padding: 10px 25px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 5px 20px;
+    font-size: 15px;
+    line-height: 36px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 0;
+  }
 
   &:hover {
     color: $white;

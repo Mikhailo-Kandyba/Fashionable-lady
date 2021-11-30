@@ -26,6 +26,11 @@
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 15px;
+
+    @include breakpoint($mobile) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -33,22 +38,45 @@
   display: flex;
   align-items: flex-end;
 
+  @include breakpoint($mobile) {
+    align-items: flex-start;
+  }
+
   .img-area {
     max-width: 80px;
     margin-right: 20px;
 
     img {
       border-radius: 5px;
+
+      @include breakpoint($mobile) {
+        width: 80px;
+      }
     }
   }
 
   .description {
+    max-width: 800px;
+
+    @include breakpoint($desktop) {
+      max-width: 630px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: none;
+      min-width: 110px;
+    }
+
     h2 {
       font-family: 'GillSans-Bold';
       font-weight: 600;
       font-size: 21px;
       line-height: 26px;
       margin-bottom: 20px;
+
+      @include breakpoint($mobile) {
+        display: none;
+      }
     }
 
     p {
@@ -57,12 +85,25 @@
       font-size: 21px;
       line-height: 24px;
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 5px;
+      }
     }
 
     h3 {
       font-size: 21px;
       line-height: 25px;
       margin-bottom: 18px;
+
+      @include breakpoint($mobile) {
+        font-family: 'GillSans-Regular';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
   }
 }
@@ -72,10 +113,28 @@
   padding-bottom: 25px;
   margin-bottom: 20px;
 
+  @include breakpoint($mobile) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
   .btn-holder {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    @include breakpoint($tablet) {
+      flex-wrap: wrap;
+    }
+
+    button {
+      @include breakpoint($mobile) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 
@@ -85,6 +144,10 @@
   justify-content: space-between;
   margin-bottom: 25px;
 
+  @include breakpoint($mobile) {
+    align-items: flex-start;
+  }
+
   p {
     font-family: 'GillSans-Bold';
     font-weight: 600;
@@ -92,14 +155,46 @@
     line-height: 25px;
     margin-bottom: 25px;
     color: $black;
+
+    @include breakpoint($mobile) {
+      font-size: 16px;
+      line-height: 17px;
+    }
+  }
+
+  .price {
+    @include breakpoint($desktop) {
+      max-width: 240px;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: fit-content;
+      min-width: 80px;
+    }
+
+    p {
+      @include breakpoint($mobile) {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
   }
 }
 
 .form-title {
+  font-family: 'GillSans-Regular';
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   margin-bottom: 20px;
   text-transform: uppercase;
+
+  @include breakpoint($mobile) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
 }
 
 .contact-info {
@@ -109,12 +204,32 @@
   max-width: 625px;
   margin-bottom: 50px;
 
+  @include breakpoint($tablet) {
+    padding: 20px 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
   .form-group {
     margin-bottom: 22px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 7px;
+    }
 
     label {
       font-size: 21px;
       margin-bottom: 10px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 3px;
+      }
     }
 
     input {
@@ -129,10 +244,22 @@
       padding: 20px 20px 20px 45px;
       border: none;
 
+      @include breakpoint($mobile) {
+        font-size: 15px;
+        line-height: 36px;
+        padding: 0 5px 0 25px;
+        height: 35px;
+      }
+
       &::placeholder {
         font-size: 21px;
         line-height: 36px;
         color: $middle-grey;
+
+        @include breakpoint($mobile) {
+          font-size: 15px;
+          line-height: 36px;
+        }
       }
     }
   }
@@ -145,8 +272,21 @@
   max-width: 625px;
   margin-bottom: 50px;
 
+  @include breakpoint($tablet) {
+    padding: 20px 20px 10px;
+    margin-bottom: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
+
   .form-title {
     margin-bottom: 30px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -155,6 +295,10 @@
   align-items: center;
   margin-bottom: 23px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 5px;
+  }
+
   label {
     font-size: 21px;
     line-height: 21px;
@@ -162,6 +306,12 @@
     cursor: pointer;
     position: relative;
     padding: 0 0 3px 51px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 21px;
+      padding: 0 0 3px 31px;
+    }
 
     &:before {
       content: "";
@@ -173,6 +323,12 @@
       transform: translate(0, -50%);
       left: 0;
       background: url(../images/ellipse.svg) 0 0 no-repeat;
+
+      @include breakpoint($mobile) {
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/ellipse-mobile.svg");
+      }
     }
   }
 }
@@ -184,6 +340,12 @@
   background: url(../images/ellipse-radio.svg) 0 0 no-repeat;
   width: 28px;
   height: 27px;
+
+  @include breakpoint($mobile) {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/ellipse-radio-mobile.svg");
+  }
 }
 
 .sorting-filter-wrap {
@@ -193,11 +355,24 @@
   max-width: 625px;
   margin-bottom: 50px;
 
+  @include breakpoint($tablet) {
+    padding: 20px 20px 10px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
   .select-holder {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 18px;
     position: relative;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 7px;
+    }
 
     label {
       font-family: 'GillSans-Regular';
@@ -205,6 +380,12 @@
       font-size: 21px;
       line-height: 21px;
       margin-bottom: 15px;
+
+      @include breakpoint($mobile) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
+      }
     }
 
     select {
@@ -223,35 +404,99 @@
       appearance: none;
       position: relative;
 
+      @include breakpoint($mobile) {
+        font-size: 15px;
+        line-height: 36px;
+        padding: 2px 30px 2px 25px;
+      }
+
       &:focus {
         outline: none;
       }
     }
 
     &:after {
-      top: 65px;
-      right: 35px;
+      display: none;
+    }
+  }
+}
 
-      @include breakpoint($mobile) {
-        width: 7px;
-        height: 12px;
-        background-image: url("../images/pointer-mobile.svg");
-      }
+.select-area {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 10px;
+    top: 50%;
+    right: 35px;
+    transform: translate(0, -50%);
+    background-image: url("../images/pointer.svg");
+    background-repeat: no-repeat;
+    z-index: 5;
+
+    @include breakpoint($mobile) {
+      width: 12px;
+      height: 7px;
+      right: 15px;
+      background-image: url("../images/pointer-mobile-3.svg");
     }
   }
 }
 
 .order-summary-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-summary-block {
   background: $lactic;
   border-radius: 10px;
-  padding: 47px 91px 35px 60px;
+  padding: 40px 50px 50px 48px;
   max-width: 625px;
+  width: 100%;
   margin-bottom: 50px;
+
+  @include breakpoint($tablet) {
+    padding: 20px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 25px 0 0 0;
+    border-radius: 0;
+    background: $white;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
 
   .btn-holder {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    .btn-goods {
+      padding: 23px 115px 18px;
+
+      @include breakpoint($desktop) {
+        padding: 23px 45px 18px;
+      }
+
+      @include breakpoint($tablet) {
+        padding: 10px 25px;
+      }
+
+      @include breakpoint($mobile) {
+        width: 100%;
+        padding: 4px 25px;
+      }
+    }
+  }
+}
+
+.order-block {
+  @include breakpoint($mobile) {
+    margin-bottom: 5px;
   }
 }
 
@@ -261,9 +506,18 @@
   justify-content: space-between;
   margin-bottom: 25px;
 
+  @include breakpoint($mobile) {
+    margin-bottom: 0;
+  }
+
   p {
     font-size: 26px;
     line-height: 36px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
 
   strong {
@@ -272,13 +526,36 @@
     font-weight: 600;
     font-size: 26px;
     line-height: 36px;
+
+    @include breakpoint($mobile) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
 }
 
 .product-filter-wrap {
   margin-bottom: 52px;
 
+  @include breakpoint($tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 0;
+  }
+
   .row {
     align-items: flex-start;
+
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+
+    .col {
+      @include breakpoint($mobile) {
+        width: 100%;
+      }
+    }
   }
 }

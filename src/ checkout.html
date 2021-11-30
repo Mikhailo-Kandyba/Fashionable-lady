@@ -432,33 +432,39 @@
                         <h3 class="form-title">доставка новой почтой</h3>
                         <div class="select-holder">
                             <label for="region">Область*</label>
-                            <select name="region" id="region">
-                                <option disabled selected="selected">Выбрать область</option>
-                                <option>Винницкая область</option>
-                                <option>Волынская область</option>
-                                <option>Житомирская область</option>
-                                <option>Запорожская область</option>
-                            </select>
+                            <div class="select-area">
+                                <select name="region" id="region">
+                                    <option disabled selected="selected">Выбрать область</option>
+                                    <option>Винницкая область</option>
+                                    <option>Волынская область</option>
+                                    <option>Житомирская область</option>
+                                    <option>Запорожская область</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="select-holder">
                             <label for="town">Город*</label>
-                            <select name="town" id="town">
-                                <option disabled selected="selected">Выбрать город</option>
-                                <option>Днепр</option>
-                                <option>Мариуполь</option>
-                                <option>Севастополь</option>
-                                <option>Николаев</option>
-                            </select>
+                            <div class="select-area">
+                                <select name="town" id="town">
+                                    <option disabled selected="selected">Выбрать город</option>
+                                    <option>Днепр</option>
+                                    <option>Мариуполь</option>
+                                    <option>Севастополь</option>
+                                    <option>Николаев</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="select-holder">
                             <label for="branch-number">Номер отделения*</label>
-                            <select name="branch-number" id="branch-number">
-                                <option disabled selected="selected">Выбрать отделения</option>
-                                <option>Нова Пошта. Поштове відділення №10. Харків</option>
-                                <option>Нова Пошта. Поштове відділення №22. Харків</option>
-                                <option>Нова Пошта. Поштове відділення №42. Харків</option>
-                                <option>Нова Пошта. Поштове відділення №41. Харків</option>
-                            </select>
+                            <div class="select-area">
+                                <select name="branch-number" id="branch-number">
+                                    <option disabled selected="selected">Выбрать отделения</option>
+                                    <option>Нова Пошта. Поштове відділення №10. Харків</option>
+                                    <option>Нова Пошта. Поштове відділення №22. Харків</option>
+                                    <option>Нова Пошта. Поштове відділення №42. Харків</option>
+                                    <option>Нова Пошта. Поштове відділення №41. Харків</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <form action="#" class="delivery-method">
@@ -486,18 +492,20 @@
                 </div>
                 <div class="col">
                     <div class="order-summary-wrap">
-                        <div class="order-block">
-                            <div class="order-summary">
-                                <p>Сумма заказа:</p>
-                                <strong>1200 UAN</strong>
+                        <div class="order-summary-block">
+                            <div class="order-block">
+                                <div class="order-summary">
+                                    <p>Сумма заказа:</p>
+                                    <strong>1200 UAN</strong>
+                                </div>
+                                <div class="order-summary">
+                                    <p>Всего:</p>
+                                    <strong>1200 UAN</strong>
+                                </div>
                             </div>
-                            <div class="order-summary">
-                                <p>Всего:</p>
-                                <strong>1200 UAN</strong>
+                            <div class="btn-holder">
+                                <button class="btn-goods">Оформить заказ</button>
                             </div>
-                        </div>
-                        <div class="btn-holder">
-                            <button class="btn-goods">Оформить заказ</button>
                         </div>
                     </div>
                 </div>
