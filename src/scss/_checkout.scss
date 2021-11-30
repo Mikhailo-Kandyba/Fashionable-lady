@@ -187,34 +187,58 @@
 }
 
 .sorting-filter-wrap {
-  .sorting-filter {
+  background: $lactic;
+  border-radius: 10px;
+  padding: 47px 60px 30px 60px;
+  max-width: 625px;
+  margin-bottom: 50px;
+
+  .select-holder {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 18px;
-  }
+    position: relative;
 
-  .select-holder {
-    #select-choice-1,
-    #select-choice-2,
-    #select-choice-3, {
+    label {
+      font-family: 'GillSans-Regular';
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 15px;
+    }
+
+    select {
+      font-family: 'GillSans-Regular';
+      font-weight: 400;
       font-size: 21px;
       line-height: 36px;
-      height: 55px;
-      min-width: 505px;
-      color: $middle-grey;
-      background: $white;
       border-radius: 20px;
-      padding: 2px 36px 2px 43px;
+      background: $white;
+      width: 100%;
+      border: none;
+      padding: 5px 60px 10px 40px;
+      white-space: normal;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &:after {
+      top: 65px;
+      right: 35px;
+
+      @include breakpoint($mobile) {
+        width: 7px;
+        height: 12px;
+        background-image: url("../images/pointer-mobile.svg");
+      }
     }
   }
-}
-
-.sorting-filter-wrap {
-  background: $lactic;
-  border-radius: 10px;
-  padding: 47px 91px 35px 60px;
-  max-width: 625px;
-  margin-bottom: 50px;
 }
 
 .order-summary-wrap {

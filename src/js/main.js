@@ -182,3 +182,9 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
+
+
+$( function() {
+    $( "#region, #town, #branch-number" ).selectmenu();
+} );
+
