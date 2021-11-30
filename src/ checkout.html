@@ -388,6 +388,118 @@
                 </div>
             </div>
         </section>
+        <section class="container-md product-filter-wrap">
+            <div class="row">
+                <div class="col">
+                    <form action="#" class="contact-info">
+                        <h3 class="form-title">Контактная информация</h3>
+                        <div class="form-group">
+                            <label for="name">Имя*</label>
+                            <input type="text" name="name" id="name" placeholder="Анастасия">
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Фамилия*</label>
+                            <input type="text" name="surname" id="surname" placeholder="Мудрак">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Номер телефона*</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="+38(063)575-76-45">
+                        </div>
+                    </form>
+                    <form action="#" class="delivery-method">
+                        <h3 class="form-title">Способ доставки</h3>
+                        <div class="form-radio">
+                            <input id="radio-delivery-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-delivery-1">Доставка в отделение Новой почты.</label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-delivery-2" type="radio" name="radio" value="2">
+                            <label for="radio-delivery-2">Доставка курьером Новой почты на ваш адрес.</label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-delivery-3" type="radio" name="radio" value="3">
+                            <label for="radio-delivery-3">Экспресс доставка в отделение Укрпошти.</label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-delivery-4" type="radio" name="radio" value="4">
+                            <label for="radio-delivery-4">Экспресс доставка курьером Укрпошти на ваш адрес.</label>
+                        </div>
+                    </form>
+                    <div class="sorting-filter-wrap">
+                        <h3 class="form-title">доставка новой почтой</h3>
+                        <div class="sorting-filter">
+                            <p>Область*</p>
+                            <div class="select-holder">
+                                <select id="select-choice-1" onchange="setForm(this.value)">
+                                    <option value="form1">Выбрать область</option>
+                                    <option value="form2">Выбрать область</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sorting-filter">
+                            <p>Город*</p>
+                            <div class="select-holder">
+                                <select id="select-choice-2" onchange="setForm(this.value)">
+                                    <option value="form1">Выбрать город</option>
+                                    <option value="form2">Выбрать город</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sorting-filter">
+                            <p>Номер отделения*</p>
+                            <div class="select-holder">
+                                <select id="select-choice-3" onchange="setForm(this.value)">
+                                    <option value="form1">Выбрать отделения</option>
+                                    <option value="form2">Выбрать отделения</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#" class="delivery-method">
+                        <h3 class="form-title">Способ оплаты</h3>
+                        <div class="form-radio">
+                            <input id="radio-payment-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-payment-1">Перевод на карту Privat24</label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-payment-2" type="radio" name="radio" value="2">
+                            <label for="radio-payment-2">Перевод на карту Monobank</label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-payment-3" type="radio" name="radio" value="3">
+                            <label for="radio-payment-3">Наложенным платежом </label>
+                        </div>
+
+                        <div class="form-radio">
+                            <input id="radio-payment-4" type="radio" name="radio" value="4">
+                            <label for="radio-payment-4">Онлайн оплата WayForPay (Visa, MasterCard, Privat24, Monobank)</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="order-summary-wrap">
+                        <div class="order-block">
+                            <div class="order-summary">
+                                <p>Сумма заказа:</p>
+                                <strong>1200 UAN</strong>
+                            </div>
+                            <div class="order-summary">
+                                <p>Всего:</p>
+                                <strong>1200 UAN</strong>
+                            </div>
+                        </div>
+                        <div class="btn-holder">
+                            <button class="btn-goods">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="background-padding-lactic">
             <div class="container">
                 <div class="mailing">

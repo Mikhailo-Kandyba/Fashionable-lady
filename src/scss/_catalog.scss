@@ -237,7 +237,10 @@
 .select-holder {
   position: relative;
 
-  #select1 {
+  #select1,
+  #select-choice-1,
+  #select-choice-2,
+  #select-choice-3 {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     font-size: 20px;
