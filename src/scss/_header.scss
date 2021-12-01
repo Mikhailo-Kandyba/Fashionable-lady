@@ -555,7 +555,7 @@
     @include  breakpoint($mobile) {
       min-width: 293px;
       left: -10px !important;
-      top: 17px !important;
+      top: -1px !important;
     }
   }
 

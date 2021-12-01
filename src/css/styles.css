@@ -905,7 +905,7 @@ h6 {
       .search-and-basket .dropdown-menu {
         min-width: 293px;
         left: -10px !important;
-        top: 17px !important; } }
+        top: -1px !important; } }
   .search-and-basket input {
     font-size: 20px;
     line-height: 20px;
@@ -3370,6 +3370,7 @@ h6 {
         line-height: 36px;
         margin-bottom: 0; } }
   .schedule ul li {
+    font-size: 21px;
     font-weight: 300;
     margin-bottom: 3px; }
     @media only screen and (max-width: 767px) {
