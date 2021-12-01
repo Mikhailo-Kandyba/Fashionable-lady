@@ -392,6 +392,19 @@
   }
 }
 
+.btn-xxl {
+  padding: 23px 172px 18px;
+
+  @include breakpoint($desktop) {
+    padding: 20px 171px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 4px 15px 4px;
+  }
+}
+
+
 .grey-btn {
   background: $middle-grey;
 
