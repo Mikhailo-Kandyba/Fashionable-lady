@@ -269,8 +269,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 50%;
     right: 0;
+    transform: translate(0, -50%);
     width: 16px;
     height: 10px;
     background: url("../images/pointer.svg");
