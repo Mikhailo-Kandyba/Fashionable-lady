@@ -381,6 +381,10 @@ h6 {
   color: #000;
   background: transparent;
   border: none; }
+  @media only screen and (max-width: 767px) {
+    .btn-secondary {
+      font-size: 20px;
+      line-height: 23px; } }
   .btn-secondary:hover {
     background: transparent;
     color: #BFBFBF; }
@@ -1878,8 +1882,8 @@ h6 {
         font-size: 14px;
         line-height: 17px;
         color: #000;
-        font-family: 'GillSans-Bold';
-        font-weight: 600;
+        font-family: 'GillSans-Regular';
+        font-weight: 400;
         text-align: left; } }
 
 .description-block {
@@ -1895,8 +1899,6 @@ h6 {
     margin-bottom: 10px; }
     @media only screen and (max-width: 767px) {
       .description-block h3 {
-        font-family: 'GillSans-Bold';
-        font-weight: 600;
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 8px; } }
@@ -1982,6 +1984,10 @@ h6 {
 
 .color-block {
   margin-bottom: 42px; }
+  @media only screen and (max-width: 767px) {
+    .color-block h3 {
+      font-family: 'GillSans-Bold';
+      font-weight: 600; } }
   @media only screen and (max-width: 767px) {
     .color-block {
       margin-bottom: 20px; } }

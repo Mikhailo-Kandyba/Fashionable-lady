@@ -221,9 +221,6 @@
 
     @include breakpoint($mobile) {
       display: none;
-      //font-size: 16px;
-      //line-height: 20px;
-      //color: $black;
     }
   }
 
@@ -236,8 +233,8 @@
       font-size: 14px;
       line-height: 17px;
       color: $black;
-      font-family: 'GillSans-Bold';
-      font-weight: 600;
+      font-family: 'GillSans-Regular';
+      font-weight: 400;
       text-align: left;
     }
   }
@@ -258,8 +255,6 @@
     margin-bottom: 10px;
 
     @include breakpoint($mobile) {
-      font-family: 'GillSans-Bold';
-      font-weight: 600;
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 8px;
@@ -377,6 +372,13 @@
 
 .color-block {
   margin-bottom: 42px;
+
+  h3 {
+    @include breakpoint($mobile) {
+      font-family: 'GillSans-Bold';
+      font-weight: 600;
+    }
+  }
 
   @include breakpoint($mobile) {
     margin-bottom: 20px;

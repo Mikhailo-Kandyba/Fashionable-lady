@@ -306,6 +306,11 @@
   background: transparent;
   border: none;
 
+  @include breakpoint($mobile) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
   &:hover {
     background: transparent;
     color: $dark-grey-two;
