@@ -2670,6 +2670,8 @@ h6 {
     .order-list .description {
       min-width: 130px; } }
   .order-list .description h2 {
+    font-family: 'GillSans-Regular';
+    font-weight: 400;
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 7px;
