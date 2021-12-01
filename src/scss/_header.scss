@@ -611,8 +611,10 @@
       max-width: 100px;
     }
 
-    .description {
+    .description-model-item {
       text-align: right;
+      border: none;
+      max-width: 190px;
     }
   }
 }

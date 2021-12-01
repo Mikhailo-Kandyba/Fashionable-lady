@@ -941,8 +941,10 @@ h6 {
   padding: 10px 0; }
   .basket-list li .img-area {
     max-width: 100px; }
-  .basket-list li .description {
-    text-align: right; }
+  .basket-list li .description-model-item {
+    text-align: right;
+    border: none;
+    max-width: 190px; }
 
 .accordion-wrap {
   margin-bottom: 20px; }
