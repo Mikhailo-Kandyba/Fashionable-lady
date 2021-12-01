@@ -1460,7 +1460,11 @@ h6 {
 .filter-and-tova {
   display: flex;
   justify-content: space-between;
-  padding: 23px 0; }
+  padding: 23px 0;
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 1023px) {
+    .filter-and-tova {
+      margin-bottom: 20px; } }
   @media only screen and (max-width: 767px) {
     .filter-and-tova {
       flex-direction: column; } }
@@ -1568,11 +1572,21 @@ h6 {
         font-size: 14px; } }
 
 .select-holder {
-  position: relative; }
-  .select-holder #select1,
-  .select-holder #select-choice-1,
-  .select-holder #select-choice-2,
-  .select-holder #select-choice-3 {
+  position: relative;
+  max-width: 335px;
+  width: 100%; }
+  @media only screen and (max-width: 1350px) {
+    .select-holder {
+      max-width: 360px;
+      min-width: auto; } }
+  @media only screen and (max-width: 1023px) {
+    .select-holder {
+      max-width: 265px;
+      min-width: auto; } }
+  @media only screen and (max-width: 767px) {
+    .select-holder {
+      max-width: 100%; } }
+  .select-holder #select1 {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     font-size: 20px;
@@ -1580,32 +1594,16 @@ h6 {
     background: #FAFAFA;
     border-radius: 10px;
     border: none;
-    height: 40px;
-    min-width: 335px;
-    padding: 2px 36px 2px 25px; }
-    .select-holder #select1:hover,
-    .select-holder #select-choice-1:hover,
-    .select-holder #select-choice-2:hover,
-    .select-holder #select-choice-3:hover {
+    width: 100%;
+    padding: 2px 36px 2px 25px;
+    white-space: normal; }
+    .select-holder #select1:hover {
       background: #EBEBEB; }
-    @media only screen and (max-width: 1023px) {
-      .select-holder #select1,
-      .select-holder #select-choice-1,
-      .select-holder #select-choice-2,
-      .select-holder #select-choice-3 {
-        min-width: 265px; } }
     @media only screen and (max-width: 767px) {
-      .select-holder #select1,
-      .select-holder #select-choice-1,
-      .select-holder #select-choice-2,
-      .select-holder #select-choice-3 {
+      .select-holder #select1 {
         font-size: 14px;
-        line-height: 36px;
-        height: 35px; } }
-    .select-holder #select1:focus-visible,
-    .select-holder #select-choice-1:focus-visible,
-    .select-holder #select-choice-2:focus-visible,
-    .select-holder #select-choice-3:focus-visible {
+        line-height: 36px; } }
+    .select-holder #select1:focus-visible {
       outline: none; }
   .select-holder select {
     -webkit-appearance: none;
@@ -3516,10 +3514,7 @@ h6 {
   justify-content: space-between; }
 
 .margin-15 {
-  margin: 0 -15px; }
-  @media only screen and (max-width: 1350px) {
-    .margin-15 {
-      margin: 0 -10px; } }
+  margin: 0 -10px; }
   @media only screen and (max-width: 1023px) {
     .margin-15 {
       margin: 0 -5px; } }

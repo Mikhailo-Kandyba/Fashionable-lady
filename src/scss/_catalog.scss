@@ -83,6 +83,11 @@
   display: flex;
   justify-content: space-between;
   padding: 23px 0;
+  margin-bottom: 80px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 20px;
+  }
 
   @include breakpoint($mobile) {
     flex-direction: column;
@@ -236,11 +241,26 @@
 
 .select-holder {
   position: relative;
+  max-width: 335px;
+  width: 100%;
 
-  #select1,
-  #select-choice-1,
-  #select-choice-2,
-  #select-choice-3 {
+  @include breakpoint($desktop) {
+    max-width: 360px;
+    min-width: auto;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 265px;
+    min-width: auto;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+  }
+
+
+
+  #select1 {
     font-family: 'GillSans-Regular';
     font-weight: 400;
     font-size: 20px;
@@ -248,22 +268,17 @@
     background: $lactic;
     border-radius: 10px;
     border: none;
-    height: 40px;
-    min-width: 335px;
+    width: 100%;
     padding: 2px 36px 2px 25px;
+    white-space: normal;
 
     &:hover {
       background: $dark-grey;
     }
 
-    @include breakpoint($tablet) {
-      min-width: 265px;
-    }
-
     @include breakpoint($mobile) {
       font-size: 14px;
       line-height: 36px;
-      height: 35px;
     }
 
     &:focus-visible {
