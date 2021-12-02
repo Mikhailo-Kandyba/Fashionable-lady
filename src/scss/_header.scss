@@ -27,34 +27,32 @@
   }
 }
 
-.menu-top-wrap {
+.holder-languages {
   display: flex;
-  justify-content: flex-start;
-  min-width: 335px;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 110px;
+  color: $silver-middle;
 
   @include breakpoint($desktop) {
-    min-width: auto;
+    min-width: 100%;
   }
 }
 
 .menu-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 270px;
+  min-width: 335px;
   flex-wrap: wrap;
 
   li {
-    padding-right: 10px;
-    line-height: 21px;
-
-
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    margin-right: 20px;
 
     a {
-      font-size: 20px;
-      line-height: 23px;
       display: block;
-      padding: 10px 20px 10px 10px;
+      padding: 10px;
 
       @include breakpoint($desktop) {
         padding: 10px 5px;
@@ -63,22 +61,11 @@
   }
 }
 
-.user-info-wrap {
+.user-info-holder {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   min-width: 510px;
-
-  @include breakpoint($desktop) {
-    min-width: 420px;
-    margin-left: 10px;
-  }
-}
-
-.user-info-holder {
-  display: flex;
-  justify-content: space-between;
-  min-width: 400px;
   flex-wrap: wrap;
 
   .dropdown {
@@ -120,6 +107,7 @@
   padding: 12px 12px 12px 32px;
   text-decoration: none;
   white-space: normal;
+  position: relative;
 
   &:hover {
     text-decoration: underline;
@@ -449,7 +437,6 @@
     }
   }
 }
-
 
 .show-menu {
   @include breakpoint($tablet) {

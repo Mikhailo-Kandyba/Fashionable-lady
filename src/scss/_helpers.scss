@@ -19,8 +19,6 @@
 }
 
 .history-img {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -35,8 +33,6 @@
 }
 
 .output-img {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -50,9 +46,7 @@
   }
 }
 
-.mail-img {
-  position: relative;
-
+.email-img {
   &::before {
     content: "\f003";
     font-family: "FontAwesome";
@@ -64,8 +58,6 @@
 }
 
 .phone-img {
-  position: relative;
-
   &::before {
     content: "";
     position: absolute;
@@ -85,8 +77,6 @@
 }
 
 .private-img {
-  position: relative;
-
   &::before {
     content: "\f007";
     position: absolute;
@@ -106,18 +96,6 @@
 .overflow-y {
   height: 300px;
   overflow-y: scroll;
-}
-
-
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-
-  .col {
-    width: 50%;
-    padding: 0 15px;
-  }
 }
 
 .display-flex {
