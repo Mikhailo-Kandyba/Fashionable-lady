@@ -18,7 +18,7 @@
     flex-wrap: wrap;
   }
 
-  .logo-and-socials {
+  .logo-socials {
     margin-right: 10px;
 
     @include breakpoint($tablet) {
@@ -129,7 +129,7 @@
   }
 }
 
-.schedule-and-socials {
+.schedule-socials {
   display: flex;
   justify-content: space-between;
   max-width: 510px;
@@ -262,24 +262,30 @@
   }
 }
 
-.socials-list-wrap {
+.socials-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-width: 90px;
+  width: auto;
 
-  .socials-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-width: 90px;
-    width: auto;
+  @include breakpoint($mobile) {
+    min-width: 55px;
+  }
 
-    @include breakpoint($mobile) {
-      min-width: 55px;
+  li {
+    margin-right: 10px;
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+      color: $mine-shaft;
     }
+  }
 
-    i {
+  i {
       font-size: $font-size-base + 22;
 
       @include breakpoint($mobile) {
@@ -287,4 +293,3 @@
       }
     }
   }
-}

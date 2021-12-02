@@ -1,6 +1,25 @@
 @import "mixin";
 @import "variables";
 
+.btn {
+  font-family: $font-gillSans-bold;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base + 13;
+  background: $black;
+  font-weight: 600;
+  color: $white;
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover {
+    background: $mine-shaft;
+    color: $white;
+  }
+}
+
 .radio-btn {
   position: relative;
 
@@ -31,7 +50,6 @@
   }
 
   label {
-    font-weight: 400;
     font-size: $font-size-base;
     line-height: $line-height-base;
     user-select: none;
@@ -119,14 +137,8 @@
 }
 
 .btn-goods {
-  font-family: $font-gillSans-bold;
-  padding: 23px 100px 18px;
-  background: $black;
+  padding: 23px 83px 18px;
   border-radius: 20px 0 20px 0;
-  color: $white ;
-  font-weight: 600;
-  font-size: $font-size-base + 2;
-  line-height: $line-height-base - 13;
 
   @include breakpoint($desktop) {
     padding: 23px 70px 18px;
@@ -136,10 +148,6 @@
     font-size: $font-size-base - 5;
     line-height: $line-height-base - 13;
     padding: 4px 15px 4px;
-  }
-
-  &:hover {
-    background: $mine-shaft;
   }
 }
 
@@ -177,7 +185,7 @@
   color: $white;
   font-weight: 400;
   font-size: $font-size-base + 2;
-  line-height: $line-height-base - 13;
+  line-height: $line-height-base + 13;
   padding: 16px 32px;
   max-width: 185px;
   border-radius: 0 19px 19px 0;

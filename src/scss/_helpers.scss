@@ -5,17 +5,9 @@
   display: none;
 }
 
-.background-padding-lactic {
+.background-alabaster {
   background: $alabaster;
   padding: 55px 0;
-
-  @include breakpoint($tablet) {
-    padding: 25px 0;
-  }
-
-  @include breakpoint($mobile) {
-    padding: 40px 0;
-  }
 }
 
 .history-img {
@@ -184,6 +176,18 @@
 
   @include breakpoint($mobile) {
     padding-bottom: 10px;
+  }
+}
+
+.padding-55 {
+  padding: 55px 0;
+
+  @include breakpoint($tablet) {
+    padding: 25px 0;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 40px 0;
   }
 }
 

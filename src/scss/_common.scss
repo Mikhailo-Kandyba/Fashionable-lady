@@ -81,7 +81,7 @@
 .ui-tabs-anchor {
   display: block;
   font-size: $font-size-base + 1;
-  line-height: $font-size-base + 2;
+  line-height: $line-height-base + 2;
   text-transform: uppercase;
   padding: 6px 0 6px;
 
@@ -138,6 +138,11 @@
     img {
       display: block;
     }
+  }
+
+  .img-area {
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
   }
 }
 
@@ -206,8 +211,6 @@
 
 .img-area {
   position: relative;
-  overflow: hidden;
-  border-radius: 20px 20px 0 0;
 }
 
 .tab-content {
@@ -337,6 +340,24 @@
       top: 8px;
     }
   }
+
+  &:hover {
+    &:after {
+      width: 88px;
+      height: 24px;
+      background-image: url("../images/arrow-active.svg");
+      transform: rotate(-180deg);
+
+      @include breakpoint($mobile) {
+        background-image: url("../images/arrow-active-mobile.svg");
+        width: 46px;
+        height: 24px;
+        right: 0;
+        left: auto;
+        top: 8px;
+      }
+    }
+  }
 }
 
 .next,
@@ -415,67 +436,48 @@
   }
 }
 
-.form-btn-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.mailing {
 
-  @include breakpoint($tablet) {
-    justify-content: center;
-  }
-
-  .form-group {
-    border: 2px solid $black;
-    border-top-left-radius: 22px;
-    border-bottom-left-radius: 22px;
-    width: 375px;
-
-    @include breakpoint($desktop) {
-      width: 340px;
-    }
+  .fill-contact {
+    display: flex;
+    justify-content: flex-end;
 
     @include breakpoint($tablet) {
-      width: 320px;
+      justify-content: center;
+    }
+  }
+
+  .input-group {
+    border: 2px solid $black;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 560px;
+  }
+
+  .btn-outline-secondary {
+    background: $black;
+    border-radius: 0;
+    padding: 14px 31px 15px 31px;
+
+    &:after {
+      display: none;
     }
 
-    @include breakpoint($mobile) {
-      border-top-left-radius: 12px;
-      border-bottom-left-radius: 12px;
+    &:hover {
+      background: $mine-shaft;
+      color: $white;
     }
+  }
 
-    input {
-      font-size: $font-size-base;
-      line-height: $line-height-base - 3;
-      height: 64px;
-      background: $white;
-      border-radius: 19px 0 0 19px;
-      width: 100%;
-      border: none;
-      padding: 12px 17px;
+  .form-control {
+    height: 67px;
+    padding: 10px 10px 10px 44px;
 
-      @include breakpoint($desktop) {
-        padding: 22px 15px;
-      }
-
-      @include breakpoint($mobile) {
-        padding: 5px 4px 5px 14px;
-        height: 40px;
-        border-radius: 12px 0 0 12px;
-      }
-
-      &::placeholder {
-        font-family: $font-gillSans-light;
-        font-weight: 300;
-        font-size: $font-size-base + 2;
-        line-height: $line-height-base + 13;
-
-        @include breakpoint($mobile) {
-          font-size: $font-size-base - 6;
-          line-height: $line-height-base + 13;
-        }
-      }
+    &::placeholder {
+      font-family: $font-gillSans-light;
+      font-weight: 300;
+      font-size: $font-size-base + 2;
+      line-height: $line-height-base + 13;
     }
   }
 }
-
-
