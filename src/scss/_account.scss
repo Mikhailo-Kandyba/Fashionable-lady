@@ -27,8 +27,8 @@
   h3 {
     font-family: $font-gillSans-bold;
     font-weight: 600;
-    font-size: 21px;
-    line-height: 21px;
+    font-size: $font-size-base +1;
+    line-height: $line-height-base - 2;
     margin-bottom: 33px;
 
     @include breakpoint($mobile) {
@@ -47,16 +47,16 @@
   }
 
   .table-item {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 2;
     text-align: center;
     width: 100%;
     border-right: 1px solid $silver-middle;
     padding: 15px 0;
 
     @include breakpoint($mobile) {
-      font-size: 12px;
-      line-height: 14px;
+      font-size: $font-size-base - 8;
+      line-height: $line-height-base - 9;
       padding: 6px 0;
     }
 
@@ -93,13 +93,13 @@
 
 
     p {
-      font-size: 21px;
-      line-height: 21px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 2;
       margin-bottom: 15px;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 21px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 2;
         margin-bottom: 5px;
       }
     }

@@ -33,24 +33,23 @@
   }
 
   h3 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: $font-size-base + 6;
+    line-height: $line-height-base + 7;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 5px;
 
     @include breakpoint($mobile) {
       font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 16px;
-      line-height: 20px;
+      line-height: $line-height-base - 3;
+      margin-bottom: 0;
     }
   }
 }
 
 #tabs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
 
   @include breakpoint($tablet) {
@@ -61,6 +60,7 @@
 .tabs-navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
 
   @include breakpoint($tablet) {
@@ -75,19 +75,19 @@
 
 .ui-tabs-tab {
   margin: 0 15px;
+  position: relative;
 }
 
 .ui-tabs-anchor {
   display: block;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: $font-size-base + 1;
+  line-height: $font-size-base + 2;
   text-transform: uppercase;
-  padding: 10px 0 6px;
+  padding: 6px 0 6px;
 
   @include breakpoint($mobile) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 6;
     padding: 6px 0 6px;
   }
 
@@ -98,8 +98,6 @@
 
 .ui-state-active,
 .ui-state-hover {
-  position: relative;
-
   &:after {
     content: "";
     position: absolute;
@@ -159,13 +157,13 @@
   }
 
   p {
-    font-size: 21px;
-    line-height: 32px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 9;
     margin-bottom: 5px;
 
     @include breakpoint($mobile) {
-      font-size: 12px;
-      line-height: 18px;
+      font-size: $font-size-base - 8;
+      line-height: $line-height-base - 5;
       margin-bottom: 12px;
     }
   }
@@ -174,18 +172,17 @@
     font-family: $font-gillSans-bold;
     display: block;
     text-align: right;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 600;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 3;
 
     @include breakpoint($mobile) {
-      font-size: 12px;
-      line-height: 15px;
+      font-size: $font-size-base - 8;
+      line-height: $line-height-base - 8;
     }
   }
 }
 
-.holder-btn-item {
+.badges {
   position: absolute;
   top: 73px;
   left: 0;
@@ -196,8 +193,21 @@
   }
 }
 
+.badge {
+  display: block;
+  font-family: $base-font-default;
+  font-weight: 400;
+  font-size: $font-size-base - 9;
+  line-height: $line-height-base + 9;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  border-radius: 0 5px 5px 0;
+}
+
 .img-area {
   position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
 }
 
 .tab-content {
@@ -223,8 +233,8 @@
 
   h3 {
     font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: $font-size-base + 6;
+    line-height: $line-height-base + 7;
     text-transform: uppercase;
     margin-bottom: 45px;
 
@@ -235,8 +245,8 @@
     @include breakpoint($mobile) {
       font-family: $font-gillSans-bold;
       font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 3;
       padding-left: 4px;
       margin-bottom: 8px;
     }
@@ -269,16 +279,16 @@
     }
 
     p {
-      font-size: 21px;
-      line-height: 25px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 2;
 
       @include breakpoint($tablet) {
-        line-height: 27px;
+        line-height: $line-height-base + 4;
       }
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 6;
       }
     }
   }
@@ -386,8 +396,8 @@
     }
   }
   p {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: $font-size-base + 10;
+    line-height: $line-height-base + 17;
 
     @include breakpoint($tablet) {
       width: 100%;
@@ -396,8 +406,8 @@
     }
 
     @include breakpoint($mobile) {
-      font-size: 14px;
-      line-height: 21px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 2;
       padding-right: 20px;
       text-align: left;
       margin-bottom: 5px;
@@ -434,8 +444,8 @@
     }
 
     input {
-      font-size: 20px;
-      line-height: 20px;
+      font-size: $font-size-base;
+      line-height: $line-height-base - 3;
       height: 64px;
       background: $white;
       border-radius: 19px 0 0 19px;
@@ -456,12 +466,12 @@
       &::placeholder {
         font-family: $font-gillSans-light;
         font-weight: 300;
-        font-size: 22px;
-        line-height: 36px;
+        font-size: $font-size-base + 2;
+        line-height: $line-height-base + 13;
 
         @include breakpoint($mobile) {
-          font-size: 14px;
-          line-height: 36px;
+          font-size: $font-size-base - 6;
+          line-height: $line-height-base + 13;
         }
       }
     }

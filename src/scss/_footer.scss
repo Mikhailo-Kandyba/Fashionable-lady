@@ -38,8 +38,8 @@
 
       h3 {
         @include breakpoint($mobile) {
-          font-size: 14px;
-          line-height: 36px;
+          font-size: $font-size-base - 6;
+          line-height: $line-height-base + 13;
         }
       }
     }
@@ -99,12 +99,12 @@
   }
 
   a {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 2;
 
     @include breakpoint($mobile) {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base + 1;
     }
   }
 }
@@ -157,8 +157,8 @@
       margin-bottom: 10px;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 36px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base + 13;
         margin-bottom: 0;
       }
     }
@@ -167,8 +167,8 @@
       @include breakpoint($mobile) {
         font-family: $font-gillSans-light;
         font-weight: 300;
-        font-size: 14px;
-        line-height: 36px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base + 13;
       }
     }
   }
@@ -194,8 +194,8 @@
 .schedule {
   font-family: $font-gillSans-light;
   font-weight: 300;
-  font-size: 21px;
-  line-height: 36px;
+  font-size: $font-size-base + 1;
+  line-height: $line-height-base + 13;
   max-width: 310px;
   width: 100%;
 
@@ -211,25 +211,25 @@
     font-family: $base-font-default;
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 13;
 
     @include breakpoint($mobile) {
-      font-size: 14px;
-      line-height: 36px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base + 13;
       margin-bottom: 0;
     }
   }
 
   ul {
     li {
-      font-size: 21px;
+      font-size: $font-size-base + 1;
       font-weight: 300;
       margin-bottom: 3px;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 36px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base + 13;
         margin-bottom: 0;
       }
     }
@@ -237,8 +237,8 @@
 }
 
 .socials {
-  font-size: 21px;
-  line-height: 36px;
+   font-size: $font-size-base + 1;
+  line-height: $line-height-base + 13;
   max-width: 200px;
   width: 100%;
 
@@ -247,8 +247,8 @@
   }
 
   h3 {
-    font-size: 21px;
-    line-height: 36px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 13;
     font-weight: 400;
     margin-bottom: 10px;
 
@@ -280,10 +280,10 @@
     }
 
     i {
-      font-size: 42px;
+      font-size: $font-size-base + 22;
 
       @include breakpoint($mobile) {
-        font-size: 25px;
+        font-size: $font-size-base + 5;
       }
     }
   }

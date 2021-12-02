@@ -32,8 +32,8 @@
 
   label {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
     user-select: none;
     text-transform: uppercase;
     padding: 10px 15px 10px 10px;
@@ -45,8 +45,8 @@
     @include breakpoint($mobile) {
       font-family: $font-gillSans-bold;
       font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 2;
     }
 
     &:hover {
@@ -62,19 +62,6 @@
     font-weight: 600;
     color: $black;
   }
-}
-
-.btn-model {
-  font-family: $base-font-default;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 32px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-transform: uppercase;
-  width: 100%;
-  color: $white;
-  margin-bottom: 5px;
 }
 
 .btn-favorites {
@@ -104,10 +91,10 @@
 
   i {
     color: $burnt-sienna;
-    font-size: 20px;
+    font-size: $font-size-base;
 
     @include breakpoint($mobile) {
-      font-size: 13px;
+      font-size: $font-size-base - 7;
     }
   }
 
@@ -117,11 +104,11 @@
     &:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: $tall-poppy;
-      font-size: 20px;
+      color: $burnt-sienna;
+      font-size: $font-size-base;
 
       @include breakpoint($mobile) {
-        font-size: 13px;
+        font-size: $font-size-base - 7;
       }
     }
 
@@ -138,16 +125,16 @@
   border-radius: 20px 0 20px 0;
   color: $white ;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base - 13;
 
   @include breakpoint($desktop) {
     padding: 23px 70px 18px;
   }
 
   @include breakpoint($mobile) {
-    font-size: 15px;
-    line-height: 36px;
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 13;
     padding: 4px 15px 4px;
   }
 
@@ -156,44 +143,31 @@
   }
 }
 
-.btn_green {
-  background: $japanese-laurel;
-  color: $white;
-
-  &:hover {
-    background: $la-palma;
-  }
+.bg-success {
+  background-color: $japanese-laurel !important;
 }
 
-.btn_red {
-  background: $sangria;
-
-  &:hover {
-    background: $tall-poppy;
-  }
-
+.bg-danger {
+  background: $sangria !important;
 }
 
-.btn_orange {
-  background: $red-stage;
-
-  &:hover {
-    background: $ochre;
-  }
+.bg-warning {
+  background: $red-stage !important;
 }
 
 .btn_selected {
   i {
     display: none;
   }
+
   &:after {
     content: "\f004";
     font-family: "FontAwesome";
     color: $burnt-sienna;
-    font-size: 20px;
+    font-size: $font-size-base;
 
     @include breakpoint($mobile) {
-      font-size: 13px;
+      font-size: $font-size-base - 7;
     }
   }
 }
@@ -202,8 +176,8 @@
   background: $black;
   color: $white;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base - 13;
   padding: 16px 32px;
   max-width: 185px;
   border-radius: 0 19px 19px 0;
@@ -213,8 +187,8 @@
   }
 
   @include  breakpoint($mobile) {
-    font-size: 14px;
-    line-height: 36px;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 13;
     padding: 4px 11px;
     border-radius: 0 12px 12px 0;
     color: $alabaster;
@@ -224,8 +198,8 @@
 .btn-drop {
   font-family: $base-font-default;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   background: transparent;
   border: none;
   color: $black;
@@ -252,15 +226,15 @@
 .btn-article {
   font-family: $base-font-default;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: $font-size-base - 4;
+  line-height: $line-height-base - 4;
   background: $mine-shaft;
   border-radius: 15px;
   padding: 6px 18px;
 
   @include breakpoint($mobile) {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: $font-size-base - 10;
+    line-height: $line-height-base - 11;
   }
 
   &:hover {
@@ -271,15 +245,15 @@
 .btn-secondary {
   font-family: $font-gillSans-extra-bold;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: $font-size-base + 6;
+  line-height: $line-height-base + 7;
   color: $black;
   background: transparent;
   border: none;
 
   @include breakpoint($mobile) {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 
   &:hover {
@@ -299,8 +273,8 @@
 .btn-link {
   font-family: $base-font-default;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   display: block;
   color: $black;
   position: relative;
@@ -309,8 +283,8 @@
   width: fit-content;
 
   @include breakpoint($mobile) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 6;
     padding: 5px 20px 5px 0;
     min-width: 130px;
   }
@@ -395,8 +369,8 @@
 .btn-coupon-left {
   font-family: $font-gillSans-bold;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 36px;
+  font-size: $font-size-base + 1;
+  line-height: $line-height-base + 13;
   color: $black;
   background: $alabaster;
   border: none;
@@ -410,8 +384,8 @@
 
   @include breakpoint($mobile) {
     padding: 5px 20px;
-    font-size: 15px;
-    line-height: 36px;
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 13;
     color: $silver-middle;
     border-radius: 20px;
   }
@@ -420,8 +394,8 @@
 .btn-coupon-right {
   font-family: $font-gillSans-bold;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 36px;
+  font-size: $font-size-base + 1;
+  line-height: $line-height-base - 13;
   color: $white;
   background: $black;
   border: none;
@@ -435,8 +409,8 @@
 
   @include breakpoint($mobile) {
     padding: 5px 20px;
-    font-size: 15px;
-    line-height: 36px;
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 13;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 0;

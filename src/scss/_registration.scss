@@ -18,28 +18,28 @@
   h3 {
     font-family: $base-font-default;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: $font-size-base + 6;
+    line-height: $line-height-base - 7;
     text-transform: uppercase;
     margin-bottom: 35px;
     text-align: center;
 
     @include breakpoint($mobile) {
-      font-size: 16px;
-      line-height: 19px;
+      font-size: $font-size-base - 4;
+      line-height: $line-height-base - 4;
       margin-bottom: 5px;
     }
   }
 
   a {
     display: block;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base - 13;
     margin-bottom: 25px;
 
     @include breakpoint($mobile) {
-      font-size: 14px;
-      line-height: 36px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 13;
       margin-bottom: 11px;
     }
   }
@@ -86,20 +86,20 @@
 
   lable {
     display: block;
-    font-size: 21px;
-    line-height: 36px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base + 13;
     margin-bottom: 8px;
 
     @include breakpoint($mobile) {
-      font-size: 14px;
-      line-height: 36px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base + 13;
       margin-bottom: 0;
     }
   }
 
   input {
-    font-size: 21px;
-    line-height: 21px;
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base - 2;
     background: $white;
     border-radius: 10px;
     padding: 10px 29px;
@@ -115,13 +115,13 @@
     &::placeholder {
       font-family: $base-font-default;
       font-weight: 400;
-      font-size: 21px;
-      line-height: 36px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 13;
       color: $silver-middle;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 36px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base + 13;
       }
     }
   }
@@ -136,12 +136,12 @@
   &::placeholder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 39px;
-    line-height: 36px;
+    font-size: $font-size-base + 19;
+    line-height: $line-height-base + 13;
 
     @include breakpoint($mobile) {
-      font-size: 29px;
-      line-height: 36px;
+      font-size: $font-size-base + 9;
+      line-height: $line-height-base + 13;
     }
   }
 }

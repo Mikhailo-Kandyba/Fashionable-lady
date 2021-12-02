@@ -77,29 +77,29 @@
     h2 {
       font-family: $base-font-default;
       font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 3;
       margin-bottom: 7px;
       text-transform: uppercase;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 6;
       }
     }
 
     h3 {
       font-family: $font-gillSans-light;
       font-weight: 300;
-      font-size: 21px;
-      line-height: 21px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 2;
       margin-bottom: 26px;
 
       @include breakpoint($mobile) {
-        font-family: $base-font-default;
+        font-family: $base-font-family;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 2;
         margin-bottom: 5px;
       }
     }
@@ -108,13 +108,13 @@
       display: block;
       font-family: $font-gillSans-bold;
       font-weight: 600;
-      font-size: 21px;
-      line-height: 26px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 3;
       margin-bottom: 10px;
 
       @include breakpoint($mobile) {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: $font-size-base - 4;
+        line-height: $line-height-base - 3;
         margin-bottom: 5px;
       }
     }
@@ -122,12 +122,12 @@
     p {
       font-family: $font-gillSans-light;
       font-weight: 300;
-      font-size: 21px;
-      line-height: 24px;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base + 1;
 
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 7;
       }
     }
   }

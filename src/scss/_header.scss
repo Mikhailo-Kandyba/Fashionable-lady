@@ -101,8 +101,8 @@
 
 .dropdown-item {
   display: block;
-  font-size: 20px;
-  line-height: 23px;
+  font-family: $base-font-family;
+  line-height: $line-height-base;
   font-weight: 400;
   padding: 12px 12px 12px 32px;
   text-decoration: none;
@@ -118,6 +118,12 @@
     background-color:  transparent;
   }
 }
+
+
+
+
+
+
 
 .header-bottom {
   margin-bottom: 10px;
@@ -153,8 +159,9 @@
     }
 
     input {
-      font-size: 21px;
-      line-height: 21px;
+      font-family: $base-font-family;
+      font-size: $font-size-base + 1;
+      line-height: $line-height-base - 2;
       width: 100%;
       border-radius: 15px;
       background: $white;
@@ -168,13 +175,27 @@
 
       &::placeholder {
         font-weight: 400;
-        font-size: 21px;
-        line-height: 25px;
+        font-family: $base-font-family;
+        font-size: $font-size-base + 1;
+        line-height: $line-height-base + 2;
         color: $black;
       }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav-wrap {
   border-right: 2px solid $white;
@@ -313,8 +334,8 @@
 
         a {
           padding: 10px;
-          font-size: 20px;
-          line-height: 23px;
+          font-size: $font-size-base;
+          line-height: $line-height-base;
           &:hover {
             text-decoration: underline;
           }
@@ -337,8 +358,8 @@
   cursor: pointer;
 
   span {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 
   @include breakpoint($desktop) {
@@ -390,7 +411,7 @@
   justify-content: space-between;
   position: relative;
 
-  .search-and-basket {
+  .search-basket {
     .dropdown {
       margin: 0 15px;
 
@@ -522,9 +543,20 @@
   }
 }
 
-.search-and-basket {
+
+
+
+
+
+
+
+
+
+
+
+
+.search-basket {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   @include breakpoint($mobile) {
@@ -546,26 +578,12 @@
     }
   }
 
-  input {
-    font-size: 20px;
-    line-height: 20px;
-    width: 100%;
-    border-radius: 15px;
-    background: $white;
-    border: 1px solid $mine-shaft;
-    height: 50px;
-    padding: 10px;
-
-    &::placeholder {
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      color: $black;
-    }
-  }
-
   .dropdown {
     margin: 0;
+  }
+
+  .input-group {
+    max-width: 367px;
   }
 
   .btn-drop {
@@ -582,6 +600,62 @@
     &:after {
       display: none;
     }
+  }
+}
+
+.btn-outline-secondary {
+  position: relative;
+  border-radius: 15px 0 0 15px;
+  background: $white;
+  padding: 10px 30px 10px 40px;
+  border: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    background-color: transparent;
+    background: $white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27px;
+    height: 24px;
+    background: url("../images/search.svg");
+    z-index: 50;
+  }
+}
+
+.form-control {
+  font-family: $base-font-default;
+  font-size: $font-size-base + 1;
+  line-height: $line-height-base +1;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  color: $black;
+  border: none;
+
+  &::placeholder {
+    font-size: $font-size-base + 1;
+    line-height: $line-height-base +1;
+    color: $black;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: transparent;
+    color: $black;
   }
 }
 
@@ -617,8 +691,8 @@
 .accordion {
   font-family: $font-gillSans-bold;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 2$font-size-base;
+  line-height: $line-height-base;
   color: $black;
   border-bottom: 1px solid $black;
   position: relative;
@@ -628,8 +702,8 @@
   text-align: left;
 
   @include breakpoint($mobile) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 6;
     padding: 11px 0;
   }
 
@@ -668,8 +742,8 @@
 .panel {
   font-family: $font-gillSans-light;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: $font-size-base - 6;
+  line-height: $line-height-base - 7;
   color: $black;
   background-color: white;
   display: none;
@@ -680,8 +754,8 @@
   ul {
     li {
       @include breakpoint($mobile) {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: $font-size-base - 6;
+        line-height: $line-height-base - 7;
       }
     }
 
@@ -699,8 +773,8 @@
 .phone-wrap {
 
   @include breakpoint($mobile) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 6;
   }
   a {
     display: block;
@@ -708,8 +782,8 @@
 
     @include breakpoint($mobile) {
       margin-bottom: 3px;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 6;
       font-family: $base-font-default;
       font-weight: 400;
     }

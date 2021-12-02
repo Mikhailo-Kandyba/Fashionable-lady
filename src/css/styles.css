@@ -176,7 +176,7 @@ h6 {
         font-family: "GillSans-Bold";
         font-weight: 600;
         font-size: 16px;
-        line-height: 20px; } }
+        line-height: 21px; } }
     .radio-btn label:hover {
       font-weight: 600;
       color: #000; }
@@ -185,18 +185,6 @@ h6 {
 .radio-btn input[type=radio]:checked + label {
   font-weight: 600;
   color: #000; }
-
-.btn-model {
-  font-family: "GillSans-Regular";
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 32px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-transform: uppercase;
-  width: 100%;
-  color: #fff;
-  margin-bottom: 5px; }
 
 .btn-favorites {
   background: #fff;
@@ -230,7 +218,7 @@ h6 {
     .btn-favorites:hover:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: #bc2b2b;
+      color: #eb5757;
       font-size: 20px; }
       @media only screen and (max-width: 767px) {
         .btn-favorites:hover:after {
@@ -246,33 +234,26 @@ h6 {
   color: #fff;
   font-weight: 600;
   font-size: 22px;
-  line-height: 36px; }
+  line-height: 10px; }
   @media only screen and (max-width: 1350px) {
     .btn-goods {
       padding: 23px 70px 18px; } }
   @media only screen and (max-width: 767px) {
     .btn-goods {
       font-size: 15px;
-      line-height: 36px;
+      line-height: 10px;
       padding: 4px 15px 4px; } }
   .btn-goods:hover {
     background: #333; }
 
-.btn_green {
-  background: #117900;
-  color: #fff; }
-  .btn_green:hover {
-    background: #259e0f; }
+.bg-success {
+  background-color: #117900 !important; }
 
-.btn_red {
-  background: #9C0101; }
-  .btn_red:hover {
-    background: #bc2b2b; }
+.bg-danger {
+  background: #9C0101 !important; }
 
-.btn_orange {
-  background: #c76103; }
-  .btn_orange:hover {
-    background: #db7a25; }
+.bg-warning {
+  background: #c76103 !important; }
 
 .btn_selected i {
   display: none; }
@@ -291,7 +272,7 @@ h6 {
   color: #fff;
   font-weight: 400;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 10px;
   padding: 16px 32px;
   max-width: 185px;
   border-radius: 0 19px 19px 0; }
@@ -300,7 +281,7 @@ h6 {
   @media only screen and (max-width: 767px) {
     .btn-form {
       font-size: 14px;
-      line-height: 36px;
+      line-height: 10px;
       padding: 4px 11px;
       border-radius: 0 12px 12px 0;
       color: #fafafa; } }
@@ -456,7 +437,7 @@ h6 {
     .btn-coupon-left {
       padding: 5px 20px;
       font-size: 15px;
-      line-height: 36px;
+      line-height: 10px;
       color: #bebebe;
       border-radius: 20px; } }
 
@@ -464,7 +445,7 @@ h6 {
   font-family: "GillSans-Bold";
   font-weight: 600;
   font-size: 21px;
-  line-height: 36px;
+  line-height: 10px;
   color: #fff;
   background: #000;
   border: none;
@@ -478,7 +459,7 @@ h6 {
     .btn-coupon-right {
       padding: 5px 20px;
       font-size: 15px;
-      line-height: 36px;
+      line-height: 10px;
       border-top-left-radius: 20px;
       border-bottom-right-radius: 20px;
       border-top-right-radius: 0; } }
@@ -562,7 +543,7 @@ h6 {
 
 .dropdown-item {
   display: block;
-  font-size: 20px;
+  font-family: "GillSans-Regular";
   line-height: 23px;
   font-weight: 400;
   padding: 12px 12px 12px 32px;
@@ -600,6 +581,7 @@ h6 {
         .header-bottom .form-group::after {
           left: 15px; } }
     .header-bottom .form-group input {
+      font-family: "GillSans-Regular";
       font-size: 21px;
       line-height: 21px;
       width: 100%;
@@ -613,6 +595,7 @@ h6 {
           padding: 11px 20px 11px 50px; } }
       .header-bottom .form-group input::placeholder {
         font-weight: 400;
+        font-family: "GillSans-Regular";
         font-size: 21px;
         line-height: 25px;
         color: #000; }
@@ -766,10 +749,10 @@ h6 {
   align-items: center;
   justify-content: space-between;
   position: relative; }
-  .mobile-header-content .search-and-basket .dropdown {
+  .mobile-header-content .search-basket .dropdown {
     margin: 0 15px; }
     @media only screen and (max-width: 767px) {
-      .mobile-header-content .search-and-basket .dropdown {
+      .mobile-header-content .search-basket .dropdown {
         margin: 0; } }
 
 .menu-navigation-wrap {
@@ -863,14 +846,13 @@ h6 {
       bottom: 4px;
       transform: translateY(-8px) translateX(0) rotate(-45deg); }
 
-.search-and-basket {
+.search-basket {
   display: flex;
-  align-items: center;
   justify-content: space-between; }
   @media only screen and (max-width: 767px) {
-    .search-and-basket {
+    .search-basket {
       max-width: 65px; } }
-  .search-and-basket .dropdown-menu {
+  .search-basket .dropdown-menu {
     top: 18px !important;
     left: -10px !important;
     min-width: 340px;
@@ -878,35 +860,65 @@ h6 {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
     @media only screen and (max-width: 767px) {
-      .search-and-basket .dropdown-menu {
+      .search-basket .dropdown-menu {
         min-width: 293px;
         left: -10px !important;
         top: -1px !important; } }
-  .search-and-basket input {
-    font-size: 20px;
-    line-height: 20px;
-    width: 100%;
-    border-radius: 15px;
-    background: #fff;
-    border: 1px solid #333;
-    height: 50px;
-    padding: 10px; }
-    .search-and-basket input::placeholder {
-      font-weight: 400;
-      font-size: 21px;
-      line-height: 25px;
-      color: #000; }
-  .search-and-basket .dropdown {
+  .search-basket .dropdown {
     margin: 0; }
-  .search-and-basket .btn-drop {
+  .search-basket .input-group {
+    max-width: 367px; }
+  .search-basket .btn-drop {
     padding: 10px; }
     @media only screen and (max-width: 767px) {
-      .search-and-basket .btn-drop {
+      .search-basket .btn-drop {
         padding: 8px; }
-        .search-and-basket .btn-drop img {
+        .search-basket .btn-drop img {
           width: 20px; } }
-    .search-and-basket .btn-drop:after {
+    .search-basket .btn-drop:after {
       display: none; }
+
+.btn-outline-secondary {
+  position: relative;
+  border-radius: 15px 0 0 15px;
+  background: #fff;
+  padding: 10px 30px 10px 40px;
+  border: none; }
+  .btn-outline-secondary:hover {
+    background-color: transparent; }
+  .btn-outline-secondary:focus {
+    box-shadow: none; }
+  .btn-outline-secondary:active {
+    box-shadow: none;
+    background-color: transparent;
+    background: #fff; }
+  .btn-outline-secondary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 27px;
+    height: 24px;
+    background: url("../images/search.svg");
+    z-index: 50; }
+
+.form-control {
+  font-family: "GillSans-Regular";
+  font-size: 21px;
+  line-height: 24px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  color: #000;
+  border: none; }
+  .form-control::placeholder {
+    font-size: 21px;
+    line-height: 24px;
+    color: #000; }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+    color: #000; }
 
 .basket-list li {
   display: flex;
@@ -931,7 +943,7 @@ h6 {
 .accordion {
   font-family: "GillSans-Bold";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2 20px;
   line-height: 23px;
   color: #000;
   border-bottom: 1px solid #000;
@@ -1035,18 +1047,17 @@ h6 {
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    font-weight: 400; }
+    font-weight: 400;
+    margin-bottom: 5px; }
     @media only screen and (max-width: 767px) {
       .goods h3 {
         font-family: "GillSans-Bold";
         font-weight: 600;
         font-size: 16px;
-        line-height: 20px; } }
+        line-height: 20px;
+        margin-bottom: 0; } }
 
 #tabs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 30px; }
   @media only screen and (max-width: 1023px) {
     #tabs {
@@ -1055,6 +1066,7 @@ h6 {
 .tabs-navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 50px; }
   @media only screen and (max-width: 1023px) {
     .tabs-navigation {
@@ -1065,15 +1077,15 @@ h6 {
       margin-bottom: 18px; } }
 
 .ui-tabs-tab {
-  margin: 0 15px; }
+  margin: 0 15px;
+  position: relative; }
 
 .ui-tabs-anchor {
   display: block;
-  font-weight: 400;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 22px;
   text-transform: uppercase;
-  padding: 10px 0 6px; }
+  padding: 6px 0 6px; }
   @media only screen and (max-width: 767px) {
     .ui-tabs-anchor {
       font-size: 14px;
@@ -1082,18 +1094,15 @@ h6 {
   .ui-tabs-anchor:hover {
     text-decoration: none; }
 
-.ui-state-active,
-.ui-state-hover {
-  position: relative; }
-  .ui-state-active:after,
-  .ui-state-hover:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: #000; }
+.ui-state-active:after,
+.ui-state-hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #000; }
 
 .model-list {
   display: flex;
@@ -1141,24 +1150,35 @@ h6 {
     display: block;
     text-align: right;
     font-size: 21px;
-    line-height: 26px;
-    font-weight: 600; }
+    line-height: 26px; }
     @media only screen and (max-width: 767px) {
       .description-model-item strong {
         font-size: 12px;
         line-height: 15px; } }
 
-.holder-btn-item {
+.badges {
   position: absolute;
   top: 73px;
   left: 0;
   max-width: 88px; }
   @media only screen and (max-width: 767px) {
-    .holder-btn-item {
+    .badges {
       display: none; } }
 
+.badge {
+  display: block;
+  font-family: "GillSans-Regular";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  border-radius: 0 5px 5px 0; }
+
 .img-area {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0; }
 
 .tab-content {
   margin: 0 -15px; }
@@ -1500,11 +1520,11 @@ h6 {
       font-family: "GillSans-Regular";
       font-weight: 400;
       font-size: 16px;
-      line-height: 36px;
+      line-height: 10px;
       margin-right: 10px; }
       @media only screen and (max-width: 767px) {
         .filter-and-tova .panel lable {
-          font-size: 12px;
+          font-size: 13px;
           line-height: 36px; } }
 
 .tova-wrap {
@@ -1791,7 +1811,7 @@ h6 {
 .name-block h3 {
   font-weight: 400;
   font-size: 26px;
-  line-height: 30px;
+  line-height: 16px;
   margin-bottom: 7px; }
   @media only screen and (max-width: 767px) {
     .name-block h3 {
@@ -1940,7 +1960,7 @@ h6 {
     @media only screen and (max-width: 767px) {
       .form_radio_btn label {
         font-size: 14px;
-        line-height: 17px;
+        line-height: 19px;
         padding: 4px 7px; } }
     .form_radio_btn label:hover {
       background: #bfbfbf; }
@@ -2328,7 +2348,7 @@ h6 {
     font-family: "GillSans-Regular";
     font-weight: 400;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 16px;
     text-transform: uppercase;
     margin-bottom: 35px;
     text-align: center; }
@@ -2340,12 +2360,12 @@ h6 {
   .registration-block a {
     display: block;
     font-size: 21px;
-    line-height: 36px;
+    line-height: 10px;
     margin-bottom: 25px; }
     @media only screen and (max-width: 767px) {
       .registration-block a {
         font-size: 14px;
-        line-height: 36px;
+        line-height: 10px;
         margin-bottom: 11px; } }
   .registration-block .holder-btn button {
     width: 100%; }
@@ -2460,7 +2480,7 @@ h6 {
   font-family: "GillSans-Bold";
   font-weight: 600;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 14px;
   margin-bottom: 35px; }
   @media only screen and (max-width: 767px) {
     .title-navigation-speaker {
@@ -2634,7 +2654,7 @@ h6 {
     font-family: "GillSans-Regular";
     font-weight: 400;
     font-size: 21px;
-    line-height: 25px;
+    line-height: 26px;
     margin-bottom: 7px;
     text-transform: uppercase; }
     @media only screen and (max-width: 767px) {
