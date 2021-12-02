@@ -37,17 +37,17 @@
       }
 
       &:hover {
-        color: $middle-grey;
+        color: $silver-middle;
       }
     }
   }
 
   .active {
     a {
-      color: $middle-grey;
+      color: $silver-middle;
 
       &:hover {
-        color: $middle-grey;
+        color: $silver-middle;
       }
     }
   }
@@ -120,7 +120,7 @@
     font-size: 20px;
     line-height: 36px;
     border-bottom: none;
-    background: $lactic;
+    background: $alabaster;
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 14px 26px 6px 20px;
@@ -132,7 +132,7 @@
     }
 
     &:hover {
-      background: $dark-grey;
+      background: $mine-shaft;
     }
 
     &:after {
@@ -265,7 +265,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    background: $lactic;
+    background: $alabaster;
     border-radius: 10px;
     border: none;
     width: 100%;
@@ -273,7 +273,7 @@
     white-space: normal;
 
     &:hover {
-      background: $dark-grey;
+      background: $mine-shaft;
     }
 
     @include breakpoint($mobile) {
@@ -315,7 +315,7 @@
   top: -25px;
 
   .irs-bar {
-    background: $light-red-two;
+    background: -two;
     top: 33px;
     height: 3px;
   }
@@ -326,14 +326,14 @@
   }
 
   .irs-handle {
-    background: $light-red-two;
+    background: $chestnut-rose;
     border: none;
     box-shadow: none;
     width: 17px;
     height: 17px;
 
     &:hover {
-      background: $light-red-two;
+      background: $chestnut-rose;
       cursor: pointer;
     }
   }
@@ -357,7 +357,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;
-  color: $dark;
+  color: $mine-shaft;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -371,7 +371,7 @@
   &:hover {
     input ~ .checkmark {
       background-color: transparent;
-      border: 2px solid $light-red-two;
+      border: 2px solid $chestnut-rose;
     }
   }
 
@@ -382,7 +382,7 @@
 
     &:checked ~ .checkmark {
       background-color: transparent;
-      border: 2px solid $light-red-two;
+      border: 2px solid $chestnut-rose;
     }
   }
 
@@ -393,7 +393,7 @@
     height: 22px;
     width: 22px;
     background: transparent;
-    border: 2px solid $dark-grey-two;
+    border: 2px solid $silver;
     border-radius: 5px;
 
     &:after {

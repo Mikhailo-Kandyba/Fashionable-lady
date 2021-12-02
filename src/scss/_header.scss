@@ -102,7 +102,7 @@
 
 .dropdown-menu {
   left: -11px !important;
-  background-color: $lactic;
+  background-color: $alabaster;
   padding: 8px 4px 5px 22px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -133,7 +133,7 @@
 
 .header-bottom {
   margin-bottom: 10px;
-  background: $lactic;
+  background: $alabaster;
 
   @include breakpoint($tablet) {
     display: none;
@@ -207,7 +207,7 @@
     }
 
     &:hover {
-      background: $dark-grey;
+      background: $silver;
 
       a {
         text-decoration: none;
@@ -221,7 +221,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background: $dark-grey;
+  background: $gallery;
 
   .decor {
     height: 14px;
@@ -280,7 +280,7 @@
 
   .dropdown-menu {
     border-radius: 0 0 20px 20px;
-    background: $lactic;
+    background: $alabaster;
     min-width: 1280px;
     flex-wrap: wrap;
     position: absolute;
@@ -362,7 +362,7 @@
   }
 
   .number {
-    background: $dark-grey;
+    background: $gallery;
     border-radius: 50%;
     padding: 6px 7px;
   }
@@ -565,7 +565,7 @@
     width: 100%;
     border-radius: 15px;
     background: $white;
-    border: 1px solid $dark-grey;
+    border: 1px solid $mine-shaft;
     height: 50px;
     padding: 10px;
 
@@ -603,8 +603,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid $dark-grey;
-    border-bottom: 1px solid $dark-grey;
+    border-top: 1px solid $mine-shaft;
+    border-bottom: 1px solid $mine-shaft;
     padding: 10px 0;
 
     .img-area {

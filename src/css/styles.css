@@ -88,7 +88,7 @@ i {
   color: #000; }
   i:hover {
     cursor: pointer;
-    color: #211e1e; }
+    color: #333; }
 
 button {
   cursor: pointer;
@@ -96,7 +96,7 @@ button {
   button:focus {
     outline: none; }
   button:hover {
-    background: #EBEBEB; }
+    background: #333; }
 
 label:hover {
   cursor: pointer; }
@@ -164,7 +164,7 @@ h6 {
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 85px;
-  color: #BEBEBE; }
+  color: #bebebe; }
   @media only screen and (max-width: 1350px) {
     .holder-languages {
       min-width: 100%; } }
@@ -250,7 +250,7 @@ h6 {
       right: 11px;
       top: 13px; } }
   .btn-favorites i {
-    color: #EB5757;
+    color: #eb5757;
     font-size: 20px; }
     @media only screen and (max-width: 767px) {
       .btn-favorites i {
@@ -260,7 +260,7 @@ h6 {
     .btn-favorites:hover:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: #EB5757;
+      color: #bc2b2b;
       font-size: 20px; }
       @media only screen and (max-width: 767px) {
         .btn-favorites:hover:after {
@@ -286,7 +286,7 @@ h6 {
       line-height: 36px;
       padding: 4px 15px 4px; } }
   .btn-goods:hover {
-    background: #211e1e; }
+    background: #333; }
 
 .btn_green {
   background: #117900;
@@ -297,10 +297,10 @@ h6 {
 .btn_red {
   background: #9C0101; }
   .btn_red:hover {
-    background: #EB5757; }
+    background: #bc2b2b; }
 
 .btn_orange {
-  background: #C76103; }
+  background: #c76103; }
   .btn_orange:hover {
     background: #db7a25; }
 
@@ -310,7 +310,7 @@ h6 {
 .btn_selected:after {
   content: "\f004";
   font-family: "FontAwesome";
-  color: #EB5757;
+  color: #eb5757;
   font-size: 20px; }
   @media only screen and (max-width: 767px) {
     .btn_selected:after {
@@ -326,14 +326,14 @@ h6 {
   max-width: 185px;
   border-radius: 0 19px 19px 0; }
   .btn-form:hover {
-    background: #211e1e; }
+    background: #333; }
   @media only screen and (max-width: 767px) {
     .btn-form {
       font-size: 14px;
       line-height: 36px;
       padding: 4px 11px;
       border-radius: 0 12px 12px 0;
-      color: #FAFAFA; } }
+      color: #fafafa; } }
 
 .btn-drop {
   font-family: 'GillSans-Regular';
@@ -363,7 +363,7 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  background: #EBEBEB;
+  background: #333;
   border-radius: 15px;
   padding: 6px 18px; }
   @media only screen and (max-width: 767px) {
@@ -371,7 +371,7 @@ h6 {
       font-size: 10px;
       line-height: 12px; } }
   .btn-article:hover {
-    background: #BFBFBF; }
+    background: #bfbfbf; }
 
 .btn-secondary {
   font-family: 'GillSansExtraBold';
@@ -387,11 +387,11 @@ h6 {
       line-height: 23px; } }
   .btn-secondary:hover {
     background: transparent;
-    color: #BFBFBF; }
+    color: #bfbfbf; }
   .btn-secondary:focus {
     outline: none;
     background: transparent;
-    color: #BFBFBF;
+    color: #bfbfbf;
     border: none;
     box-shadow: none; }
 
@@ -459,14 +459,14 @@ h6 {
       padding: 4px 15px 4px; } }
 
 .grey-btn {
-  background: #BEBEBE; }
+  background: #bebebe; }
   .grey-btn:hover {
     background: #000; }
 
 .btn-red-two {
-  background: #C85D6C; }
+  background: #c85d6c; }
   .btn-red-two:hover {
-    background: #EB5757; }
+    background: #bc2b2b; }
 
 .btn-coupon-left {
   font-family: 'GillSans-Bold';
@@ -474,7 +474,7 @@ h6 {
   font-size: 21px;
   line-height: 36px;
   color: #000;
-  background: #FAFAFA;
+  background: #fafafa;
   border: none;
   padding: 20px 64px 21px 81px;
   border-top-left-radius: 20px;
@@ -487,7 +487,7 @@ h6 {
       padding: 5px 20px;
       font-size: 15px;
       line-height: 36px;
-      color: #BEBEBE;
+      color: #bebebe;
       border-radius: 20px; } }
 
 .btn-coupon-right {
@@ -590,7 +590,7 @@ h6 {
 
 .dropdown-menu {
   left: -11px !important;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 8px 4px 5px 22px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -615,7 +615,7 @@ h6 {
 
 .header-bottom {
   margin-bottom: 10px;
-  background: #FAFAFA; }
+  background: #fafafa; }
   @media only screen and (max-width: 1023px) {
     .header-bottom {
       display: none; } }
@@ -669,7 +669,7 @@ h6 {
       display: block;
       padding: 29px 16px 24px 19px; }
     .menu-bottom li:hover {
-      background: #EBEBEB; }
+      background: #bfbfbf; }
       .menu-bottom li:hover a {
         text-decoration: none; }
 
@@ -678,7 +678,7 @@ h6 {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background: #EBEBEB; }
+  background: #ebebeb; }
   .catalog-item .decor {
     height: 14px;
     width: 18px;
@@ -718,7 +718,7 @@ h6 {
       background-repeat: no-repeat; }
   .catalog-item .dropdown-menu {
     border-radius: 0 0 20px 20px;
-    background: #FAFAFA;
+    background: #fafafa;
     min-width: 1280px;
     flex-wrap: wrap;
     position: absolute;
@@ -773,7 +773,7 @@ h6 {
   .basket-wrap span {
     display: block; }
   .basket-wrap .number {
-    background: #EBEBEB;
+    background: #ebebeb;
     border-radius: 50%;
     padding: 6px 7px; }
 
@@ -926,7 +926,7 @@ h6 {
     width: 100%;
     border-radius: 15px;
     background: #fff;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #333;
     height: 50px;
     padding: 10px; }
     .search-and-basket input::placeholder {
@@ -950,8 +950,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #EBEBEB;
-  border-bottom: 1px solid #EBEBEB;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
   padding: 10px 0; }
   .basket-list li .img-area {
     max-width: 100px; }
@@ -1155,7 +1155,7 @@ h6 {
 
 .description-model-item {
   padding: 15px 28px 17px 20px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-top: none;
   border-radius: 0 0 20px 20px; }
   @media only screen and (max-width: 1350px) {
@@ -1166,7 +1166,7 @@ h6 {
       padding: 5px 12px 2px 12px;
       border-radius: 0 0 18px 18px; } }
   .description-model-item p {
-    flex: 21px;
+    font-size: 21px;
     line-height: 32px;
     margin-bottom: 5px; }
     @media only screen and (max-width: 767px) {
@@ -1219,8 +1219,7 @@ h6 {
     font-size: 26px;
     line-height: 30px;
     text-transform: uppercase;
-    margin-bottom: 45px;
-    padding-left: 18px; }
+    margin-bottom: 45px; }
     @media only screen and (max-width: 1023px) {
       .blog h3 {
         margin-bottom: 20px; } }
@@ -1333,14 +1332,13 @@ h6 {
 .btn-slider-holder {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  margin-right: 18px; }
+  justify-content: flex-end; }
   @media only screen and (max-width: 767px) {
     .btn-slider-holder {
       margin-right: 0; } }
 
 .slider-blog {
-  margin-bottom: 30px; }
+  margin: 0 -15px 30px; }
   @media only screen and (max-width: 767px) {
     .slider-blog {
       margin-bottom: 5px; } }
@@ -1448,11 +1446,11 @@ h6 {
           line-height: 18px;
           padding: 10px 3px 7px 0; } }
       .breadcrumb li a:hover {
-        color: #BEBEBE; }
+        color: #bebebe; }
   .breadcrumb .active a {
-    color: #BEBEBE; }
+    color: #bebebe; }
     .breadcrumb .active a:hover {
-      color: #BEBEBE; }
+      color: #bebebe; }
   .breadcrumb li + li:before {
     padding: 0;
     color: black;
@@ -1502,7 +1500,7 @@ h6 {
     font-size: 20px;
     line-height: 36px;
     border-bottom: none;
-    background: #FAFAFA;
+    background: #fafafa;
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 14px 26px 6px 20px; }
@@ -1512,7 +1510,7 @@ h6 {
         border-radius: 15px;
         padding: 0 26px 0 22px; } }
     .filter-and-tova .accordion:hover {
-      background: #EBEBEB; }
+      background: #333; }
     .filter-and-tova .accordion:after {
       right: 16px; }
       @media only screen and (max-width: 1350px) {
@@ -1605,14 +1603,14 @@ h6 {
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
-    background: #FAFAFA;
+    background: #fafafa;
     border-radius: 10px;
     border: none;
     width: 100%;
     padding: 2px 36px 2px 25px;
     white-space: normal; }
     .select-holder #select1:hover {
-      background: #EBEBEB; }
+      background: #333; }
     @media only screen and (max-width: 767px) {
       .select-holder #select1 {
         font-size: 14px;
@@ -1642,20 +1640,20 @@ h6 {
 .irs--round {
   top: -25px; }
   .irs--round .irs-bar {
-    background: #C85D6C;
+    background: -two;
     top: 33px;
     height: 3px; }
   .irs--round .irs-line {
     top: 33px;
     height: 3px; }
   .irs--round .irs-handle {
-    background: #C85D6C;
+    background: #c85d6c;
     border: none;
     box-shadow: none;
     width: 17px;
     height: 17px; }
     .irs--round .irs-handle:hover {
-      background: #C85D6C;
+      background: #c85d6c;
       cursor: pointer; }
   .irs--round .irs-from,
   .irs--round .irs-to,
@@ -1685,14 +1683,14 @@ h6 {
       line-height: 16px; } }
   .container-label:hover input ~ .checkmark {
     background-color: transparent;
-    border: 2px solid #C85D6C; }
+    border: 2px solid #c85d6c; }
   .container-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer; }
     .container-label input:checked ~ .checkmark {
       background-color: transparent;
-      border: 2px solid #C85D6C; }
+      border: 2px solid #c85d6c; }
   .container-label .checkmark {
     position: absolute;
     top: 0;
@@ -1700,7 +1698,7 @@ h6 {
     height: 22px;
     width: 22px;
     background: transparent;
-    border: 2px solid #BFBFBF;
+    border: 2px solid #bfbfbf;
     border-radius: 5px; }
     .container-label .checkmark:after {
       content: "";
@@ -1878,7 +1876,7 @@ h6 {
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #C85D6C;
+    color: #c85d6c;
     margin-bottom: 13px; }
     @media only screen and (max-width: 767px) {
       .price strong {
@@ -1915,7 +1913,7 @@ h6 {
   .description-block .description {
     font-size: 18px;
     line-height: 27px;
-    color: #BEBEBE;
+    color: #bebebe;
     margin-bottom: 20px; }
     @media only screen and (max-width: 767px) {
       .description-block .description {
@@ -1976,21 +1974,21 @@ h6 {
     border: none;
     border-radius: 15px;
     user-select: none;
-    background: #EBEBEB; }
+    background: #333; }
     @media only screen and (max-width: 767px) {
       .form_radio_btn label {
         font-size: 14px;
         line-height: 17px;
         padding: 4px 7px; } }
     .form_radio_btn label:hover {
-      background: #BFBFBF; }
+      background: #bfbfbf; }
 
 .form_radio_btn input[type=radio] {
   display: none; }
 
 /* Checked */
 .form_radio_btn input[type=radio]:checked + label {
-  background: #BFBFBF; }
+  background: #bfbfbf; }
 
 .color-block {
   margin-bottom: 42px; }
@@ -2127,7 +2125,7 @@ h6 {
     .card-product-tabs #tabs-3 p a,
     .card-product-tabs #tabs-4 p a,
     .card-product-tabs #tabs-5 p a {
-      color: #C85D6C; }
+      color: #c85d6c; }
   .card-product-tabs #tabs-1 strong,
   .card-product-tabs #tabs-2 strong,
   .card-product-tabs #tabs-3 strong,
@@ -2227,7 +2225,7 @@ h6 {
   justify-content: space-between; }
 
 .slider-reviews .slick-slide {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 15px;
   padding: 25px; }
 
@@ -2253,7 +2251,7 @@ h6 {
       display: flex; } }
 
 .reviews textarea {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 20px;
   border: none;
   width: 734px;
@@ -2277,7 +2275,7 @@ h6 {
   .reviews textarea::placeholder {
     font-family: 'GillSans-Regular';
     font-weight: 400;
-    color: #BEBEBE;
+    color: #bebebe;
     font-size: 20px;
     line-height: 23px; }
     @media only screen and (max-width: 767px) {
@@ -2356,7 +2354,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 25px;
   padding: 75px 50px; }
   @media only screen and (max-width: 767px) {
@@ -2435,14 +2433,14 @@ h6 {
     border: none; }
     @media only screen and (max-width: 767px) {
       .user-form input {
-        background: #FAFAFA;
+        background: #fafafa;
         height: 40px; } }
     .user-form input::placeholder {
       font-family: 'GillSans-Regular';
       font-weight: 400;
       font-size: 21px;
       line-height: 36px;
-      color: #BEBEBE; }
+      color: #bebebe; }
       @media only screen and (max-width: 767px) {
         .user-form input::placeholder {
           font-size: 14px;
@@ -2531,7 +2529,7 @@ h6 {
     font-size: 21px;
     line-height: 26px;
     display: block;
-    color: #BEBEBE;
+    color: #bebebe;
     position: relative;
     padding: 20px 15px 33px 0;
     width: 100%; }
@@ -2545,7 +2543,7 @@ h6 {
       position: absolute;
       width: 100%;
       height: 1px;
-      background: #BEBEBE;
+      background: #bebebe;
       bottom: 0;
       right: 0; }
     .personal-area-navigation a:after {
@@ -2573,7 +2571,7 @@ h6 {
     font-size: 24px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
     margin-right: 50px;
-    color: #BEBEBE; }
+    color: #bebebe; }
     @media only screen and (max-width: 767px) {
       .personal-area-navigation i {
         font-size: 15px;
@@ -2763,7 +2761,7 @@ h6 {
   .table .table-row {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #BEBEBE; }
+    border-bottom: 1px solid #bebebe; }
     .table .table-row:last-child {
       border-bottom: none; }
   .table .table-item {
@@ -2771,7 +2769,7 @@ h6 {
     line-height: 25px;
     text-align: center;
     width: 100%;
-    border-right: 1px solid #BEBEBE;
+    border-right: 1px solid #bebebe;
     padding: 15px 0; }
     @media only screen and (max-width: 767px) {
       .table .table-item {
@@ -2951,7 +2949,7 @@ h6 {
       margin-bottom: 6px; } }
 
 .contact-info {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 10px;
   padding: 50px 60px 28px;
   max-width: 625px;
@@ -2997,14 +2995,14 @@ h6 {
       .contact-info .form-group input::placeholder {
         font-size: 21px;
         line-height: 36px;
-        color: #BEBEBE; }
+        color: #bebebe; }
         @media only screen and (max-width: 767px) {
           .contact-info .form-group input::placeholder {
             font-size: 15px;
             line-height: 36px; } }
 
 .delivery-method {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 10px;
   padding: 47px 91px 25px 60px;
   max-width: 625px;
@@ -3071,7 +3069,7 @@ h6 {
       background-image: url("../images/ellipse-radio-mobile.svg"); } }
 
 .sorting-filter-wrap {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 10px;
   padding: 47px 60px 30px 60px;
   max-width: 625px;
@@ -3153,7 +3151,7 @@ h6 {
   justify-content: flex-end; }
 
 .order-summary-block {
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 10px;
   padding: 40px 50px 50px 48px;
   max-width: 625px;
@@ -3444,7 +3442,7 @@ h6 {
   display: none; }
 
 .background-padding-lactic {
-  background: #FAFAFA;
+  background: #fafafa;
   padding: 55px 0; }
   @media only screen and (max-width: 1023px) {
     .background-padding-lactic {
@@ -3551,7 +3549,7 @@ h6 {
   height: 26px;
   width: 76px;
   border-radius: 10px;
-  background: #FAFAFA;
+  background: #fafafa;
   border: none;
   text-align: center; }
   @media only screen and (max-width: 767px) {
@@ -3562,7 +3560,7 @@ h6 {
       height: 23px; } }
 
 .background-lactic-two {
-  background: #F1F1F1; }
+  background: #f1f1f1; }
 
 .border-radius-10 {
   border-radius: 10px; }
@@ -3575,7 +3573,7 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .background-dark-grey {
-    background: #EBEBEB; } }
+    background: #333; } }
 
 .border-bottom {
   border-bottom: 1px solid #000; }
@@ -3584,7 +3582,7 @@ h6 {
   background: #117900 !important; }
 
 .background-pink {
-  background: #C85D6C !important; }
+  background: #c85d6c !important; }
 
 .background-dark-blue {
   background: #001375 !important; }
@@ -3596,7 +3594,7 @@ h6 {
   background: #9C0101 !important; }
 
 .background-red-three {
-  background: #D30000 !important; }
+  background: #d30000 !important; }
 
 .padding-bottom-5 {
   padding-bottom: 5px; }

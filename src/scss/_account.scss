@@ -39,7 +39,7 @@
   .table-row {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $middle-grey;
+    border-bottom: 1px solid $silver-middle;
 
     &:last-child {
       border-bottom: none;
@@ -51,7 +51,7 @@
     line-height: 25px;
     text-align: center;
     width: 100%;
-    border-right: 1px solid $middle-grey;
+    border-right: 1px solid $silver-middle;
     padding: 15px 0;
 
     @include breakpoint($mobile) {

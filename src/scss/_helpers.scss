@@ -6,7 +6,7 @@
 }
 
 .background-padding-lactic {
-  background: $lactic;
+  background: $alabaster;
   padding: 55px 0;
 
   @include breakpoint($tablet) {
@@ -142,7 +142,7 @@
   height: 26px;
   width: 76px;
   border-radius: 10px;
-  background: $lactic;
+  background: $alabaster;
   border: none;
   text-align: center;
 
@@ -155,7 +155,7 @@
 }
 
 .background-lactic-two {
-  background: $lactic-two;
+  background: $seashell;
 }
 
 .border-radius-10 {
@@ -172,7 +172,7 @@
 
 .background-dark-grey {
   @include breakpoint($mobile) {
-    background: $dark-grey;
+    background: $mine-shaft;
   }
 }
 
@@ -181,24 +181,24 @@
 }
 
 .background-green {
-  background: $green !important;
+  background: $japanese-laurel !important;
 }
 .background-pink {
-  background: $light-red-two !important;
+  background: $chestnut-rose !important;
 }
 .background-dark-blue {
-  background: $dark-blue !important;
+  background: $navy-blue !important;
 }
 
 .background-black {
   background: $black !important;
 }
 .background-red {
-  background: $red !important;
+  background: $sangria !important;
 }
 
 .background-red-three {
-  background: $light-red-three !important;
+  background: $guardsman-red !important;
 }
 
 .padding-bottom-5 {

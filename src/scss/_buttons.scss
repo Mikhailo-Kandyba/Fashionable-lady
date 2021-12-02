@@ -18,7 +18,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 85px;
-  color: $middle-grey;
+  color: $silver-middle;
 
   @include breakpoint($desktop) {
     min-width: 100%;
@@ -132,7 +132,7 @@
   }
 
   i {
-    color: $light-red;
+    color: $burnt-sienna;
     font-size: 20px;
 
     @include breakpoint($mobile) {
@@ -146,7 +146,7 @@
     &:after {
       content: "\f004";
       font-family: "FontAwesome";
-      color: $light-red;
+      color: $tall-poppy;
       font-size: 20px;
 
       @include breakpoint($mobile) {
@@ -181,33 +181,33 @@
   }
 
   &:hover {
-    background: $light-black;
+    background: $mine-shaft;
   }
 }
 
 .btn_green {
-  background: $green;
+  background: $japanese-laurel;
   color: $white;
 
   &:hover {
-    background: $light-green;
+    background: $la-palma;
   }
 }
 
 .btn_red {
-  background: $red;
+  background: $sangria;
 
   &:hover {
-    background: $light-red;
+    background: $tall-poppy;
   }
 
 }
 
 .btn_orange {
-  background: $orange;
+  background: $red-stage;
 
   &:hover {
-    background: $light-orange;
+    background: $ochre;
   }
 }
 
@@ -218,7 +218,7 @@
   &:after {
     content: "\f004";
     font-family: "FontAwesome";
-    color: $light-red;
+    color: $burnt-sienna;
     font-size: 20px;
 
     @include breakpoint($mobile) {
@@ -238,7 +238,7 @@
   border-radius: 0 19px 19px 0;
 
   &:hover {
-    background: $light-black;
+    background: $mine-shaft;
   }
 
   @include  breakpoint($mobile) {
@@ -246,7 +246,7 @@
     line-height: 36px;
     padding: 4px 11px;
     border-radius: 0 12px 12px 0;
-    color: $lactic;
+    color: $alabaster;
   }
 }
 
@@ -283,7 +283,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  background: $dark-grey;
+  background: $mine-shaft;
   border-radius: 15px;
   padding: 6px 18px;
 
@@ -293,7 +293,7 @@
   }
 
   &:hover {
-    background: $dark-grey-two;
+    background: $silver;
   }
 }
 
@@ -313,13 +313,13 @@
 
   &:hover {
     background: transparent;
-    color: $dark-grey-two;
+    color: $silver;
   }
 
   &:focus {
     outline: none;
     background: transparent;
-    color: $dark-grey-two;
+    color: $silver;
     border: none;
     box-shadow: none;
   }
@@ -345,7 +345,7 @@
   }
 
   &:hover {
-    color: $dark;
+    color: $mine-shaft;
     text-decoration: none;
   }
 
@@ -406,7 +406,7 @@
 
 
 .grey-btn {
-  background: $middle-grey;
+  background: $silver-middle;
 
   &:hover {
     background: $black;
@@ -414,10 +414,10 @@
 }
 
 .btn-red-two {
-  background: $light-red-two;
+  background: $chestnut-rose;
 
   &:hover {
-    background: $light-red;
+    background: $tall-poppy;
   }
 }
 
@@ -427,7 +427,7 @@
   font-size: 21px;
   line-height: 36px;
   color: $black;
-  background: $lactic;
+  background: $alabaster;
   border: none;
   padding: 20px 64px 21px 81px;
   border-top-left-radius: 20px;
@@ -441,7 +441,7 @@
     padding: 5px 20px;
     font-size: 15px;
     line-height: 36px;
-    color: $middle-grey;
+    color: $silver-middle;
     border-radius: 20px;
   }
 }
@@ -473,7 +473,7 @@
 
   &:hover {
     color: $white;
-    background: $dark;
+    background: $mine-shaft;
   }
 }
 

@@ -109,7 +109,7 @@
 }
 
 .checkout-block {
-  border-bottom: 1px solid $dark;
+  border-bottom: 1px solid $mine-shaft;
   padding-bottom: 25px;
   margin-bottom: 20px;
 
@@ -198,7 +198,7 @@
 }
 
 .contact-info {
-  background: $lactic;
+  background: $alabaster;
   border-radius: 10px;
   padding: 50px 60px 28px;
   max-width: 625px;
@@ -254,7 +254,7 @@
       &::placeholder {
         font-size: 21px;
         line-height: 36px;
-        color: $middle-grey;
+        color: $silver-middle;
 
         @include breakpoint($mobile) {
           font-size: 15px;
@@ -266,7 +266,7 @@
 }
 
 .delivery-method {
-  background: $lactic;
+  background: $alabaster;
   border-radius: 10px;
   padding: 47px 91px 25px 60px;
   max-width: 625px;
@@ -349,7 +349,7 @@
 }
 
 .sorting-filter-wrap {
-  background: $lactic;
+  background: $alabaster;
   border-radius: 10px;
   padding: 47px 60px 30px 60px;
   max-width: 625px;
@@ -452,7 +452,7 @@
 }
 
 .order-summary-block {
-  background: $lactic;
+  background: $alabaster;
   border-radius: 10px;
   padding: 40px 50px 50px 48px;
   max-width: 625px;

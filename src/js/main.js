@@ -182,9 +182,18 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-
-
 $( function() {
     $( "#region, #town, #branch-number" ).selectmenu();
 } );
+
+$(document).ready(function(){
+    $(".model-list li").slice(0, 4).show();
+    $(".btn-goods").on("click", function(e){
+        e.preventDefault();
+        $(".model-list li:hidden").slice(0, 4).slideDown();
+        if($(".model-list li:hidden").length == 0) {
+            $(".btn-goods").text("No Content").addClass("noContent");
+        }
+    });
+})
 

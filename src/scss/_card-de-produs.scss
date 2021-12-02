@@ -216,7 +216,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: $light-red-two;
+    color: $chestnut-rose;
     margin-bottom: 13px;
 
     @include breakpoint($mobile) {
@@ -227,7 +227,7 @@
   p {
     font-size: 21px;
     line-height: 25px;
-    color: $green;
+    color: $japanese-laurel;
 
     @include breakpoint($mobile) {
       font-size: 14px;
@@ -264,7 +264,7 @@
   .description {
     font-size: 18px;
     line-height: 27px;
-    color: $middle-grey;
+    color: $silver-middle;
     margin-bottom: 20px;
 
     @include breakpoint($mobile) {
@@ -347,7 +347,7 @@
     border: none;
     border-radius: 15px;
     user-select: none;
-    background: $dark-grey;
+    background: $mine-shaft;
 
     @include breakpoint($mobile) {
       font-size: 14px;
@@ -356,7 +356,7 @@
     }
 
     &:hover {
-      background: $dark-grey-two;
+      background: $silver;
     }
   }
 }
@@ -367,7 +367,7 @@
 
 /* Checked */
 .form_radio_btn input[type=radio]:checked + label {
-  background: $dark-grey-two;
+  background: $silver;
 }
 
 .color-block {
@@ -518,7 +518,7 @@
       }
 
       a {
-        color: $light-red-two;
+        color: $chestnut-rose;
       }
     }
 
@@ -615,7 +615,7 @@
 
 .slider-reviews {
   .slick-slide {
-    background: $lactic;
+    background: $alabaster;
     border-radius: 15px;
     padding: 25px;
   }
@@ -649,7 +649,7 @@
     }
   }
   textarea {
-    background: $lactic;
+    background: $alabaster;
     border-radius: 20px;
     border: none;
     width: 734px;
@@ -677,7 +677,7 @@
     &::placeholder {
       font-family: 'GillSans-Regular';
       font-weight: 400;
-      color: $middle-grey;
+      color: $silver-middle;
       font-size: 20px;
       line-height: 23px;
 
