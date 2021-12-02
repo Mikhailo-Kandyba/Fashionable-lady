@@ -21,7 +21,7 @@
   }
 
   h3 {
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;
@@ -68,7 +68,7 @@
     }
 
     h2 {
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 21px;
       line-height: 26px;
@@ -80,7 +80,7 @@
     }
 
     p {
-      font-family: 'GillSans-Light';
+      font-family: $font-gillSans-light;
       font-weight: 300;
       font-size: 21px;
       line-height: 24px;
@@ -99,7 +99,7 @@
       margin-bottom: 18px;
 
       @include breakpoint($mobile) {
-        font-family: 'GillSans-Regular';
+        font-family: $base-font-default;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
@@ -149,7 +149,7 @@
   }
 
   p {
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 21px;
     line-height: 25px;
@@ -183,7 +183,7 @@
 }
 
 .form-title {
-  font-family: 'GillSans-Regular';
+  font-family: $base-font-default;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
@@ -233,7 +233,7 @@
     }
 
     input {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 21px;
       line-height: 21px;
@@ -376,7 +376,7 @@
     }
 
     label {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 21px;
       line-height: 21px;
@@ -390,7 +390,7 @@
     }
 
     select {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 21px;
       line-height: 36px;
@@ -523,7 +523,7 @@
 
   strong {
     display: block;
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 26px;
     line-height: 36px;

@@ -628,7 +628,7 @@
 }
 
 .accordion {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
@@ -679,7 +679,7 @@
 }
 
 .panel {
-  font-family: 'GillSans-Light';
+  font-family: $font-gillSans-light;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -723,7 +723,7 @@
       margin-bottom: 3px;
       font-size: 14px;
       line-height: 17px;
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
     }
   }

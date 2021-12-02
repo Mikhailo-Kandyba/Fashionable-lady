@@ -32,13 +32,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   height: 100%;
-  background: $white;
-  font-size: 20px;
-  line-height: 23px;
-  font-family: 'GillSans-Regular';
+  background: $base-background;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-family: $base-font-family;
   font-weight: 400;
-  min-width: 320px;
-  color: $black;
+  min-width: $base-min-width;
+  color: $base-text-color;
 }
 ol, ul {
   list-style: none;

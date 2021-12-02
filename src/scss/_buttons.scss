@@ -67,7 +67,7 @@
     }
 
     @include breakpoint($mobile) {
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
@@ -94,7 +94,7 @@
 }
 
 .btn-model {
-  font-family: 'GillSans-Regular';
+  font-family: $base-font-default;
   font-weight: 400;
   font-size: 11px;
   line-height: 32px;
@@ -161,7 +161,7 @@
 }
 
 .btn-goods {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   padding: 23px 100px 18px;
   background: $black;
   border-radius: 20px 0 20px 0;
@@ -251,7 +251,7 @@
 }
 
 .btn-drop {
-  font-family: 'GillSans-Regular';
+  font-family: $base-font-default;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -279,7 +279,7 @@
 }
 
 .btn-article {
-  font-family: 'GillSans-Regular';
+  font-family: $base-font-default;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -298,7 +298,7 @@
 }
 
 .btn-secondary {
-  font-family: 'GillSansExtraBold';
+  font-family: $font-gillSans-extra-bold;
   font-weight: 700;
   font-size: 26px;
   line-height: 30px;
@@ -326,7 +326,7 @@
 }
 
 .btn-link {
-  font-family: 'GillSans-Regular';
+  font-family: $base-font-default;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -422,7 +422,7 @@
 }
 
 .btn-coupon-left {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   font-weight: 600;
   font-size: 21px;
   line-height: 36px;
@@ -447,7 +447,7 @@
 }
 
 .btn-coupon-right {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   font-weight: 600;
   font-size: 21px;
   line-height: 36px;

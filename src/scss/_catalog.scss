@@ -21,7 +21,7 @@
     align-items: center;
 
     a {
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 21px;
       line-height: 26px;
@@ -59,13 +59,8 @@
   }
 }
 
-//.dresses {
-//  display: flex;
-//  flex-direction: column;
-//}
-
 .title-page {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   font-weight: 600;
   font-size: 36px;
   line-height: 36px;
@@ -115,7 +110,7 @@
   }
 
   .accordion {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
@@ -171,7 +166,7 @@
     }
 
     lable {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 16px;
       line-height: 36px;
@@ -226,7 +221,7 @@
   }
 
   p {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     color: $black;
     font-size: 20px;
@@ -261,7 +256,7 @@
 
 
   #select1 {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
@@ -353,7 +348,7 @@
   padding-top: 2px;
   margin-bottom: 8px;
   cursor: pointer;
-  font-family: 'GillSans-Light';
+  font-family: $font-gillSans-light;
   font-weight: 300;
   font-size: 20px;
   line-height: 23px;

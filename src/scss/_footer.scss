@@ -165,7 +165,7 @@
 
     a {
       @include breakpoint($mobile) {
-        font-family: 'GillSans-Light';
+        font-family: $font-gillSans-light;
         font-weight: 300;
         font-size: 14px;
         line-height: 36px;
@@ -192,7 +192,7 @@
 }
 
 .schedule {
-  font-family: 'GillSans-Light';
+  font-family: $font-gillSans-light;
   font-weight: 300;
   font-size: 21px;
   line-height: 36px;
@@ -208,7 +208,7 @@
   }
 
   h3 {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     margin-bottom: 10px;
     font-size: 21px;

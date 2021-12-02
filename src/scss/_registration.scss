@@ -16,7 +16,7 @@
   }
 
   h3 {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     font-size: 26px;
     line-height: 30px;
@@ -113,7 +113,7 @@
     }
 
     &::placeholder {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 21px;
       line-height: 36px;

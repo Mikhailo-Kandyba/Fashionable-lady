@@ -25,7 +25,7 @@
   width: 100%;
 
   h3 {
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 21px;
     line-height: 21px;
@@ -66,7 +66,7 @@
   }
 
   .bold {
-    font-family: 'GillSansExtraBold';
+    font-family: $font-gillSans-extra-bold;
     font-weight: 700;
   }
 }

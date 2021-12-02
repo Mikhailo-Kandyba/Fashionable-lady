@@ -75,7 +75,7 @@
     }
 
     h2 {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 21px;
       line-height: 25px;
@@ -89,14 +89,14 @@
     }
 
     h3 {
-      font-family: 'GillSans-Light';
+      font-family: $font-gillSans-light;
       font-weight: 300;
       font-size: 21px;
       line-height: 21px;
       margin-bottom: 26px;
 
       @include breakpoint($mobile) {
-        font-family: 'GillSans-Regular';
+        font-family: $base-font-default;
         font-weight: 400;
         font-size: 14px;
         line-height: 21px;
@@ -106,7 +106,7 @@
 
     strong {
       display: block;
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 21px;
       line-height: 26px;
@@ -120,7 +120,7 @@
     }
 
     p {
-      font-family: 'GillSans-Light';
+      font-family: $font-gillSans-light;
       font-weight: 300;
       font-size: 21px;
       line-height: 24px;

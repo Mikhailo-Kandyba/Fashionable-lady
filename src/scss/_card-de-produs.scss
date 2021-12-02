@@ -126,7 +126,7 @@
       display: none;
 
       @include breakpoint($mobile) {
-        font-family: 'GillSans-Bold';
+        font-family: $font-gillSans-bold;
         font-weight: 600;
         display: block;
         font-size: 16px;
@@ -212,7 +212,7 @@
 
   strong {
     display: block;
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -233,7 +233,7 @@
       font-size: 14px;
       line-height: 17px;
       color: $black;
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       text-align: left;
     }
@@ -248,7 +248,7 @@
   }
 
   h3 {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
@@ -275,7 +275,7 @@
   }
 
   strong {
-    font-family: 'GillSans-Regular';
+    font-family: $base-font-default;
     font-weight: 400;
     color: $black;
   }
@@ -375,7 +375,7 @@
 
   h3 {
     @include breakpoint($mobile) {
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
     }
   }
@@ -489,14 +489,14 @@
     }
 
     h3 {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       font-size: 26px;
       line-height: 36px;
       margin-bottom: 10px;
 
       @include breakpoint($mobile) {
-        font-family: 'GillSans-Bold';
+        font-family: $font-gillSans-bold;
         font-weight: 600;
         font-size: 16px;
         line-height: 36px;
@@ -505,7 +505,7 @@
     }
 
     p {
-      font-family: 'GillSans-Light';
+      font-family: $font-gillSans-light;
       font-weight: 300;
       font-size: 21px;
       line-height: 32px;
@@ -527,7 +527,7 @@
     }
 
     .name-and-rating > p {
-      font-family: 'GillSans-Bold';
+      font-family: $font-gillSans-bold;
       font-weight: 600;
       font-size: 20px;
       line-height: 24px;
@@ -675,7 +675,7 @@
     }
 
     &::placeholder {
-      font-family: 'GillSans-Regular';
+      font-family: $base-font-default;
       font-weight: 400;
       color: $silver-middle;
       font-size: 20px;
@@ -706,7 +706,7 @@
     .name-block {
       .bonus > {
         p {
-          font-family: 'GillSans-Regular';
+          font-family: $base-font-default;
           font-weight: 400;
           font-size: 20px;
           line-height: 23px;
@@ -761,7 +761,7 @@
   }
 
   h3 {
-    font-family: 'GillSans-Bold';
+    font-family: $font-gillSans-bold;
     font-weight: 600;
     font-size: 26px;
     line-height: 32px;

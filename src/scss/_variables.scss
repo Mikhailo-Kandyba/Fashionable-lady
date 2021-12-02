@@ -25,5 +25,16 @@ $ochre: #db7a25;
 $chestnut-rose: #c85d6c;
 $navy-blue: #001375;
 
+//font page
+$base-font-default: 'GillSans-Regular';
+$font-gillSans-light: 'GillSans-Light';
+$font-gillSans-bold: 'GillSans-Bold';
+$font-gillSans-extra-bold: 'GillSansExtraBold';
 
-
+//Body
+$base-text-color: $black;
+$base-background: $white;
+$base-font-family: $base-font-default;
+$font-size-base: 20px;
+$line-height-base: 23px;
+$base-min-width: 320px

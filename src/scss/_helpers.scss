@@ -135,7 +135,7 @@
 }
 
 .style-input-prices {
-  font-family: 'GillSans-Bold';
+  font-family: $font-gillSans-bold;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -250,7 +250,7 @@
 }
 
 .font-weight-600 {
-  font-family: 'GillSans-Bold' !important;
+  font-family: $font-gillSans-bold !important;
   font-weight: 600 !important;
 }
 
