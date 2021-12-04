@@ -13,52 +13,46 @@
 <div id="wrapper">
     <header>
         <div class="header-top">
-            <div class="">
+            <div class="container-lg">
                 <div class="header-top-content">
-                    <div class="languages-wrap">
-                        <div class="holder-languages">
-                            <div class="radio-btn">
-                                <input id="ru" type="radio" name="radio">
-                                <label for="ru">RU</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input id="ua" type="radio" name="radio" checked>
-                                <label class="active" for="ua">UA</label>
-                            </div>
+                    <div class="holder-languages">
+                        <div class="radio-btn">
+                            <input id="btn-ru" type="radio" name="radio">
+                            <label for="btn-ru">RU</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input id="btn-ua" type="radio" name="radio" checked>
+                            <label for="btn-ua">UA</label>
                         </div>
                     </div>
-                    <div class="menu-top-wrap">
-                        <ul class="menu-top">
-                            <li>
-                                <a href="#">Доставка и оплата</a>
-                            </li>
-                            <li>
-                                <a href="#">Отзывы</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="menu-top">
+                        <li>
+                            <a href="#">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                    </ul>
                     <a class="logo" href="#">
-                        <img src="./images/logo.svg" alt="logo">
+                        <img src="./images/logo.svg" width="130" height="71" alt="logo">
                     </a>
-                    <div class="user-info-wrap">
-                        <div class="user-info-holder">
-                            <div class="dropdown">
-                                <button type="button" class="btn-drop phone-img" data-toggle="dropdown">
-                                    +38(097)458-78-28
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item phone-img" href="tel:+38(095)6121860">+38(095)612-18-60</a>
-                                    <a class="dropdown-item mail-img" href="mailto:sale@modna-panyanka.com.ua">sale@modna-panyanka.com.ua</a>
-                                </div>
+                    <div class="user-info-holder">
+                        <div class="dropdown">
+                            <button type="button" class="btn-drop phone-img" data-toggle="dropdown">
+                                +38(097)458-78-28
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item phone-img" href="tel:+38(095)6121860">+38(095)612-18-60</a>
+                                <a class="dropdown-item email-img" href="mailto:sale@modna-panyanka.com.ua">sale@modna-panyanka.com.ua</a>
                             </div>
-                            <div class="dropdown">
-                                <button type="button" class="btn-drop private-img" data-toggle="dropdown">
-                                    Личный кабинет
-                                </button>
-                                <div class="dropdown-menu position-left_15">
-                                    <a class="dropdown-item history-img" href="#">История заказов</a>
-                                    <a class="dropdown-item output-img" href="#">Выйти</a>
-                                </div>
+                        </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn-drop private-img" data-toggle="dropdown">
+                                Личный кабинет
+                            </button>
+                            <div class="dropdown-menu position-left_15">
+                                <a class="dropdown-item history-img" href="#">История заказов</a>
+                                <a class="dropdown-item output-img" href="#">Выйти</a>
                             </div>
                         </div>
                     </div>
@@ -66,8 +60,8 @@
             </div>
         </div>
         <div class="header-bottom">
-            <div class="">
-                <div class="row">
+            <div class="container-xxl">
+                <div class="row align-items-center">
                     <div class="col nav-wrap">
                         <ul class="menu-bottom">
                             <li class="catalog-item">
@@ -152,20 +146,59 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <div class="search-and-basket">
-                            <form action="#">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Поиск">
-                                </div>
-                            </form>
-                            <div class="basket-wrap">
-                                <div class="name-basket">
-                                    <div class="img-area">
-                                        <img src="./images/basket.svg" alt="basket">
+                        <div class="search-basket">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon1"></button>
+                                <input type="text" class="form-control" placeholder="Поиск" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                            <div class="dropdown">
+                                <div class="basket-wrap">
+                                    <button type="button" class="btn-drop name-basket" data-toggle="dropdown">
+                                        <img src="./images/basket.svg" width="21" height="23" alt="basket">
+                                        <span>Корзина</span>
+                                    </button>
+                                    <div class="dropdown-menu overflow-y">
+                                        <ul class="basket-list">
+                                            <li>
+                                                <div class="img-area">
+                                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                                </div>
+                                                <div class="description-model-item">
+                                                    <p>Блузка больших размеров Фиона</p>
+                                                    <strong>1200 UAN</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="img-area">
+                                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                                </div>
+                                                <div class="description-model-item">
+                                                    <p>Блузка больших размеров Фиона</p>
+                                                    <strong>1200 UAN</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="img-area">
+                                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                                </div>
+                                                <div class="description-model-item">
+                                                    <p>Блузка больших размеров Фиона</p>
+                                                    <strong>1200 UAN</strong>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="img-area">
+                                                    <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                                </div>
+                                                <div class="description-model-item">
+                                                    <p>Блузка больших размеров Фиона</p>
+                                                    <strong>1200 UAN</strong>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <span>Корзина</span>
+                                    <span class="number">21</span>
                                 </div>
-                                <span class="number">21</span>
                             </div>
                         </div>
                     </div>
@@ -174,7 +207,7 @@
         </div>
         <!--mobile-header-->
         <div class="mobile-header">
-            <div class="">
+            <div class="container-lg">
                 <div class="mobile-header-content">
                     <div class="btn-menu-wrap">
                         <button class="btn-menu">
@@ -186,17 +219,16 @@
                     <a class="logo" href="#">
                         <img src="./images/logo.svg" alt="logo">
                     </a>
-                    <div class="search-and-basket">
+                    <div class="search-basket">
                         <div class="dropdown">
                             <button type="button" class="btn-drop" data-toggle="dropdown">
                                 <img src="./images/search.svg" alt="search">
                             </button>
                             <div class="dropdown-menu">
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Поиск">
-                                    </div>
-                                </form>
+                                <div class="input-group">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon3"></button>
+                                    <input type="text" class="form-control" placeholder="Поиск" aria-label="Example text with button addon" aria-describedby="button-addon2">
+                                </div>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -209,7 +241,7 @@
                                         <div class="img-area">
                                             <img src="./images/model-1.png" width="298" height="421" alt="model">
                                         </div>
-                                        <div class="description">
+                                        <div class="description-model-item">
                                             <p>Блузка больших размеров Фиона</p>
                                             <strong>1200 UAN</strong>
                                         </div>
@@ -218,7 +250,7 @@
                                         <div class="img-area">
                                             <img src="./images/model-1.png" width="298" height="421" alt="model">
                                         </div>
-                                        <div class="description">
+                                        <div class="description-model-item">
                                             <p>Блузка больших размеров Фиона</p>
                                             <strong>1200 UAN</strong>
                                         </div>
@@ -227,7 +259,7 @@
                                         <div class="img-area">
                                             <img src="./images/model-1.png" width="298" height="421" alt="model">
                                         </div>
-                                        <div class="description">
+                                        <div class="description-model-item">
                                             <p>Блузка больших размеров Фиона</p>
                                             <strong>1200 UAN</strong>
                                         </div>
@@ -236,7 +268,43 @@
                                         <div class="img-area">
                                             <img src="./images/model-1.png" width="298" height="421" alt="model">
                                         </div>
-                                        <div class="description">
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                        </div>
+                                        <div class="description-model-item">
                                             <p>Блузка больших размеров Фиона</p>
                                             <strong>1200 UAN</strong>
                                         </div>
@@ -337,12 +405,12 @@
                             </div>
                             <div class="holder-languages">
                                 <div class="radio-btn">
-                                    <input id="btn-ru" type="radio" name="radio">
-                                    <label for="btn-ru">RU</label>
+                                    <input id="btn-ru-mobile" type="radio" name="radio">
+                                    <label for="btn-ru-mobile">RU</label>
                                 </div>
                                 <div class="radio-btn">
-                                    <input id="btn-ua" type="radio" name="radio" checked>
-                                    <label for="btn-ua">UA</label>
+                                    <input id="btn-ua-mobile" type="radio" name="radio" checked>
+                                    <label for="btn-ua-mobile">UA</label>
                                 </div>
                             </div>
                             <div class="phone-wrap">
@@ -466,24 +534,26 @@
         </div>
     </main>
     <footer class="footer">
-        <section class="">
+        <section class="container-lg">
             <div class="footer-content">
-                <div class="logo-and-socials">
+                <div class="logo-socials">
                     <a class="logo" href="#">
                         <img src="./images/logo.svg" alt="logo">
                     </a>
                     <div class="socials">
                         <h3>Мы в соц.сетях</h3>
-                        <div class="socials-list-wrap">
-                            <ul class="socials-list">
-                                <li>
+                        <ul class="socials-list">
+                            <li>
+                                <a href="#">
                                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                </li>
-                                <li>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
                                     <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </li>
-                            </ul>
-                        </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="footer-navigation">
@@ -517,7 +587,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="schedule-and-socials">
+                    <div class="schedule-socials">
                         <div class="schedule">
                             <h3>График работы</h3>
                             <ul>
@@ -538,16 +608,18 @@
                         </div>
                         <div class="socials">
                             <h3>Мы в соц.сетях</h3>
-                            <div class="socials-list-wrap">
-                                <ul class="socials-list">
-                                    <li>
+                            <ul class="socials-list">
+                                <li>
+                                    <a href="#">
                                         <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                    </li>
-                                    <li>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </li>
-                                </ul>
-                            </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
