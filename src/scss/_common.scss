@@ -30,6 +30,7 @@
 
   @include breakpoint($mobile) {
     margin: 0 0 40px;
+    padding: 0;
   }
 
   h3 {
@@ -70,7 +71,6 @@
   }
 
   @include breakpoint($mobile) {
-    min-width: 140px;
     margin-bottom: 18px;
   }
 }
@@ -78,6 +78,10 @@
 .ui-tabs-tab {
   margin: 0 15px;
   position: relative;
+
+  @include breakpoint($mobile) {
+    margin: 0 10px;
+  }
 }
 
 .ui-tabs-anchor {
@@ -215,6 +219,10 @@
 
 .tab-content {
   margin: 0 -15px;
+
+  @include breakpoint($mobile) {
+    margin: 0;
+  }
 }
 
 .btn-goods-wrap {
@@ -250,7 +258,6 @@
       font-weight: 600;
       font-size: $font-size-base - 4;
       line-height: $line-height-base - 3;
-      padding-left: 4px;
       margin-bottom: 8px;
     }
   }
@@ -264,7 +271,7 @@
   padding: 0 18px;
 
   @include breakpoint($tablet) {
-    padding: 0 5px;
+    padding: 0 15px;
   }
   .img-area {
     max-width: 407px;
@@ -440,10 +447,6 @@
   .fill-contact {
     display: flex;
     justify-content: flex-end;
-
-    @include breakpoint($tablet) {
-      justify-content: center;
-    }
   }
 
   .input-group {
@@ -457,6 +460,12 @@
     border-radius: 0 20px 20px 0;
     padding: 15px 31px 16px 31px;
     max-width: 188px;
+
+    @include breakpoint($mobile) {
+      max-width: 100px;
+      padding: 7px 10px 6px 12px;
+      border-radius: 0 10px 10px 0;
+    }
 
     &:after {
       display: none;
@@ -474,11 +483,21 @@
     border: 2px solid $black;
     border-radius: 20px 0 0 20px;
 
+    @include breakpoint($mobile) {
+      height: 49px;
+      border-radius: 10px 0 0 10px;
+      padding: 11px 6px 12px 14px;
+    }
+
     &::placeholder {
       font-family: $font-gillSans-light;
       font-weight: 300;
       font-size: $font-size-base + 2;
       line-height: $line-height-base + 13;
+
+      @include breakpoint($mobile) {
+        font-size: $font-size-base - 6;
+      }
     }
   }
 }

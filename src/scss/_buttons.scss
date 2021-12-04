@@ -10,6 +10,11 @@
   color: $white;
   border: none;
 
+  @include breakpoint($mobile) {
+    font-family: $base-font-family;
+    font-size: $font-size-base - 6;
+  }
+
   &:focus {
     box-shadow: none;
   }
@@ -146,8 +151,7 @@
 
   @include breakpoint($mobile) {
     font-size: $font-size-base - 5;
-    line-height: $line-height-base - 13;
-    padding: 4px 15px 4px;
+    padding: 5px 25px 5px;
   }
 }
 

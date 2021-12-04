@@ -35,7 +35,8 @@
   color: $silver-middle;
 
   @include breakpoint($desktop) {
-    min-width: 100%;
+    justify-content: space-between;
+    min-width: 80px;
   }
 }
 
@@ -44,6 +45,10 @@
   align-items: center;
   min-width: 335px;
   flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    min-width: 285px;
+  }
 
   li {
     margin-right: 20px;
@@ -66,14 +71,14 @@
   min-width: 510px;
   flex-wrap: wrap;
 
+  @include breakpoint($desktop) {
+    min-width: 430px;
+  }
+
   .dropdown {
     &:first-child {
       margin-left: 0;
     }
-  }
-
-  @include breakpoint($desktop) {
-    min-width: 100%;
   }
 }
 
@@ -347,6 +352,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  padding: 5px 0;
 
   .search-basket {
     .dropdown {
@@ -497,10 +503,15 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
+    @include breakpoint($desktop) {
+      left: -6px !important;
+    }
+
     @include  breakpoint($mobile) {
       min-width: 293px;
       left: -10px !important;
       top: -1px !important;
+      padding: 10px;
     }
   }
 
@@ -533,6 +544,13 @@
 
   .input-group {
     max-width: 370px;
+
+    @include breakpoint($mobile) {
+      border: 1px solid $silver;
+      border-radius: 10px;
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 9;
+    }
   }
 
   .basket-wrap {
@@ -568,6 +586,10 @@
   padding: 10px 30px 10px 40px;
   border: none;
 
+  @include breakpoint($mobile) {
+    padding: 10px 10px 10px 40px;
+  }
+
   &:focus {
     box-shadow: none;
   }
@@ -594,16 +616,26 @@
 .form-control {
   font-family: $base-font-default;
   font-size: $font-size-base + 1;
-  line-height: $line-height-base +2;
+  line-height: $line-height-base - 2;
   height: 50px;
   border-radius: 0 15px 15px 0;
   color: $black;
   border: none;
 
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 6;
+    line-height: $line-height-base - 9;
+  }
+
   &::placeholder {
     font-size: $font-size-base + 1;
     line-height: $line-height-base +1;
     color: $black;
+
+    @include breakpoint($mobile) {
+      font-size: $font-size-base - 6;
+      line-height: $line-height-base - 9;
+    }
   }
 
   &:focus {
@@ -618,12 +650,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid $mine-shaft;
     border-bottom: 1px solid $mine-shaft;
     padding: 10px 0;
 
+    @include breakpoint($mobile) {
+      padding: 5px 0;
+    }
+
     .img-area {
       max-width: 60px;
+
+      @include breakpoint($mobile) {
+        max-width: 40px;
+      }
     }
 
     .description-model-item {
@@ -734,6 +773,7 @@
   a {
     display: block;
     padding: 4px 4px 4px 25px;
+    position: relative;
 
     @include breakpoint($mobile) {
       margin-bottom: 3px;
