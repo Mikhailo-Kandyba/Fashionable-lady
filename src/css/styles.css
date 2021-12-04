@@ -289,10 +289,6 @@ h6 {
       color: #fafafa; } }
 
 .btn-drop {
-  font-family: "GillSans-Regular";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
   background: transparent;
   border: none;
   color: #000;
@@ -855,8 +851,6 @@ h6 {
     align-items: center;
     justify-content: space-between; }
     .search-basket .basket-wrap .number {
-      font-size: 20px;
-      line-height: 23px;
       background: #ebebeb;
       padding: 6px 7px;
       border-radius: 50%; }
@@ -895,7 +889,7 @@ h6 {
 
 .form-control {
   font-family: "GillSans-Regular";
-  font-size: 23px;
+  font-size: 21px;
   line-height: 25px;
   height: 50px;
   border-radius: 0 15px 15px 0;
@@ -1058,7 +1052,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  font-size: 21px;
+  line-height: 25px; }
   @media only screen and (max-width: 1023px) {
     .tabs-navigation {
       margin-bottom: 40px; } }
@@ -1073,8 +1069,6 @@ h6 {
 
 .ui-tabs-anchor {
   display: block;
-  font-size: 21px;
-  line-height: 25px;
   text-transform: uppercase;
   padding: 6px 0 6px; }
   @media only screen and (max-width: 767px) {
@@ -1364,15 +1358,15 @@ h6 {
       justify-content: center; } }
 
 .mailing .input-group {
-  border: 2px solid #000;
-  border-radius: 20px;
-  overflow: hidden;
   max-width: 560px; }
 
 .mailing .btn-outline-secondary {
+  font-family: "GillSans-Regular";
+  font-weight: 400;
   background: #000;
-  border-radius: 0;
-  padding: 14px 31px 15px 31px; }
+  border-radius: 0 20px 20px 0;
+  padding: 15px 31px 16px 31px;
+  max-width: 188px; }
   .mailing .btn-outline-secondary:after {
     display: none; }
   .mailing .btn-outline-secondary:hover {
@@ -1381,7 +1375,9 @@ h6 {
 
 .mailing .form-control {
   height: 67px;
-  padding: 10px 10px 10px 44px; }
+  padding: 10px 10px 10px 44px;
+  border: 2px solid #000;
+  border-radius: 20px 0 0 20px; }
   .mailing .form-control::placeholder {
     font-family: "GillSans-Light";
     font-weight: 300;
