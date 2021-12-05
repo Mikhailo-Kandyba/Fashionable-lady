@@ -337,6 +337,7 @@
   display: none;
   position: relative;
   z-index: 50;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.11);
 
   @include breakpoint($tablet) {
     display: block;
@@ -369,12 +370,12 @@
   width: 100%;
   position: fixed;
   z-index: 25;
-  top: 90px;
+  top: 100px;
   right: 200%;
   transition: all .25s ease;
 
   @include breakpoint($mobile) {
-    top: 46px;
+    top: 56px;
   }
 }
 
@@ -496,7 +497,7 @@
   }
 
   .dropdown-menu {
-    top: 18px !important;
+    top: 24px !important;
     left: -160px !important;
     min-width: 340px;
     padding: 10px 25px;
@@ -545,8 +546,12 @@
   .input-group {
     max-width: 370px;
 
-    @include breakpoint($mobile) {
+    @include breakpoint($tablet) {
       border: 1px solid $silver;
+      border-radius: 15px;
+    }
+
+    @include breakpoint($mobile) {
       border-radius: 10px;
       font-size: $font-size-base - 6;
       line-height: $line-height-base - 9;
@@ -685,7 +690,7 @@
 .accordion {
   font-family: $font-gillSans-bold;
   font-weight: 600;
-  font-size: 2$font-size-base;
+  font-size: $font-size-base;
   line-height: $line-height-base;
   color: $black;
   border-bottom: 1px solid $black;

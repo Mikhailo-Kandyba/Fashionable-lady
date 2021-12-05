@@ -52,10 +52,8 @@
     max-width: 480px;
     width: 100%;
     margin-right: 35px;
-
-    img {
-      border-radius: 20px;
-    }
+    overflow: hidden;
+    border-radius: 20px;
 
     @include breakpoint($desktop) {
       margin-right: 10px;
@@ -144,6 +142,8 @@
 
   .img-area {
     margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 10px;
 
     @include breakpoint($mobile) {
       max-width: 80px;
@@ -347,7 +347,7 @@
     border: none;
     border-radius: 15px;
     user-select: none;
-    background: $mine-shaft;
+    background: $gallery;
 
     @include breakpoint($mobile) {
       font-size: $font-size-base - 6;
@@ -410,7 +410,6 @@
 
 .card-product-tabs {
   #tabs {
-    align-items: flex-start;
     margin-bottom: 48px;
 
     @include breakpoint($mobile) {
@@ -419,8 +418,8 @@
   }
 
   .tabs-navigation {
-    margin-left: -30px;
     margin-bottom: 22px;
+    justify-content: flex-start;
 
     @include breakpoint($desktop) {
       margin-left: 0;
@@ -436,6 +435,9 @@
   }
 
   .ui-tabs-tab {
+    &:first-child {
+      margin-left: 0;
+    }
     @include breakpoint($mobile) {
       margin: 0;
       width: 100%;
@@ -443,18 +445,8 @@
     }
   }
 
-  .ui-tabs-tab {
-    @include breakpoint($desktop) {
-      &:first-child {
-        margin-left: 0;
-      }
-    }
-  }
-
   .tab-content {
-    @include breakpoint($desktop) {
-      margin: 0;
-    }
+    margin: 0;
   }
 
   .ui-tabs-anchor {
@@ -760,11 +752,7 @@
     padding-top: 32px;
   }
 
-  h3 {
-    font-family: $font-gillSans-bold;
-    font-weight: 600;
-    font-size: $font-size-base + 6;
-    line-height: $line-height-base + 9;
+  .title {
     margin-bottom: 40px;
     text-transform: uppercase;
 
@@ -777,10 +765,10 @@
 }
 
 .slider-suggestions {
-  margin-bottom: 40px;
+  margin: 0 -18px 40px;
 
   @include breakpoint($mobile) {
-    margin-bottom: 10px;
+    margin: 0 -15px 10px;
   }
 }
 

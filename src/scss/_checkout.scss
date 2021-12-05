@@ -20,11 +20,7 @@
     align-items: flex-start;
   }
 
-  h3 {
-    font-family: $font-gillSans-bold;
-    font-weight: 600;
-    font-size: $font-size-base + 6;
-    line-height: $line-height-base + 9;
+  .title {
     margin-bottom: 15px;
 
     @include breakpoint($mobile) {
@@ -151,8 +147,6 @@
   p {
     font-family: $font-gillSans-bold;
     font-weight: 600;
-    font-size: $font-size-base + 1;
-    line-height: $line-height-base + 2;
     margin-bottom: 25px;
     color: $black;
 
@@ -471,27 +465,27 @@
     max-width: 100%;
   }
 
+  .btn-goods {
+    padding: 23px 115px 18px;
+
+    @include breakpoint($desktop) {
+      padding: 23px 45px 18px;
+    }
+
+    @include breakpoint($tablet) {
+      padding: 10px 25px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 100%;
+      padding: 4px 25px;
+    }
+  }
+
   .btn-holder {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    .btn-goods {
-      padding: 23px 115px 18px;
-
-      @include breakpoint($desktop) {
-        padding: 23px 45px 18px;
-      }
-
-      @include breakpoint($tablet) {
-        padding: 10px 25px;
-      }
-
-      @include breakpoint($mobile) {
-        width: 100%;
-        padding: 4px 25px;
-      }
-    }
   }
 }
 

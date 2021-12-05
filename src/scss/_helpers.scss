@@ -142,7 +142,7 @@
 
 .background-dark-grey {
   @include breakpoint($mobile) {
-    background: $mine-shaft;
+    background: $gallery;
   }
 }
 

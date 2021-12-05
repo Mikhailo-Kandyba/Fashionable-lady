@@ -34,7 +34,7 @@
                                     <a href="#">Отзывы</a>
                                 </li>
                             </ul>
-                            <a class="logo" href="#">
+                            <a class="logo" href="index.html">
                                 <img src="./images/logo.svg" width="130" height="71" alt="logo">
                             </a>
                             <div class="user-info-holder">
@@ -52,8 +52,8 @@
                                         Личный кабинет
                                     </button>
                                     <div class="dropdown-menu position-left_15">
-                                        <a class="dropdown-item history-img" href="#">История заказов</a>
-                                        <a class="dropdown-item output-img" href="#">Выйти</a>
+                                        <a class="dropdown-item history-img" href="history-of-orders.html">История заказов</a>
+                                        <a class="dropdown-item output-img" href="registration.html">Выйти</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,13 +217,13 @@
                                     <span class="bottom"></span>
                                 </button>
                             </div>
-                            <a class="logo" href="#">
-                                <img src="./images/logo.svg" alt="logo">
+                            <a class="logo" href="index.html">
+                                <img src="./images/logo.svg" width="130" height="71" alt="logo">
                             </a>
                             <div class="search-basket">
                                 <div class="dropdown">
                                     <button type="button" class="btn-drop" data-toggle="dropdown">
-                                        <img src="./images/search.svg" alt="search">
+                                        <img src="./images/search.svg" width="27" height="24" alt="search">
                                     </button>
                                     <div class="dropdown-menu">
                                         <div class="input-group">
@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="dropdown">
                                     <button type="button" class="btn-drop" data-toggle="dropdown">
-                                        <img src="./images/basket.svg" alt="basket">
+                                        <img src="./images/basket.svg" width="21" height="23" alt="basket">
                                     </button>
                                     <div class="dropdown-menu overflow-y">
                                         <ul class="basket-list">
@@ -425,13 +425,13 @@
                 </div>
             </header>
             <main>
-                <div class="-xl">
+                <div class="container-xl">
                     <ul class="breadcrumb">
                         <li><a href="index.html">Главная</a></li>
-                        <li class="active"><a href="#">Платья</a></li>
+                        <li class="active"><a href="%20catalog.html">Платья</a></li>
                     </ul>
                 </div>
-                <section class="-xxl dresses">
+                <section class="container-xl">
                     <h3 class="title-page">Платья</h3>
                     <div class="filter-and-tova">
                         <!--Mobile-->
@@ -767,17 +767,173 @@
                             </div>
                         </div>
                         <div class="tova-wrap">
-                            <div class="sorting">
-                                <div class="sorting-filter">
-                                    <p>Сортировать по:</p>
-                                    <div class="select-holder">
-                                        <select id="select1" onchange="setForm(this.value)">
-                                            <option value="form1">По умолчанию</option>
-                                            <option value="form2">По цене</option>
-                                        </select>
-                                    </div>
+                            <div class="sorting-filter">
+                                <p>Сортировать по:</p>
+                                <div class="select-holder">
+                                    <select id="select1" onchange="setForm(this.value)">
+                                        <option value="form1">По умолчанию</option>
+                                        <option value="form2">По цене</option>
+                                    </select>
                                 </div>
-                                <div id="form1" class="margin-15">
+                            </div>
+                            <div id="form1" class="sorting margin-15">
+                                <ul class="model-list">
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-9.png" width="298" height="420" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites btn_selected">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-3.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-5.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-6.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-7.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites btn_selected">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-4.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-8.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="img-area">
+                                            <img src="./images/model-1.png" width="298" height="421" alt="model">
+                                            <div class="badges">
+                                                <span class="badge bg-success text-white">новинка</span>
+                                                <span class="badge bg-danger text-white">-15%</span>
+                                                <span class="badge bg-warning text-white">Хит продаж</span>
+                                            </div>
+                                            <button class="btn-favorites">
+                                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                        <div class="description-model-item">
+                                            <p>Блузка больших размеров Фиона</p>
+                                            <strong>1200 UAN</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="form2" class="sorting margin-15" style="display: none">
                                     <ul class="model-list">
                                         <li>
                                             <div class="img-area">
@@ -786,163 +942,6 @@
                                                     <span class="badge bg-success text-white">новинка</span>
                                                     <span class="badge bg-danger text-white">-15%</span>
                                                     <span class="badge bg-warning text-white">Хит продаж</span>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-9.png" width="298" height="420" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
-                                                </div>
-                                                <button class="btn-favorites btn_selected">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-3.png" width="298" height="421" alt="model">
-                                                <div class="badges">
-                                                    <span class="badge bg-success text-white">новинка</span>
-                                                    <span class="badge bg-danger text-white">-15%</span>
-                                                    <span class="badge bg-warning text-white">Хит продаж</span>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-5.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-6.png" width="298" height="421" alt="model">
-                                                <div class="badges">
-                                                    <span class="badge bg-success text-white">новинка</span>
-                                                    <span class="badge bg-danger text-white">-15%</span>
-                                                    <span class="badge bg-warning text-white">Хит продаж</span>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-7.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
-                                                </div>
-                                                <button class="btn-favorites btn_selected">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-4.png" width="298" height="421" alt="model">
-                                                <div class="badges">
-                                                    <span class="badge bg-success text-white">новинка</span>
-                                                    <span class="badge bg-danger text-white">-15%</span>
-                                                    <span class="badge bg-warning text-white">Хит продаж</span>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-8.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                                <div class="badges">
-                                                    <span class="badge bg-success text-white">новинка</span>
-                                                    <span class="badge bg-danger text-white">-15%</span>
-                                                    <span class="badge bg-warning text-white">Хит продаж</span>
-                                                </div>
-                                                <button class="btn-favorites">
-                                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
-                                                </button>
-                                            </div>
-                                            <div class="description-model-item">
-                                                <p>Блузка больших размеров Фиона</p>
-                                                <strong>1200 UAN</strong>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div  id="form2" class="margin-15" style="display: none">
-                                    <ul class="model-list">
-                                        <li>
-                                            <div class="img-area">
-                                                <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
                                                 </div>
                                                 <button class="btn-favorites">
                                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -955,7 +954,7 @@
                                         </li>
                                         <li>
                                             <div class="img-area">
-                                                <img src="./images/model-2.png" width="298" height="420" alt="model">
+                                                <img src="./images/model-2.png" width="298" height="421" alt="model">
                                                 <div class="badges">
                                                     <span class="badge bg-success text-white">новинка</span>
                                                     <span class="badge bg-danger text-white">-15%</span>
@@ -973,10 +972,10 @@
                                         <li>
                                             <div class="img-area">
                                                 <img src="./images/model-3.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
+                                                <div class="badges">
+                                                    <span class="badge bg-success text-white">новинка</span>
+                                                    <span class="badge bg-danger text-white">-15%</span>
+                                                    <span class="badge bg-warning text-white">Хит продаж</span>
                                                 </div>
                                                 <button class="btn-favorites">
                                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -1007,10 +1006,10 @@
                                         <li>
                                             <div class="img-area">
                                                 <img src="./images/model-6.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
+                                                <div class="badges">
+                                                    <span class="badge bg-success text-white">новинка</span>
+                                                    <span class="badge bg-danger text-white">-15%</span>
+                                                    <span class="badge bg-warning text-white">Хит продаж</span>
                                                 </div>
                                                 <button class="btn-favorites">
                                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -1041,10 +1040,10 @@
                                         <li>
                                             <div class="img-area">
                                                 <img src="./images/model-4.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
+                                                <div class="badges">
+                                                    <span class="badge bg-success text-white">новинка</span>
+                                                    <span class="badge bg-danger text-white">-15%</span>
+                                                    <span class="badge bg-warning text-white">Хит продаж</span>
                                                 </div>
                                                 <button class="btn-favorites">
                                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -1075,10 +1074,10 @@
                                         <li>
                                             <div class="img-area">
                                                 <img src="./images/model-1.png" width="298" height="421" alt="model">
-                                                <div class="holder-btn-item">
-                                                    <button class="btn-model btn_green">новинка</button>
-                                                    <button class="btn-model btn_red">-15%</button>
-                                                    <button class="btn-model btn_orange">Хит продаж</button>
+                                                <div class="badges">
+                                                    <span class="badge bg-success text-white">новинка</span>
+                                                    <span class="badge bg-danger text-white">-15%</span>
+                                                    <span class="badge bg-warning text-white">Хит продаж</span>
                                                 </div>
                                                 <button class="btn-favorites">
                                                     <i class="fa fa-heart-o" aria-hidden="true"></i>
@@ -1091,25 +1090,24 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
                             <div class="btn-goods-wrap">
-                                <button class="btn-goods">Загрузить ещё товары</button>
+                                <button class="btn btn-goods btn-lg">Загрузить ещё товары</button>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div class="background-padding-lactic">
-                    <div class="container">
+                <div class="background-alabaster padding-55">
+                    <div class="container-lg">
                         <div class="mailing">
-                            <div class="row">
+                            <div class="row align-items-center">
                                 <div class="col">
                                     <p>Подпишитесь на рассылку скидок и новостей.</p>
                                 </div>
-                                <div class="col form-btn-wrap">
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Email">
+                                <div class="col fill-contact">
+                                    <div class="input-group align-items-center">
+                                        <input type="email" class="form-control" placeholder="Email" aria-label="Example text with button addon" aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Подписаться</button>
                                     </div>
-                                    <button class="btn-form">Подписаться</button>
                                 </div>
                             </div>
                         </div>
@@ -1120,8 +1118,8 @@
                 <section class="container-lg">
                     <div class="footer-content">
                         <div class="logo-socials">
-                            <a class="logo" href="#">
-                                <img src="./images/logo.svg" alt="logo">
+                            <a class="logo" href="index.html">
+                                <img src="./images/logo.svg" width="130" height="71" alt="logo">
                             </a>
                             <div class="socials">
                                 <h3>Мы в соц.сетях</h3>

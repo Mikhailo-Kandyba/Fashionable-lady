@@ -145,10 +145,6 @@
   padding: 23px 83px 18px;
   border-radius: 20px 0 20px 0;
 
-  @include breakpoint($desktop) {
-    padding: 23px 70px 18px;
-  }
-
   @include breakpoint($mobile) {
     font-size: $font-size-base - 5;
     padding: 5px 25px 5px;
@@ -236,7 +232,7 @@
   font-weight: 400;
   font-size: $font-size-base - 4;
   line-height: $line-height-base - 4;
-  background: $mine-shaft;
+  background: $gallery;
   border-radius: 15px;
   padding: 6px 18px;
 
@@ -345,6 +341,12 @@
   }
 }
 
+.btn-lg {
+  @include breakpoint($tablet) {
+    padding: 13px 50px;
+  }
+}
+
 .btn-xxl {
   padding: 23px 172px 18px;
 
@@ -357,7 +359,6 @@
   }
 }
 
-
 .grey-btn {
   background: $silver-middle;
 
@@ -366,7 +367,7 @@
   }
 }
 
-.btn-red-two {
+.btn-danger {
   background: $chestnut-rose;
 
   &:hover {
@@ -375,23 +376,20 @@
 }
 
 .btn-coupon-left {
-  font-family: $font-gillSans-bold;
-  font-weight: 600;
   font-size: $font-size-base + 1;
   line-height: $line-height-base + 13;
   color: $black;
   background: $alabaster;
   border: none;
-  padding: 20px 64px 21px 81px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  padding: 20px 48px;
+  border-radius: 20px 0 0 20px;
 
   @include breakpoint($tablet) {
-    padding: 10px 25px;
+    padding: 15px 25px;
   }
 
   @include breakpoint($mobile) {
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-size: $font-size-base - 5;
     line-height: $line-height-base - 13;
     color: $silver-middle;
@@ -400,23 +398,20 @@
 }
 
 .btn-coupon-right {
-  font-family: $font-gillSans-bold;
-  font-weight: 600;
   font-size: $font-size-base + 1;
-  line-height: $line-height-base - 13;
+  line-height: $line-height-base + 13;
   color: $white;
   background: $black;
   border: none;
-  padding: 20px 26px 21px 41px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding: 20px 48px;
+  border-radius: 0 20px 20px 0;
 
   @include breakpoint($tablet) {
-    padding: 10px 25px;
+    padding: 15px 25px;
   }
 
   @include breakpoint($mobile) {
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-size: $font-size-base - 5;
     line-height: $line-height-base - 13;
     border-top-left-radius: 20px;
@@ -429,6 +424,8 @@
     background: $mine-shaft;
   }
 }
+
+
 
 
 

@@ -15,10 +15,6 @@
       display: none;
     }
   }
-
-  .row {
-    align-items: flex-start;
-  }
 }
 
 .table {
@@ -38,7 +34,6 @@
 
   .table-row {
     display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid $silver-middle;
 
     &:last-child {
@@ -72,14 +67,6 @@
 }
 
 .info-bonus-user {
-  #tabs {
-    align-items: inherit;
-  }
-
-  .tabs-navigation {
-    justify-content: center;
-  }
-
   .tab-content {
     margin: 0;
 

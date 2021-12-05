@@ -92,8 +92,6 @@ button {
   border: none; }
   button:focus {
     outline: none; }
-  button:hover {
-    background: #333; }
 
 label:hover {
   cursor: pointer; }
@@ -243,9 +241,6 @@ h6 {
 .btn-goods {
   padding: 23px 83px 18px;
   border-radius: 20px 0 20px 0; }
-  @media only screen and (max-width: 1350px) {
-    .btn-goods {
-      padding: 23px 70px 18px; } }
   @media only screen and (max-width: 767px) {
     .btn-goods {
       font-size: 15px;
@@ -315,7 +310,7 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  background: #333;
+  background: #ebebeb;
   border-radius: 15px;
   padding: 6px 18px; }
   @media only screen and (max-width: 767px) {
@@ -401,6 +396,10 @@ h6 {
     .btn-xl {
       padding: 3px 60px; } }
 
+@media only screen and (max-width: 1023px) {
+  .btn-lg {
+    padding: 13px 50px; } }
+
 .btn-xxl {
   padding: 23px 172px 18px; }
   @media only screen and (max-width: 1350px) {
@@ -415,50 +414,44 @@ h6 {
   .grey-btn:hover {
     background: #000; }
 
-.btn-red-two {
+.btn-danger {
   background: #c85d6c; }
-  .btn-red-two:hover {
+  .btn-danger:hover {
     background: #bc2b2b; }
 
 .btn-coupon-left {
-  font-family: "GillSans-Bold";
-  font-weight: 600;
   font-size: 21px;
   line-height: 36px;
   color: #000;
   background: #fafafa;
   border: none;
-  padding: 20px 64px 21px 81px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px; }
+  padding: 20px 48px;
+  border-radius: 20px 0 0 20px; }
   @media only screen and (max-width: 1023px) {
     .btn-coupon-left {
-      padding: 10px 25px; } }
+      padding: 15px 25px; } }
   @media only screen and (max-width: 767px) {
     .btn-coupon-left {
-      padding: 5px 20px;
+      padding: 15px 20px;
       font-size: 15px;
       line-height: 10px;
       color: #bebebe;
       border-radius: 20px; } }
 
 .btn-coupon-right {
-  font-family: "GillSans-Bold";
-  font-weight: 600;
   font-size: 21px;
-  line-height: 10px;
+  line-height: 36px;
   color: #fff;
   background: #000;
   border: none;
-  padding: 20px 26px 21px 41px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px; }
+  padding: 20px 48px;
+  border-radius: 0 20px 20px 0; }
   @media only screen and (max-width: 1023px) {
     .btn-coupon-right {
-      padding: 10px 25px; } }
+      padding: 15px 25px; } }
   @media only screen and (max-width: 767px) {
     .btn-coupon-right {
-      padding: 5px 20px;
+      padding: 15px 20px;
       font-size: 15px;
       line-height: 10px;
       border-top-left-radius: 20px;
@@ -708,7 +701,8 @@ h6 {
   padding: 10px 0;
   display: none;
   position: relative;
-  z-index: 50; }
+  z-index: 50;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.11); }
   @media only screen and (max-width: 1023px) {
     .mobile-header {
       display: block; } }
@@ -732,12 +726,12 @@ h6 {
   width: 100%;
   position: fixed;
   z-index: 25;
-  top: 90px;
+  top: 100px;
   right: 200%;
   transition: all .25s ease; }
   @media only screen and (max-width: 767px) {
     .menu-navigation-wrap {
-      top: 46px; } }
+      top: 56px; } }
 
 .menu-navigation {
   display: flex;
@@ -827,7 +821,7 @@ h6 {
     .search-basket {
       max-width: 65px; } }
   .search-basket .dropdown-menu {
-    top: 18px !important;
+    top: 24px !important;
     left: -160px !important;
     min-width: 340px;
     padding: 10px 25px;
@@ -858,9 +852,12 @@ h6 {
     background: #bfbfbf; }
   .search-basket .input-group {
     max-width: 370px; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1023px) {
       .search-basket .input-group {
         border: 1px solid #bfbfbf;
+        border-radius: 15px; } }
+    @media only screen and (max-width: 767px) {
+      .search-basket .input-group {
         border-radius: 10px;
         font-size: 14px;
         line-height: 14px; } }
@@ -962,7 +959,7 @@ h6 {
 .accordion {
   font-family: "GillSans-Bold";
   font-weight: 600;
-  font-size: 2 20px;
+  font-size: 20px;
   line-height: 23px;
   color: #000;
   border-bottom: 1px solid #000;
@@ -1434,9 +1431,22 @@ h6 {
       .mailing .form-control::placeholder {
         font-size: 14px; } }
 
+.title {
+  font-family: "GillSans-Bold";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 49px; }
+  @media only screen and (max-width: 767px) {
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px; } }
+
 .breadcrumb {
-  display: flex;
-  align-items: center;
+  font-family: "GillSans-Bold";
+  font-size: 21px;
+  line-height: 26px;
   padding: 0;
   background-color: #fff;
   margin: 60px 0 35px; }
@@ -1450,14 +1460,7 @@ h6 {
     display: flex;
     align-items: center; }
     .breadcrumb li a {
-      font-family: "GillSans-Bold";
-      font-weight: 600;
-      font-size: 21px;
-      line-height: 26px;
-      display: flex;
-      padding: 10px 6px 10px 0;
-      color: #000;
-      text-decoration: none; }
+      padding: 10px 6px 10px 0; }
       @media only screen and (max-width: 767px) {
         .breadcrumb li a {
           font-size: 14px;
@@ -1477,9 +1480,8 @@ h6 {
 .title-page {
   font-family: "GillSans-Bold";
   font-weight: 600;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000;
+  font-size: 26px;
+  line-height: 32px;
   border-bottom: 1px solid #000;
   padding-bottom: 17px; }
   @media only screen and (max-width: 767px) {
@@ -1515,20 +1517,19 @@ h6 {
   .filter-and-tova .accordion {
     font-family: "GillSans-Regular";
     font-weight: 400;
-    font-size: 20px;
     line-height: 36px;
     border-bottom: none;
     background: #fafafa;
     border-radius: 10px;
     margin-bottom: 5px;
-    padding: 14px 26px 6px 20px; }
+    padding: 10px 35px 8px 20px; }
     @media only screen and (max-width: 767px) {
       .filter-and-tova .accordion {
         font-size: 14px;
         border-radius: 15px;
         padding: 0 26px 0 22px; } }
     .filter-and-tova .accordion:hover {
-      background: #333; }
+      background: #bfbfbf; }
     .filter-and-tova .accordion:after {
       right: 16px; }
       @media only screen and (max-width: 1350px) {
@@ -1617,9 +1618,6 @@ h6 {
     .select-holder {
       max-width: 100%; } }
   .select-holder #select1 {
-    font-family: "GillSans-Regular";
-    font-weight: 400;
-    font-size: 20px;
     line-height: 36px;
     background: #fafafa;
     border-radius: 10px;
@@ -1628,7 +1626,7 @@ h6 {
     padding: 2px 36px 2px 25px;
     white-space: normal; }
     .select-holder #select1:hover {
-      background: #333; }
+      background: #bfbfbf; }
     @media only screen and (max-width: 767px) {
       .select-holder #select1 {
         font-size: 14px;
@@ -1773,9 +1771,9 @@ h6 {
 .card-product .img-block > .img-area {
   max-width: 480px;
   width: 100%;
-  margin-right: 35px; }
-  .card-product .img-block > .img-area img {
-    border-radius: 20px; }
+  margin-right: 35px;
+  overflow: hidden;
+  border-radius: 20px; }
   @media only screen and (max-width: 1350px) {
     .card-product .img-block > .img-area {
       margin-right: 10px; } }
@@ -1837,7 +1835,9 @@ h6 {
     flex-wrap: wrap; } }
 
 .img-small .img-area {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 10px; }
   @media only screen and (max-width: 767px) {
     .img-small .img-area {
       max-width: 80px;
@@ -1992,7 +1992,7 @@ h6 {
     border: none;
     border-radius: 15px;
     user-select: none;
-    background: #333; }
+    background: #ebebeb; }
     @media only screen and (max-width: 767px) {
       .form_radio_btn label {
         font-size: 14px;
@@ -2035,15 +2035,14 @@ h6 {
     border: 2px solid #000; }
 
 .card-product-tabs #tabs {
-  align-items: flex-start;
   margin-bottom: 48px; }
   @media only screen and (max-width: 767px) {
     .card-product-tabs #tabs {
       margin-bottom: 7px; } }
 
 .card-product-tabs .tabs-navigation {
-  margin-left: -30px;
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  justify-content: flex-start; }
   @media only screen and (max-width: 1350px) {
     .card-product-tabs .tabs-navigation {
       margin-left: 0;
@@ -2055,19 +2054,17 @@ h6 {
       min-width: 100%;
       margin-bottom: 5px; } }
 
+.card-product-tabs .ui-tabs-tab:first-child {
+  margin-left: 0; }
+
 @media only screen and (max-width: 767px) {
   .card-product-tabs .ui-tabs-tab {
     margin: 0;
     width: 100%;
     text-align: center; } }
 
-@media only screen and (max-width: 1350px) {
-  .card-product-tabs .ui-tabs-tab:first-child {
-    margin-left: 0; } }
-
-@media only screen and (max-width: 1350px) {
-  .card-product-tabs .tab-content {
-    margin: 0; } }
+.card-product-tabs .tab-content {
+  margin: 0; }
 
 .card-product-tabs .ui-tabs-anchor {
   font-size: 20px;
@@ -2346,24 +2343,20 @@ h6 {
     .suggestions {
       margin-bottom: 20px;
       padding-top: 32px; } }
-  .suggestions h3 {
-    font-family: "GillSans-Bold";
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
+  .suggestions .title {
     margin-bottom: 40px;
     text-transform: uppercase; }
     @media only screen and (max-width: 767px) {
-      .suggestions h3 {
+      .suggestions .title {
         font-size: 15px;
         line-height: 20px;
         margin-bottom: 15px; } }
 
 .slider-suggestions {
-  margin-bottom: 40px; }
+  margin: 0 -18px 40px; }
   @media only screen and (max-width: 767px) {
     .slider-suggestions {
-      margin-bottom: 10px; } }
+      margin: 0 -15px 10px; } }
 
 .slider-reviews .slick-slide {
   width: 427px; }
@@ -2483,6 +2476,10 @@ h6 {
   @media only screen and (max-width: 767px) {
     .registration-wrap {
       margin-bottom: 35px; } }
+  .registration-wrap #tabs {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
   .registration-wrap .tab-content {
     max-width: 845px;
     width: 100%; }
@@ -2511,18 +2508,6 @@ h6 {
       background-image: url("../images/pointer-2.svg"); }
   .personal-area-wrap .personal-area-navigation i {
     color: #000; }
-
-.title-navigation-speaker {
-  font-family: "GillSans-Bold";
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 14px;
-  margin-bottom: 35px; }
-  @media only screen and (max-width: 767px) {
-    .title-navigation-speaker {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 10px; } }
 
 .personal-area-navigation {
   flex-direction: column;
@@ -2612,8 +2597,6 @@ h6 {
   @media only screen and (max-width: 767px) {
     .featured-products-wrap {
       margin-bottom: 40px; } }
-  .featured-products-wrap .row {
-    align-items: flex-start; }
   .featured-products-wrap .display_none {
     display: block; }
     @media only screen and (max-width: 767px) {
@@ -2625,6 +2608,8 @@ h6 {
       .featured-products-wrap .holder-btn {
         display: flex;
         justify-content: center; } }
+  .featured-products-wrap .title {
+    margin-bottom: 50px; }
 
 .featured-products {
   margin: 0 -15px; }
@@ -2644,8 +2629,6 @@ h6 {
     @media only screen and (max-width: 767px) {
       .orders-wrap .display_none {
         display: none; } }
-  .orders-wrap .row {
-    align-items: flex-start; }
 
 .order-list li {
   display: flex;
@@ -2659,7 +2642,9 @@ h6 {
 
 .order-list .img-area {
   max-width: 188px;
-  margin-right: 30px; }
+  margin-right: 30px;
+  overflow: hidden;
+  border-radius: 20px; }
   @media only screen and (max-width: 1350px) {
     .order-list .img-area {
       margin-right: 20px;
@@ -2671,8 +2656,6 @@ h6 {
     .order-list .img-area {
       max-width: 140px;
       margin-right: 15px; } }
-  .order-list .img-area img {
-    border-radius: 20px; }
 
 .order-list .description {
   max-width: 440px; }
@@ -2742,8 +2725,6 @@ h6 {
     @media only screen and (max-width: 767px) {
       .history-of-orders-wrap .display_none {
         display: none; } }
-  .history-of-orders-wrap .row {
-    align-items: flex-start; }
   .history-of-orders-wrap .order-list .description h3 {
     margin-bottom: 18px; }
   .history-of-orders-wrap .order-list .description strong {
@@ -2762,8 +2743,6 @@ h6 {
     @media only screen and (max-width: 767px) {
       .account-wrap .display_none {
         display: none; } }
-  .account-wrap .row {
-    align-items: flex-start; }
 
 .table {
   width: 100%; }
@@ -2778,7 +2757,6 @@ h6 {
         display: none; } }
   .table .table-row {
     display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #bebebe; }
     .table .table-row:last-child {
       border-bottom: none; }
@@ -2799,12 +2777,6 @@ h6 {
   .table .bold {
     font-family: "GillSansExtraBold";
     font-weight: 700; }
-
-.info-bonus-user #tabs {
-  align-items: inherit; }
-
-.info-bonus-user .tabs-navigation {
-  justify-content: center; }
 
 .info-bonus-user .tab-content {
   margin: 0; }
@@ -2836,14 +2808,10 @@ h6 {
         display: none; } }
   .checkout-wrap .row {
     align-items: flex-start; }
-  .checkout-wrap h3 {
-    font-family: "GillSans-Bold";
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 32px;
+  .checkout-wrap .title {
     margin-bottom: 15px; }
     @media only screen and (max-width: 767px) {
-      .checkout-wrap h3 {
+      .checkout-wrap .title {
         font-size: 18px;
         line-height: 22px; } }
 
@@ -2934,8 +2902,6 @@ h6 {
   .checkout-holder p {
     font-family: "GillSans-Bold";
     font-weight: 600;
-    font-size: 21px;
-    line-height: 25px;
     margin-bottom: 25px;
     color: #000; }
     @media only screen and (max-width: 767px) {
@@ -3185,22 +3151,22 @@ h6 {
       background: #fff;
       margin-bottom: 40px;
       max-width: 100%; } }
+  .order-summary-block .btn-goods {
+    padding: 23px 115px 18px; }
+    @media only screen and (max-width: 1350px) {
+      .order-summary-block .btn-goods {
+        padding: 23px 45px 18px; } }
+    @media only screen and (max-width: 1023px) {
+      .order-summary-block .btn-goods {
+        padding: 10px 25px; } }
+    @media only screen and (max-width: 767px) {
+      .order-summary-block .btn-goods {
+        width: 100%;
+        padding: 4px 25px; } }
   .order-summary-block .btn-holder {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
-    .order-summary-block .btn-holder .btn-goods {
-      padding: 23px 115px 18px; }
-      @media only screen and (max-width: 1350px) {
-        .order-summary-block .btn-holder .btn-goods {
-          padding: 23px 45px 18px; } }
-      @media only screen and (max-width: 1023px) {
-        .order-summary-block .btn-holder .btn-goods {
-          padding: 10px 25px; } }
-      @media only screen and (max-width: 767px) {
-        .order-summary-block .btn-holder .btn-goods {
-          width: 100%;
-          padding: 4px 25px; } }
 
 @media only screen and (max-width: 767px) {
   .order-block {
@@ -3571,7 +3537,7 @@ h6 {
 
 @media only screen and (max-width: 767px) {
   .background-dark-grey {
-    background: #333; } }
+    background: #ebebeb; } }
 
 .border-bottom {
   border-bottom: 1px solid #000; }
